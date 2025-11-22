@@ -5,11 +5,11 @@
         "subjectName": "Engineering Mathematics-I",
         "subjectCode": "1FY2-01",
         "units": [
-          { "unitName": "Calculus", "notesPDF": "/assets/notes/Maths I Unit 1.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfINU_Y9CMp1pZ827ZB1U-Xn" },
+          { "unitName": "Calculus", "notesPDF": "/assets/notes/Maths I Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2pfcp7PoTuLDlp0gV0GhLD&si=iDHFdhNLued7fQsv" },
           { "unitName": "Sequence & Series", "notesPDF": "/assets/notes/Maths I Unit 2.pdf", "lectureLink": "https://www.youtube.com/watch?v=mm478gK-MlY&list=PLU6SqdYcYsfIAbLwyyWUiWJPV6qFbPC13" },
           { "unitName": "Fourier Series", "notesPDF": "/assets/notes/Maths I Unit 3.pdf", "lectureLink": "https://www.youtube.com/watch?v=NdouX5-KD6Y&list=PLU6SqdYcYsfIXjT49bVTz4KjqHD5fGQY8" },
-          { "unitName": "Multivariable Calculus(Differentaition)", "notesPDF": "/assets/notes/Maths I Unit 4.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfINU_Y9CMp1pZ827ZB1U-Xn" },
-          { "unitName": "Multivariable Calculus(Integration)", "notesPDF": "/assets/notes/Maths I Unit 5.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfINU_Y9CMp1pZ827ZB1U-Xn" }
+          { "unitName": "Multivariable Calculus(Differentaition)", "notesPDF": "/assets/notes/Maths I Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1Zg0rHgjZZZh724xFjrCUJ&si=4HhM_7JeMbHkI_E-" },
+          { "unitName": "Multivariable Calculus(Integration)", "notesPDF": "/assets/notes/Maths I Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1stxPwSVYgQzYM0rnq-GUF&si=mbPVJ_Fai2GjtV2i" }
         ],
         "pyqs": [
           { "examType": "MainExam", "year": 2025, "pdfLink": "/assets/main/mathematics -1 paper 2025.pdf" },
@@ -44,7 +44,7 @@
           { "unitName": "Surveying", "notesPDF": "/assets/notes/1CE1-01_U2_BCE.pdf", "lectureLink": "https://www.youtube.com/live/2ij9_sZr1no" },
           { "unitName": "Building Construction", "notesPDF": "/assets/notes/Civil Unit 3.pdf", "lectureLink": "https://youtu.be/jmW8dSmxz5M" },
           { "unitName": "Transportation Engineering", "notesPDF": "/assets/notes/Civil Unit 4.pdf", "lectureLink": "https://youtu.be/Y7Q9kbutKPQ" },
-          { "unitName": "Water Resources Engineering", "notesPDF": "/assets/notes/1CE1-01_U5_BCE.pdf", "lectureLink": "https://youtube.com/playlist?list=basiccivil-unit5" }
+          { "unitName": "Water Resources Engineering", "notesPDF": "/assets/notes/1CE1-01_U5_BCE.pdf", "lectureLink": "https://youtube.com/playlist?list=PLRLB5WCqU54UlfeMhsTBh9-1WVH7TYXtH&si=79bkqd4ncpcnjCCK" }
         ],
         "pyqs": [
           { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/civil paper odd 2023.pdf" },
@@ -99,12 +99,12 @@
         "subjectName": "Basic Electrical Engineering",
         "subjectCode": "1FY3-08",
         "units": [
-          { "unitName": "DC Circuits", "notesPDF": "/assets/notes/BEE Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit1" },
-          { "unitName": "AC Circuits", "notesPDF": "/assets/notes/BEE Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit2" },
-          { "unitName": "Transformers", "notesPDF": "/assets/notes/BEE Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit3" },
-          { "unitName": "Electrical Machines", "notesPDF": "/assets/notes/BEE Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit4" },
-          { "unitName": "Power Converters", "notesPDF": "/assets/notes/BEE Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit5" },
-          { "unitName": "Electrical Installation", "notesPDF": "/assets/notes/BEE Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit6"}
+          { "unitName": "DC Circuits", "notesPDF": "/assets/notes/BEE Unit 1.pdf", "lectureLink": "https://www.youtube.com/watch?v=XrHtU713vJA&list=PLh9YR2LLEi8og58M95X5jiRAnbf5khSFc&pp=gAQB" },
+          { "unitName": "AC Circuits", "notesPDF": "/assets/notes/BEE Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X27evF1Nu5rRPilw3cCmtIg&si=RV-srDwy9ssadAfR" },
+          { "unitName": "Transformers", "notesPDF": "/assets/notes/BEE Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2QpcefeSjF0jHQqRExgWod&si=fmATGg_uyTvjxRsT" },
+          { "unitName": "Electrical Machines", "notesPDF": "/assets/notes/BEE Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1uyo9RK3Me4onxKiDJ8p39&si=ZksCD80SmJq1A9ES" },
+          { "unitName": "Power Converters", "notesPDF": "/assets/notes/BEE Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PLtOfSb08SMFPBAgR-c1n5WJrhBOJo7VAQ&si=j2JT6ntR0z8wO-jn" },
+          { "unitName": "Electrical Installation", "notesPDF": "/assets/notes/BEE Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0jDznecxf9QLDjkwZ7b_Nr&si=zQ-EdbFQ4FEgsjor"}
         ],
         "pyqs": [
           { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2025.pdf" },

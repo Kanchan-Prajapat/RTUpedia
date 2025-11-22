@@ -31,8 +31,8 @@ const Header = () => {
   return (
     <header style={headerStyle}>
       <div style={navContainerStyle}>
-        <Link to="/" style={{ color: 'var(--color-background)', textDecoration: 'none' }}>
-          <h1>📚 RTUpedia</h1>
+        <Link to="/" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>
+          <h1  style={{ color: 'var(--color-background)', textDecoration: 'none', fontFamily: 'EB Garamond', paddingTop:'10px' }} > RTUpedia</h1>
         </Link>
         
         <nav style={{ display: 'flex', alignItems: 'center' }}>

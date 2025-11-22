@@ -1,14 +1,22 @@
 /* SGPA Card Styling */
 .sgpa-card {
-  background: white;
-  border: 1px solid #d6d6d6;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 20px;
+
+  /* CENTER CONTENT */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
   cursor: pointer;
   box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
   transition: 0.3s ease;
   max-width: 350px;
-  margin-bottom: 20px;
+  margin: 20px auto;  /* Centers card */
 }
 
 .sgpa-card:hover {
@@ -17,28 +25,29 @@
 }
 
 .sgpa-card h2 {
-  color: #0b1e6f;
+  color: var(--color-primary);
   font-size: 22px;
   margin-bottom: 10px;
 }
 
 .sgpa-card p {
-  color: #333;
+  color: var(--color-text);
   font-size: 14px;
   margin-bottom: 15px;
 }
 
 .sgpa-btn {
-  background: #0b1e6f;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-background);
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
   font-size: 15px;
   cursor: pointer;
   transition: 0.2s ease;
+  font-weight: bold;
 }
 
 .sgpa-btn:hover {
-  background: #132c9e;
+  background: var(--color-tertiary);
 }

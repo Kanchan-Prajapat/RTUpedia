@@ -16,7 +16,11 @@
       {"name": "Computer Science (CSE)", "slug": "cse"},
       {"name": "Civil Engineering", "slug": "civil"},
       {"name": "Mechanical Engineering", "slug": "mech"},
-      {"name": "Electrical Engineering", "slug": "eee"}
+      {"name": "Electrical Engineering", "slug": "eee"},
+      {"name": "Chemical Engineering", "slug": "Chem"},
+      {"name": "Internate of Things", "slug": "iot"},
+      {"name": "AI & Data Science", "slug": "aids"},
+      {"name": "Cyber Security", "slug": "cyber"}
     ]
   },
   {
@@ -24,8 +28,15 @@
     "year": "3rd Year",
     "slug": "third-year",
     "branches": [
-      {"name": "CSE", "slug": "cse"},
-      {"name": "IT/AI&DS/Cyber", "slug": "it-aids-cyber"}
+      {"name": "Computer Science (CSE)", "slug": "cse"},
+      {"name": "Civil Engineering", "slug": "civil"},
+      {"name": "Mechanical Engineering", "slug": "mech"},
+      {"name": "Electrical Engineering", "slug": "eee"},
+      {"name": "Chemical Engineering", "slug": "Chem"},
+      {"name": "Internate of Things", "slug": "iot"},
+      {"name": "AI & Data Science", "slug": "aids"},
+      {"name": "Cyber Security", "slug": "cyber"}
+     
     ]
   },
   {
@@ -33,8 +44,14 @@
     "year": "4th Year",
     "slug": "fourth-year",
     "branches": [
-      {"name": "CSE", "slug": "cse"},
-      {"name": "IT/AI&DS/Cyber", "slug": "it-aids-cyber"}
+     {"name": "Computer Science (CSE)", "slug": "cse"},
+      {"name": "Civil Engineering", "slug": "civil"},
+      {"name": "Mechanical Engineering", "slug": "mech"},
+      {"name": "Electrical Engineering", "slug": "eee"},
+      {"name": "Chemical Engineering", "slug": "Chem"},
+      {"name": "Internate of Things", "slug": "iot"},
+      {"name": "AI & Data Science", "slug": "aids"},
+      {"name": "Cyber Security", "slug": "cyber"}
     ]
   }
 ]
