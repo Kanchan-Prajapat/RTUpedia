@@ -1,0 +1,89 @@
+.sgpa-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.sgpa-title {
+  text-align: center;
+  color: #0b1e6f;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.sgpa-subtext {
+  text-align: center;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+/* Grade Box */
+.legend-box {
+  background: #eef2ff;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #b5baff;
+}
+
+.legend-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #202a7a;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.legend-item {
+  font-size: 14px;
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.course-table th {
+  background: #0b1e6f;
+  color: white;
+  padding: 10px;
+}
+
+.course-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.course-table tr:hover {
+  background: #f0f5ff;
+}
+
+.grade-select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #777;
+}
+
+.sgpa-result-box {
+  background: #e1e7ff;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.sgpa-value {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #0b1e6f;
+  font-size: 28px;
+  color: #0b1e6f;
+  font-weight: bold;
+}

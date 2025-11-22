@@ -1,0 +1,394 @@
+{
+  "first-year": {
+    "common": [
+      {
+        "subjectName": "Engineering Mathematics-I",
+        "subjectCode": "1FY2-01",
+        "units": [
+          { "unitName": "Calculus", "notesPDF": "/assets/notes/Maths I Unit 1.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfINU_Y9CMp1pZ827ZB1U-Xn" },
+          { "unitName": "Sequence & Series", "notesPDF": "/assets/notes/Maths I Unit 2.pdf", "lectureLink": "https://www.youtube.com/watch?v=mm478gK-MlY&list=PLU6SqdYcYsfIAbLwyyWUiWJPV6qFbPC13" },
+          { "unitName": "Fourier Series", "notesPDF": "/assets/notes/Maths I Unit 3.pdf", "lectureLink": "https://www.youtube.com/watch?v=NdouX5-KD6Y&list=PLU6SqdYcYsfIXjT49bVTz4KjqHD5fGQY8" },
+          { "unitName": "Multivariable Calculus(Differentaition)", "notesPDF": "/assets/notes/Maths I Unit 4.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfINU_Y9CMp1pZ827ZB1U-Xn" },
+          { "unitName": "Multivariable Calculus(Integration)", "notesPDF": "/assets/notes/Maths I Unit 5.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfINU_Y9CMp1pZ827ZB1U-Xn" }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2025, "pdfLink": "/assets/main/mathematics -1 paper 2025.pdf" },
+          { "examType": "MainExam", "year": 2024, "pdfLink": "/assets/main/mathematics -1 paper 2024.pdf" },
+          { "examType": "MainExam", "year": 2023, "pdfLink": "/assets/main/mathematics -1 paper 2023.pdf" },
+          { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/main/mathematics -1 paper 2022.pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Engineering Mathematics-II",
+        "subjectCode": "2FY2-01",
+        "units": [
+          { "unitName": "Matrices and Determinants", "notesPDF": "/assets/notes/Maths II Unit 1.pdf", "lectureLink": "https://www.youtube.com/watch?v=p5rBJj5CKCg&list=PLU6SqdYcYsfI34zVjDYDCZ6KLAifHmN1v" },
+          { "unitName": "First order ordinary differential equations", "notesPDF": "/assets/notes/Maths II Unit 2.pdf", "lectureLink": "https://www.youtube.com/watch?v=McOc6OUC7Pc&list=PLU6SqdYcYsfJ73RjAojkPl9FHIRPK6JrV" },
+          { "unitName": "Ordinary differential equations of higher orders", "notesPDF": "/assets/notes/Maths II Unit 3.pdf", "lectureLink": "https://www.youtube.com/watch?v=tHqx1qxA8q4&list=PLU6SqdYcYsfIgl58LabHfHW3mksEWimFs" },
+          { "unitName": "PDE – First order", "notesPDF": "/assets/notes/Maths II Unit 4.pdf", "lectureLink": "https://www.youtube.com/watch?v=vZEN4NXhmag&list=PLU6SqdYcYsfJljvy7Goi78EGwjPDQEnSw" },
+          { "unitName": "PDE – Higher order", "notesPDF": "/assets/notes/Maths II Unit 5.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfKej9J-4Jkv-LwrI3gDFZRz" }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "pdfLink": "/assets/main/mathematics -2 paper 2023.pdf" },
+          { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/main/mathematics -2 paper 2022.pdf" },
+          { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/main/mathematics -2 paper 2022 (new scheme).pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Basic Civil Engineering",
+        "subjectCode": "1FY3-09",
+        "units": [
+          { "unitName": "Introduction", "notesPDF": "/assets/notes/Civil Unit 1.pdf", "lectureLink": "https://youtu.be/4moK7tZbfn4" },
+          { "unitName": "Surveying", "notesPDF": "/assets/notes/1CE1-01_U2_BCE.pdf", "lectureLink": "https://www.youtube.com/live/2ij9_sZr1no" },
+          { "unitName": "Building Construction", "notesPDF": "/assets/notes/Civil Unit 3.pdf", "lectureLink": "https://youtu.be/jmW8dSmxz5M" },
+          { "unitName": "Transportation Engineering", "notesPDF": "/assets/notes/Civil Unit 4.pdf", "lectureLink": "https://youtu.be/Y7Q9kbutKPQ" },
+          { "unitName": "Water Resources Engineering", "notesPDF": "/assets/notes/1CE1-01_U5_BCE.pdf", "lectureLink": "https://youtube.com/playlist?list=basiccivil-unit5" }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/civil paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2022, "sem": "Even", "pdfLink": "/assets/main/civil paper even 2022.pdf" },
+          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/civil paper odd 2022.pdf" },
+          { "examType": "MainExam", "year": 2021, "sem": "Odd", "pdfLink": "/assets/main/civil paper odd 2021.pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Basic Mechanical Engineering",
+        "subjectCode": "1FY3-07",
+        "units": [
+          { "unitName": "Fundamentals", "notesPDF": "/assets/notes/BME Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit1" },
+          { "unitName": "Pumps & IC Engines", "notesPDF": "/assets/notes/BME Unit 2.pdf", "lectureLink": "https://youtu.be/5FL1G6kLZTs" },
+          { "unitName": "RAC", "notesPDF": "/assets/notes/BME Unit 3.pdf", "lectureLink": "https://youtu.be/AYYF6cmF0gM" },
+          { "unitName": "Transmission of Power", "notesPDF": "/assets/notes/BME Unit 4.pdf", "lectureLink": "https://youtu.be/Gd6-v03HWeQ" },
+          { "unitName": "Primary Manufacturing Processes", "notesPDF": "/assets/notes/BME Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit5" },
+          { "unitName": "Engineering Materials & Heat treatment", "notesPDF": "/assets/notes/BME Unit 6.pdf", "lectureLink": "https://youtu.be/LEkLGlOEsLw" }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Even","pdfLink": "/assets/main/mechanical paper even 2023.pdf" },
+          { "examType": "MainExam", "year": 2022,"sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2022.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Even","pdfLink": "/assets/main/mechanical paper even 2024.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2024.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2025.pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Engineering Chemistry",
+        "subjectCode": "1FY2-03",
+        "units": [
+          { "unitName": "Water", "notesPDF": "/assets/notes/Chem Unit 1.pdf", "lectureLink": "https://www.youtube.com/watch?v=OifRPyCVcag" },
+          { "unitName": "Organic Fuels", "notesPDF": "/assets/notes/Chem Unit 2.pdf", "lectureLink": "https://www.youtube.com/watch?v=qrC5jADuiME" },
+          { "unitName": "Corrosion and its control", "notesPDF": "/assets/notes/Chem Unit 3.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLLf6O8XdGj00lVydanLfC6bcT4aXGJN4V" },
+          { "unitName": "Engineering Materials", "notesPDF": "/assets/notes/Chem Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=PLfq4fiRrJSn4k4jst_OLjwLtKmR1RyuvX" },
+          { "unitName": "Organic Reaction Mechanism", "notesPDF": "/assets/notes/Chem Unit 5.pdf", "lectureLink": "https://www.youtube.com/watch?v=2U1xKSEMNkY" }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2025.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2024.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/chemistry paper even 2024.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/chemistry paper even 2023.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2022.pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Basic Electrical Engineering",
+        "subjectCode": "1FY3-08",
+        "units": [
+          { "unitName": "DC Circuits", "notesPDF": "/assets/notes/BEE Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit1" },
+          { "unitName": "AC Circuits", "notesPDF": "/assets/notes/BEE Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit2" },
+          { "unitName": "Transformers", "notesPDF": "/assets/notes/BEE Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit3" },
+          { "unitName": "Electrical Machines", "notesPDF": "/assets/notes/BEE Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit4" },
+          { "unitName": "Power Converters", "notesPDF": "/assets/notes/BEE Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit5" },
+          { "unitName": "Electrical Installation", "notesPDF": "/assets/notes/BEE Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=basicelectrical-unit6"}
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2025.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/BEE paper even 2024.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2022.pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Engineering Physics",
+        "subjectCode": "1FY2-02",
+        "units": [
+          { "unitName": "Wave Optics", "notesPDF": "/assets/notes/Phy Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit1" },
+          { "unitName": "Quantum Mechanics", "notesPDF": "/assets/notes/Phy Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit2" },
+          { "unitName": "Optical Fiber", "notesPDF": "/assets/notes/Phy Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit3" },
+          { "unitName": "Lasers", "notesPDF": "/assets/notes/Phy Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit4" },
+          { "unitName": "Material Science & Semiconductor Physics", "notesPDF": "/assets/notes/Phy Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit5" },
+          { "unitName": "Introduction of Electromagnetism", "notesPDF": "/assets/notes/Phy Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit6" }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2025.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2024.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/physics paper even 2024.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/physics paper even 2023.pdf" },
+          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2022.pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Communication Skills",
+        "subjectCode": "1FY1-04",
+        "units": [
+          { "unitName": "Communication", "notesPDF": "/assets/notes/CS Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit1" },
+          { "unitName": "Grammar", "notesPDF": "/assets/notes/CS Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit2" },
+          { "unitName": "Composition", "notesPDF": "/assets/notes/CS Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit3" },
+          { "unitName": "Short Stories", "notesPDF": "/assets/notes/CS Unit 4 Short Stories.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit4" },
+          { "unitName": "Poems", "notesPDF": "/assets/notes/CS Unit 5 Poems .pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit5" }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2025.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/communication skill paper even 2024.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2024.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/communication skill paper even 2023.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2022.pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Human Values and Professional Ethics",
+        "subjectCode": "1FY1-05",
+        "units": [
+          { "unitName": "Course Introduction", "notesPDF": "/assets/notes/HV Unit 1.pdf", "lectureLink": "https://youtu.be/0jwdgW0fYMA?si=Kex3WEsGl-_HSI6h" },
+          { "unitName": "Harmony in the Human Being", "notesPDF": "/assets/notes/HV Unit 2.pdf", "lectureLink": "https://youtu.be/Z_x1lys8jM4?si=XXePXPJ1aKuhUnlO" },
+          { "unitName": "Harmony in the Family & Society", "notesPDF": "/assets/notes/HV Unit 3.pdf", "lectureLink": "https://youtu.be/K17NiRJBv3E?si=rg42M1M5RdaHFZkw" },
+          { "unitName": "Harmony in Nature & Existence", "notesPDF": "/assets/notes/HV Unit 4.pdf", "lectureLink": "https://youtu.be/XuHFT3JYKnc?si=-AawbUnNcnVrp53f" },
+          { "unitName": "Professional Ethics", "notesPDF": "/assets/notes/HV Unit 5.pdf", "lectureLink": "https://youtu.be/-rwWBaIreJA?si=G5rKUa9aP3lgD0M6" }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2024.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/human values paper even 2024.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/human values paper even 2023.pdf" },
+          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2022.pdf" }
+        ]
+      },
+
+      {
+        "subjectName": "Programming and Problem Solving (PPS)",
+        "subjectCode": "1FY3-06",
+        "units": [
+          { "unitName": "Fundamentals of Computer", "notesPDF": "/assets/notes/PPS Unit 1.pdf", "lectureLink": "https://youtu.be/agaLaSafbwc?si=0uel-HpoJdsmqrYW" },
+          { "unitName": "Number System", "notesPDF": "/assets/notes/PPS Unit 2.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLh9YR2LLEi8rheQDVP4tGe1BvofvMjBUX" },
+          { "unitName": "C Programming", "notesPDF": "/assets/notes/PPS Unit 3.pdf", "lectureLink": "https://youtu.be/irqbmMNs2Bo?si=ojgYUGRKAQq26z57" }
+        ],
+         "pyqs": [
+          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2024.pdf" },
+          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/PPS paper even 2024.pdf" },
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      }
+    ]
+    
+  },
+
+  "second-year": {
+    "cse": [
+      {
+        "semester": "3rd-sem",
+        "subjects": [
+          {
+            "subjectName": "Advanced Engineering Mathematics",
+            "subjectCode": "3CS2-01",
+            "units": [
+              { "unitName": "Random Variable", "notesPDF": "/assets/notes/3CS2-01_U1_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit1" },
+              { "unitName": "Binomial Distribution", "notesPDF": "/assets/notes/3CS2-01_U2_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit2" },
+              { "unitName": "Historical Development", "notesPDF": "/assets/notes/3CS2-01_U3_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit3" },
+              { "unitName": "Classical Optimization using Differential Calculus", "notesPDF": "/assets/notes/3CS2-01_U4_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit4" },
+              { "unitName": "Linear Programming", "notesPDF": "/assets/notes/3CS2-01_U5_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit5" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS2-01.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS2-01.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Technical Communication",
+            "subjectCode": "3CS1-02",
+            "units": [
+              { "unitName": "Introduction to Technical Communication", "notesPDF": "/assets/notes/3CS1-02_U1_TC.pdf", "lectureLink": "https://youtube.com/playlist?list=tc-unit1" },
+              { "unitName": "Comprehension of Technical Materials/Texts and Information Design & development", "notesPDF": "/assets/notes/3CS1-02_U2_TC.pdf", "lectureLink": "https://youtube.com/playlist?list=tc-unit2" },
+              { "unitName": "Technical Writing, Grammar and Editing", "notesPDF": "/assets/notes/3CS1-02_U3_TC.pdf", "lectureLink": "https://youtube.com/playlist?list=tc-unit3" },
+              { "unitName": "Advanced Technical Writing", "notesPDF": "/assets/notes/3CS1-02_U4_TC.pdf", "lectureLink": "https://youtube.com/playlist?list=tc-unit4" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS1-02.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS1-02.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Managerial Economics and Financial Accounting",
+            "subjectCode": "3CS1-03",
+            "units": [
+              { "unitName": "Basic Economic Concepts", "notesPDF": "/assets/notes/3CS1-03_U1_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit1" },
+              { "unitName": "Demand and Supply Analysis", "notesPDF": "/assets/notes/3CS1-03_U2_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit2" },
+              { "unitName": "Production and Cost Analysis", "notesPDF": "/assets/notes/3CS1-03_U3_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit3" },
+              { "unitName": "Market Structure and Pricing Theory", "notesPDF": "/assets/notes/3CS1-03_U4_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit4" },
+              { "unitName": "Financial Statement Analysis", "notesPDF": "/assets/notes/3CS1-03_U5_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit5" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS1-03.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS1-03.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Digital Electronics",
+            "subjectCode": "3CS3-04",
+            "units": [
+              { "unitName": "Fundamental Concepts", "notesPDF": "/assets/notes/3CS3-04_U1_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit1" },
+              { "unitName": "Minimization Techniques and Logic Gates", "notesPDF": "/assets/notes/3CS3-04_U2_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit2" },
+              { "unitName": "Digital Logic Gate Characteristics", "notesPDF": "/assets/notes/3CS3-04_U3_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit3" },
+              { "unitName": "Combinational Circuits", "notesPDF": "/assets/notes/3CS3-04_U4_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit4" },
+              { "unitName": "Sequential Circuits", "notesPDF": "/assets/notes/3CS3-04_U5_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit5" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS3-04.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS3-04.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Data Structures and Algorithms",
+            "subjectCode": "3CS4-05",
+            "units": [
+              { "unitName": "Stacks", "notesPDF": "/assets/notes/3CS4-05_U1_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit1" },
+              { "unitName": "Linked List and Queue", "notesPDF": "/assets/notes/3CS4-05_U2_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit2" },
+              { "unitName": "Searching Techniques and Sorting", "notesPDF": "/assets/notes/3CS4-05_U3_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit3" },
+              { "unitName": "Trees", "notesPDF": "/assets/notes/3CS4-05_U4_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit4" },
+              { "unitName": "Graphs and Hashing", "notesPDF": "/assets/notes/3CS4-05_U5_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit5" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS4-05.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS4-05.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Object Oriented Programming",
+            "subjectCode": "3CS4-06",
+            "units": [
+              { "unitName": "Introduction", "notesPDF": "/assets/notes/3CS4-06_U1_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit1" },
+              { "unitName": "Dynamic Memory Allocation", "notesPDF": "/assets/notes/3CS4-06_U2_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit2" },
+              { "unitName": "Inheritance", "notesPDF": "/assets/notes/3CS4-06_U3_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit3" },
+              { "unitName": "Operator Overloading", "notesPDF": "/assets/notes/3CS4-06_U4_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit4" },
+              { "unitName": "File Handeling", "notesPDF": "/assets/notes/3CS4-06_U5_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit5" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS4-06.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS4-06.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Software Engineering",
+            "subjectCode": "3CS4-07",
+            "units": [
+              { "unitName": "Introduction", "notesPDF": "/assets/notes/3CS4-07_U1_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit1" },
+              { "unitName": "Software Project Management", "notesPDF": "/assets/notes/3CS4-07_U2_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit2" },
+              { "unitName": "Requirement Analysis", "notesPDF": "/assets/notes/3CS4-07_U3_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit3" },
+              { "unitName": "Software Design", "notesPDF": "/assets/notes/3CS4-07_U4_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit4" },
+              { "unitName": "Object Oriented Analysis", "notesPDF": "/assets/notes/3CS4-07_U5_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit5" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS4-07.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS4-07.pdf" }
+            ]
+          }
+        ]
+      },
+      {
+        "semester": "4th-sem",
+        "subjects": [
+          {
+            "subjectName": "Discrete Mathematics Structure",
+            "subjectCode": "4CS2-01",
+            "units": [
+              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS2-01_U1_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit1" },
+              { "unitName": "Set Theory, Relation, Function", "notesPDF": "/assets/notes/4CS2-01_U2_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit2" },
+              { "unitName": "Propositional Logic", "notesPDF": "/assets/notes/4CS2-01_U3_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit3" },
+              { "unitName": "Posets, Hasse Diagram and Lattices, Combinatorics", "notesPDF": "/assets/notes/4CS2-01_U4_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit4" },
+              { "unitName": "Algebraic Structures", "notesPDF": "/assets/notes/4CS2-01_U5_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit5" },
+              { "unitName": "Graph Theory", "notesPDF": "/assets/notes/4CS2-01_U6_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit6" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS2-01.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS2-01.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Microprocessor & Interfaces",
+            "subjectCode": "4CS3-04",
+            "units": [
+              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS3-04_U1_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit1" },
+              { "unitName": "Architecture of 8085 Microprocessor", "notesPDF": "/assets/notes/4CS3-04_U2_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit2" },
+              { "unitName": "8085 Instruction Set and Programming", "notesPDF": "/assets/notes/4CS3-04_U3_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit3" },
+              { "unitName": "Interfacing Memory and I/O Devices", "notesPDF": "/assets/notes/4CS3-04_U4_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit4" },
+              { "unitName": "8085 Microprocessor Interfacing (8255, 8259 etc.)", "notesPDF": "/assets/notes/4CS3-04_U5_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit5" },
+              { "unitName": "Microprocessor Application", "notesPDF": "/assets/notes/4CS3-04_U6_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit6" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS3-04.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS3-04.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Database Management System",
+            "subjectCode": "4CS4-05",
+            "units": [
+              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS4-05_U1_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit1" },
+              { "unitName": "Introduction to Database Systems, Entity Relationship Model", "notesPDF": "/assets/notes/4CS4-05_U2_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit2" },
+              { "unitName": "Relationship Algebra and Calculus, SQL Queries Programming and Triggers", "notesPDF": "/assets/notes/4CS4-05_U3_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit3" },
+              { "unitName": "Schema Refinement and Normal Forms", "notesPDF": "/assets/notes/4CS4-05_U4_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit4" },
+              { "unitName": "Transaction Processing", "notesPDF": "/assets/notes/4CS4-05_U5_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit5" },
+              { "unitName": "Concurrency Control, Database Failure and Recovery", "notesPDF": "/assets/notes/4CS4-05_U6_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit6" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS4-05.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS4-05.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Theory Of Computation",
+            "subjectCode": "4CS4-06",
+            "units": [
+              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS4-06_U1_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit1" },
+              { "unitName": "Finite Automata & Regular Expression", "notesPDF": "/assets/notes/4CS4-06_U2_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit2" },
+              { "unitName": "Context-Free Grammar and Pushdown Automata", "notesPDF": "/assets/notes/4CS4-06_U3_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit3" },
+              { "unitName": "Turing Machines", "notesPDF": "/assets/notes/4CS4-06_U4_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit4" },
+              { "unitName": "Hierarchy of Formal Languages", "notesPDF": "/assets/notes/4CS4-06_U5_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit5" },
+              { "unitName": "Tractable and Untractable Problems (P and NP Classes)", "notesPDF": "/assets/notes/4CS4-06_U6_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit6" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS4-06.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS4-06.pdf" }
+            ]
+          },
+          {
+            "subjectName": "Data Communication and Computer Networks",
+            "subjectCode": "4CS4-07",
+            "units": [
+              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS4-07_U1_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit1" },
+              { "unitName": "Introductory Concepts (Data Transmission, Media)", "notesPDF": "/assets/notes/4CS4-07_U2_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit2" },
+              { "unitName": "Data Link Layer", "notesPDF": "/assets/notes/4CS4-07_U3_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit3" },
+              { "unitName": "Network Layer", "notesPDF": "/assets/notes/4CS4-07_U4_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit4" },
+              { "unitName": "Transport Layer", "notesPDF": "/assets/notes/4CS4-07_U5_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit5" },
+              { "unitName": "Application Layer", "notesPDF": "/assets/notes/4CS4-07_U6_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit6" }
+            ],
+            "pyqs": [
+              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS4-07.pdf" },
+              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS4-07.pdf" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

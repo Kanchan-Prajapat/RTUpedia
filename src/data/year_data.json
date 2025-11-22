@@ -1,0 +1,40 @@
+
+[
+  {
+    "id": 1,
+    "year": "1st Year",
+    "slug": "first-year",
+    "branches": [
+      {"name": "Common (Sem I & II)", "slug": "common"}
+    ]
+  },
+  {
+    "id": 2,
+    "year": "2nd Year",
+    "slug": "second-year",
+    "branches": [
+      {"name": "Computer Science (CSE)", "slug": "cse"},
+      {"name": "Civil Engineering", "slug": "civil"},
+      {"name": "Mechanical Engineering", "slug": "mech"},
+      {"name": "Electrical Engineering", "slug": "eee"}
+    ]
+  },
+  {
+    "id": 3,
+    "year": "3rd Year",
+    "slug": "third-year",
+    "branches": [
+      {"name": "CSE", "slug": "cse"},
+      {"name": "IT/AI&DS/Cyber", "slug": "it-aids-cyber"}
+    ]
+  },
+  {
+    "id": 4,
+    "year": "4th Year",
+    "slug": "fourth-year",
+    "branches": [
+      {"name": "CSE", "slug": "cse"},
+      {"name": "IT/AI&DS/Cyber", "slug": "it-aids-cyber"}
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+/* src/styles/themes.css */
+
+:root {
+  /* Light Mode (Blue + White + Yellow) */
+  --color-primary: #0C2B4E;     /* Blue: Buttons, Headers, Links */
+  --color-secondary: #ffc107;   /* Yellow: Card Accent */
+  --color-tertiary: #17243b;    /* Cyan/Teal: Secondary button/Link hover */
+  --color-background:#F4F4F4;  /* White: Main BG */
+  --color-text: #212529;        /* Dark Text */
+  --color-card-bg: #f8f9fa;     /* Light Gray Card BG */
+  --color-border: #dee2e6;
+}
+
+[data-theme='dark'] {
+  /* Dark Mode (Navy + Charcoal + Cyan) */
+  --color-primary: #F4F4F4;     /* Cyan: Buttons, Headers, Links */
+  --color-secondary: #FBC02D;   /* Charcoal: Card Accent/Border */
+  --color-tertiary: #b3c7da;    /* Blue: Secondary button/Link hover */
+  --color-background: #0C2B4E;   /* Navy: Main BG */
+  --color-text: #f8f9fa;        /* White Text */
+  --color-card-bg: #2c3e50;     /* Darker Card BG */
+  --color-border: #444444;
+}
