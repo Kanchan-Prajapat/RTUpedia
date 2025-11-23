@@ -58,11 +58,11 @@
         "subjectName": "Basic Mechanical Engineering",
         "subjectCode": "1FY3-07",
         "units": [
-          { "unitName": "Fundamentals", "notesPDF": "/assets/notes/BME Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit1" },
-          { "unitName": "Pumps & IC Engines", "notesPDF": "/assets/notes/BME Unit 2.pdf", "lectureLink": "https://youtu.be/5FL1G6kLZTs" },
-          { "unitName": "RAC", "notesPDF": "/assets/notes/BME Unit 3.pdf", "lectureLink": "https://youtu.be/AYYF6cmF0gM" },
+          { "unitName": "Fundamentals", "notesPDF": "/assets/notes/BME Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2nw1rlJeyK4QDQVAkHrL_0&si=--CxAZjuAbjg81z8" },
+          { "unitName": "Pumps & IC Engines", "notesPDF": "/assets/notes/BME Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2d3tev5912luZFr-SnDGFz&si=2gCeb2M4m_1Tc8Cn" },
+          { "unitName": "RAC", "notesPDF": "/assets/notes/BME Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0eJByDg66HgkBHrDmBxfQZ&si=WmggIpXo4DyM6z-c" },
           { "unitName": "Transmission of Power", "notesPDF": "/assets/notes/BME Unit 4.pdf", "lectureLink": "https://youtu.be/Gd6-v03HWeQ" },
-          { "unitName": "Primary Manufacturing Processes", "notesPDF": "/assets/notes/BME Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit5" },
+          { "unitName": "Primary Manufacturing Processes", "notesPDF": "/assets/notes/BME Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PL-JvKqQx2Atd59aCxARxsGtx62TtTy3iN&si=peksC3dqOm2XLju-" },
           { "unitName": "Engineering Materials & Heat treatment", "notesPDF": "/assets/notes/BME Unit 6.pdf", "lectureLink": "https://youtu.be/LEkLGlOEsLw" }
         ],
         "pyqs": [
@@ -118,12 +118,12 @@
         "subjectName": "Engineering Physics",
         "subjectCode": "1FY2-02",
         "units": [
-          { "unitName": "Wave Optics", "notesPDF": "/assets/notes/Phy Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit1" },
-          { "unitName": "Quantum Mechanics", "notesPDF": "/assets/notes/Phy Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit2" },
-          { "unitName": "Optical Fiber", "notesPDF": "/assets/notes/Phy Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit3" },
-          { "unitName": "Lasers", "notesPDF": "/assets/notes/Phy Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit4" },
-          { "unitName": "Material Science & Semiconductor Physics", "notesPDF": "/assets/notes/Phy Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit5" },
-          { "unitName": "Introduction of Electromagnetism", "notesPDF": "/assets/notes/Phy Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=physics-unit6" }
+          { "unitName": "Wave Optics", "notesPDF": "/assets/notes/Phy Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqxaLkpqedfrlnuJNMwJ3cl&si=pQaiACkOUsSsOs49" },
+          { "unitName": "Quantum Mechanics", "notesPDF": "/assets/notes/Phy Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X32yIxcPw2aHhKr0xTiCLNK&si=d7sqAD_TDiWWPoA9" },
+          { "unitName": "Optical Fiber", "notesPDF": "/assets/notes/Phy Unit 3.pdf", "lectureLink": "https://youtu.be/mn8_l6bU8OQ?si=MCBhD-pYwv9wgVx0" },
+          { "unitName": "Lasers", "notesPDF": "/assets/notes/Phy Unit 4.pdf", "lectureLink": "https://youtu.be/RnHJ9ZANp9I?si=Izb55uU55VgKmhq7" },
+          { "unitName": "Material Science & Semiconductor Physics", "notesPDF": "/assets/notes/Phy Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X36ix336R2SZjNlS8EQigSC&si=sCBBYvvT8Jl8YfBg" },
+          { "unitName": "Introduction of Electromagnetism", "notesPDF": "/assets/notes/Phy Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqN6MYtUIU345QiJPLuVJTd&si=an_isI009fA2l2dt" }
         ],
         "pyqs": [
           { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2025.pdf" },
@@ -139,11 +139,11 @@
         "subjectName": "Communication Skills",
         "subjectCode": "1FY1-04",
         "units": [
-          { "unitName": "Communication", "notesPDF": "/assets/notes/CS Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit1" },
-          { "unitName": "Grammar", "notesPDF": "/assets/notes/CS Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit2" },
-          { "unitName": "Composition", "notesPDF": "/assets/notes/CS Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit3" },
-          { "unitName": "Short Stories", "notesPDF": "/assets/notes/CS Unit 4 Short Stories.pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit4" },
-          { "unitName": "Poems", "notesPDF": "/assets/notes/CS Unit 5 Poems .pdf", "lectureLink": "https://youtube.com/playlist?list=basicmech-unit5" }
+          { "unitName": "Communication", "notesPDF": "/assets/notes/CS Unit 1.pdf", "lectureLink": "https://youtu.be/GY3ADgnWLos?si=OXvPXTxRwSGQnKAq" },
+          { "unitName": "Grammar", "notesPDF": "/assets/notes/CS Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3T6FfZy6juNdt7PXJiHDUq&si=jY1-yYPiu_BcL4Dm" },
+          { "unitName": "Composition", "notesPDF": "/assets/notes/CS Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0ddkcQNAXpuz3UFfttuOF4&si=6VQuUtP7GM-o_VCf" },
+          { "unitName": "Short Stories", "notesPDF": "/assets/notes/CS Unit 4 Short Stories.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2IP26N9MqRNkeg6PGrYKO8&si=0Rl8rkyr-Faq34b9" },
+          { "unitName": "Poems", "notesPDF": "/assets/notes/CS Unit 5 Poems .pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3VNj6hqn8zxpzZKU3OgAAl&si=Si_ucxeenv5Gh8oe" }
         ],
         "pyqs": [
           { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2025.pdf" },
@@ -190,7 +190,6 @@
         ]
       }
     ]
-    
   },
 
   "second-year": {
@@ -202,108 +201,247 @@
             "subjectName": "Advanced Engineering Mathematics",
             "subjectCode": "3CS2-01",
             "units": [
-              { "unitName": "Random Variable", "notesPDF": "/assets/notes/3CS2-01_U1_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit1" },
-              { "unitName": "Binomial Distribution", "notesPDF": "/assets/notes/3CS2-01_U2_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit2" },
-              { "unitName": "Historical Development", "notesPDF": "/assets/notes/3CS2-01_U3_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit3" },
-              { "unitName": "Classical Optimization using Differential Calculus", "notesPDF": "/assets/notes/3CS2-01_U4_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit4" },
-              { "unitName": "Linear Programming", "notesPDF": "/assets/notes/3CS2-01_U5_AEM.pdf", "lectureLink": "https://youtube.com/playlist?list=aem-unit5" }
+              {
+                "unitName": "Random variables: Discrete and continuous random variables, Probability mass function and probability density function, Joint distributions, Marginal and conditional distributions and moments, Moment generating function.",
+                "notesPDF": "/assets/notes/Advanced Engineering Mathematics Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit1"
+              },
+              {
+                "unitName": "Discrete Probability Distributions: Binomial, Poisson and Geometric distributions, Continuous distributions: Uniform, Normal, Exponential, Gamma distributions.",
+                "notesPDF": "/assets/notes/Advanced Engineering Mathematics Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit2"
+              },
+              {
+                "unitName": "Historical development of optimization techniques, Formulation of LPP, Graphical method, Convexity, Simplex method, Big M-method, Two-phase method.",
+                "notesPDF": "/assets/notes/Advanced Engineering Mathematics Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit3"
+              },
+              {
+                "unitName": "Classical Optimization using Differential Calculus, Single variable optimization, Multivariable Optimization with/without constraints, Lagrange’s Method.",
+                "notesPDF": "/assets/notes/Advanced Engineering Mathematics Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit4"
+              },
+              {
+                "unitName": "Linear Programming: Duality, Sensitivity analysis, Transportation problem, Assignment problem.",
+                "notesPDF": "/assets/notes/Advanced Engineering Mathematics Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit5"
+              }
             ],
-            "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS2-01.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS2-01.pdf" }
-            ]
+            "pyqs": [ 
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+                    { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+                    ]
           },
+
           {
             "subjectName": "Technical Communication",
             "subjectCode": "3CS1-02",
             "units": [
-              { "unitName": "Introduction to Technical Communication", "notesPDF": "/assets/notes/3CS1-02_U1_TC.pdf", "lectureLink": "https://youtube.com/playlist?list=tc-unit1" },
-              { "unitName": "Comprehension of Technical Materials/Texts and Information Design & development", "notesPDF": "/assets/notes/3CS1-02_U2_TC.pdf", "lectureLink": "https://youtube.com/playlist?list=tc-unit2" },
-              { "unitName": "Technical Writing, Grammar and Editing", "notesPDF": "/assets/notes/3CS1-02_U3_TC.pdf", "lectureLink": "https://youtube.com/playlist?list=tc-unit3" },
-              { "unitName": "Advanced Technical Writing", "notesPDF": "/assets/notes/3CS1-02_U4_TC.pdf", "lectureLink": "https://youtube.com/playlist?list=tc-unit4" }
+              {
+                "unitName": "Introduction to Technical Communication: Process of Communication, Language as a tool of communication, Technical communication: meaning, importance and role.",
+                "notesPDF": "/assets/notes/Technical Communication Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit1"
+              },
+              {
+                "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development: Reading techniques, summarizing, abstracting, information collection, organization and presentation.",
+                "notesPDF": "/assets/notes/Technical Communication Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit2"
+              },
+              {
+                "unitName": "Technical Writing, Grammar and Editing: Technical style, technical definitions, technical descriptions, technical manuals, grammar usage and common errors.",
+                "notesPDF": "/assets/notes/Technical Communication Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit3"
+              },
+              {
+                "unitName": "Advanced Technical Writing: Research papers, project reports, dissertations, proposals, technical emails.",
+                "notesPDF": "/assets/notes/Technical Communication Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit4"
+              }
             ],
             "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS1-02.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS1-02.pdf" }
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
             ]
           },
+
           {
             "subjectName": "Managerial Economics and Financial Accounting",
             "subjectCode": "3CS1-03",
             "units": [
-              { "unitName": "Basic Economic Concepts", "notesPDF": "/assets/notes/3CS1-03_U1_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit1" },
-              { "unitName": "Demand and Supply Analysis", "notesPDF": "/assets/notes/3CS1-03_U2_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit2" },
-              { "unitName": "Production and Cost Analysis", "notesPDF": "/assets/notes/3CS1-03_U3_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit3" },
-              { "unitName": "Market Structure and Pricing Theory", "notesPDF": "/assets/notes/3CS1-03_U4_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit4" },
-              { "unitName": "Financial Statement Analysis", "notesPDF": "/assets/notes/3CS1-03_U5_MEFA.pdf", "lectureLink": "https://youtube.com/playlist?list=mefa-unit5" }
+              {
+                "unitName": "Basic Economic Concepts: Meaning, nature and scope of economics; basic economic problems; scarcity and choice; national income.",
+                "notesPDF": "/assets/notes/Managerial Economics Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit1"
+              },
+              {
+                "unitName": "Demand and Supply Analysis: Demand forecasting, elasticity of demand, supply function, elasticity of supply.",
+                "notesPDF": "/assets/notes/Managerial Economics Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit2"
+              },
+              {
+                "unitName": "Production and Cost Analysis: Production function, laws of returns to scale, least cost combination, isoquants, cost curves.",
+                "notesPDF": "/assets/notes/Managerial Economics Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit3"
+              },
+              {
+                "unitName": "Market structure and pricing theory: Perfect competition, monopoly, monopolistic competition, oligopoly.",
+                "notesPDF": "/assets/notes/Managerial Economics Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit4"
+              },
+              {
+                "unitName": "Financial Statement Analysis: Balance sheet, P&L statements, cash-flow analysis, fund-flow analysis, financial ratios.",
+                "notesPDF": "/assets/notes/Managerial Economics Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit5"
+              }
             ],
             "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS1-03.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS1-03.pdf" }
+                          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
             ]
           },
+
           {
             "subjectName": "Digital Electronics",
             "subjectCode": "3CS3-04",
             "units": [
-              { "unitName": "Fundamental Concepts", "notesPDF": "/assets/notes/3CS3-04_U1_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit1" },
-              { "unitName": "Minimization Techniques and Logic Gates", "notesPDF": "/assets/notes/3CS3-04_U2_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit2" },
-              { "unitName": "Digital Logic Gate Characteristics", "notesPDF": "/assets/notes/3CS3-04_U3_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit3" },
-              { "unitName": "Combinational Circuits", "notesPDF": "/assets/notes/3CS3-04_U4_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit4" },
-              { "unitName": "Sequential Circuits", "notesPDF": "/assets/notes/3CS3-04_U5_DE.pdf", "lectureLink": "https://youtube.com/playlist?list=de-unit5" }
+              {
+                "unitName": "Fundamental Concepts: Number systems, binary codes, Boolean algebra, logic gate fundamentals.",
+                "notesPDF": "/assets/notes/Digital Electronics Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=digital-electronics-unit1"
+              },
+              {
+                "unitName": "Minimization Techniques and Logic Gates: K-map, simplification methods, combinational logic.",
+                "notesPDF": "/assets/notes/Digital Electronics Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=digital-electronics-unit2"
+              },
+              {
+                "unitName": "Digital Logic Gate Characteristics: Logic families, TTL, CMOS, interfacing.",
+                "notesPDF": "/assets/notes/Digital Electronics Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=digital-electronics-unit3"
+              },
+              {
+                "unitName": "Combinational Circuits: Encoders, decoders, multiplexers, de-multiplexers, adders, subtractors.",
+                "notesPDF": "/assets/notes/Digital Electronics Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=digital-electronics-unit4"
+              },
+              {
+                "unitName": "Sequential Circuits: Flip-flops, counters, shift registers, synchronous/asynchronous circuits.",
+                "notesPDF": "/assets/notes/Digital Electronics Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=digital-electronics-unit5"
+              }
             ],
             "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS3-04.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS3-04.pdf" }
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
             ]
           },
+
           {
             "subjectName": "Data Structures and Algorithms",
             "subjectCode": "3CS4-05",
             "units": [
-              { "unitName": "Stacks", "notesPDF": "/assets/notes/3CS4-05_U1_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit1" },
-              { "unitName": "Linked List and Queue", "notesPDF": "/assets/notes/3CS4-05_U2_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit2" },
-              { "unitName": "Searching Techniques and Sorting", "notesPDF": "/assets/notes/3CS4-05_U3_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit3" },
-              { "unitName": "Trees", "notesPDF": "/assets/notes/3CS4-05_U4_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit4" },
-              { "unitName": "Graphs and Hashing", "notesPDF": "/assets/notes/3CS4-05_U5_DSA.pdf", "lectureLink": "https://youtube.com/playlist?list=dsa-unit5" }
+              {
+                "unitName": "Stacks: Stack implementation, applications, recursion, expression conversion.",
+                "notesPDF": "/assets/notes/Data Structures Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=data-structures-unit1"
+              },
+              {
+                "unitName": "Linked Lists and Queues: Types of linked lists, queue implementation, circular queues, priority queues.",
+                "notesPDF": "/assets/notes/Data Structures Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=data-structures-unit2"
+              },
+              {
+                "unitName": "Searching Techniques and Sorting: Linear search, binary search, quicksort, mergesort, heapsort.",
+                "notesPDF": "/assets/notes/Data Structures Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=data-structures-unit3"
+              },
+              {
+                "unitName": "Trees: Binary trees, AVL trees, B-trees, tree traversal techniques.",
+                "notesPDF": "/assets/notes/Data Structures Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=data-structures-unit4"
+              },
+              {
+                "unitName": "Graphs and Hashing: Graph representation, BFS, DFS, shortest path algorithms, hashing techniques.",
+                "notesPDF": "/assets/notes/Data Structures Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=data-structures-unit5"
+              }
             ],
-            "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS4-05.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS4-05.pdf" }
-            ]
+            "pyqs": [      { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }]
           },
+
           {
             "subjectName": "Object Oriented Programming",
             "subjectCode": "3CS4-06",
             "units": [
-              { "unitName": "Introduction", "notesPDF": "/assets/notes/3CS4-06_U1_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit1" },
-              { "unitName": "Dynamic Memory Allocation", "notesPDF": "/assets/notes/3CS4-06_U2_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit2" },
-              { "unitName": "Inheritance", "notesPDF": "/assets/notes/3CS4-06_U3_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit3" },
-              { "unitName": "Operator Overloading", "notesPDF": "/assets/notes/3CS4-06_U4_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit4" },
-              { "unitName": "File Handeling", "notesPDF": "/assets/notes/3CS4-06_U5_OOP.pdf", "lectureLink": "https://youtube.com/playlist?list=oop-unit5" }
+              {
+                "unitName": "Introduction: OOP concepts, classes and objects, constructors and destructors.",
+                "notesPDF": "/assets/notes/Object Oriented Programming Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=oop-unit1"
+              },
+              {
+                "unitName": "Dynamic Memory Allocation: Pointers, new/delete, dynamic constructors.",
+                "notesPDF": "/assets/notes/Object Oriented Programming Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=oop-unit2"
+              },
+              {
+                "unitName": "Inheritance: Types of inheritance, virtual base class, ambiguity resolution.",
+                "notesPDF": "/assets/notes/Object Oriented Programming Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=oop-unit3"
+              },
+              {
+                "unitName": "Operator Overloading: Unary and binary operator overloading.",
+                "notesPDF": "/assets/notes/Object Oriented Programming Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=oop-unit4"
+              },
+              {
+                "unitName": "File Handling: File streams, read/write operations.",
+                "notesPDF": "/assets/notes/Object Oriented Programming Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=oop-unit5"
+              }
             ],
-            "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS4-06.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS4-06.pdf" }
-            ]
+            "pyqs": [     
+               { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }]
           },
+
           {
             "subjectName": "Software Engineering",
             "subjectCode": "3CS4-07",
             "units": [
-              { "unitName": "Introduction", "notesPDF": "/assets/notes/3CS4-07_U1_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit1" },
-              { "unitName": "Software Project Management", "notesPDF": "/assets/notes/3CS4-07_U2_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit2" },
-              { "unitName": "Requirement Analysis", "notesPDF": "/assets/notes/3CS4-07_U3_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit3" },
-              { "unitName": "Software Design", "notesPDF": "/assets/notes/3CS4-07_U4_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit4" },
-              { "unitName": "Object Oriented Analysis", "notesPDF": "/assets/notes/3CS4-07_U5_SE.pdf", "lectureLink": "https://youtube.com/playlist?list=se-unit5" }
+              {
+                "unitName": "Introduction: Software process models, software development life cycle.",
+                "notesPDF": "/assets/notes/Software Engineering Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit1"
+              },
+              {
+                "unitName": "Software Project Management: Project planning, cost estimation, scheduling.",
+                "notesPDF": "/assets/notes/Software Engineering Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit2"
+              },
+              {
+                "unitName": "Requirement Analysis: SRS, functional and non-functional requirements.",
+                "notesPDF": "/assets/notes/Software Engineering Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit3"
+              },
+              {
+                "unitName": "Software Design: Architectural design, modular design, user interface design.",
+                "notesPDF": "/assets/notes/Software Engineering Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit4"
+              },
+              {
+                "unitName": "Object-Oriented Analysis: UML diagrams, class diagrams, sequence diagrams.",
+                "notesPDF": "/assets/notes/Software Engineering Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit5"
+              }
             ],
-            "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_3CS4-07.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_3CS4-07.pdf" }
-            ]
+            "pyqs": [     
+               { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }]
           }
         ]
       },
+
       {
         "semester": "4th-sem",
         "subjects": [
@@ -311,84 +449,650 @@
             "subjectName": "Discrete Mathematics Structure",
             "subjectCode": "4CS2-01",
             "units": [
-              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS2-01_U1_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit1" },
-              { "unitName": "Set Theory, Relation, Function", "notesPDF": "/assets/notes/4CS2-01_U2_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit2" },
-              { "unitName": "Propositional Logic", "notesPDF": "/assets/notes/4CS2-01_U3_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit3" },
-              { "unitName": "Posets, Hasse Diagram and Lattices, Combinatorics", "notesPDF": "/assets/notes/4CS2-01_U4_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit4" },
-              { "unitName": "Algebraic Structures", "notesPDF": "/assets/notes/4CS2-01_U5_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit5" },
-              { "unitName": "Graph Theory", "notesPDF": "/assets/notes/4CS2-01_U6_DMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dms-unit6" }
+              {
+                "unitName": "Introduction: Objective, scope and outcome of the course.",
+                "notesPDF": "/assets/notes/Discrete Mathematics Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit1"
+              },
+              {
+                "unitName": "Set Theory, Relation, Function: Countable/uncountable sets, cardinality, inclusion-exclusion principle, pigeonhole principle.",
+                "notesPDF": "/assets/notes/Discrete Mathematics Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit2"
+              },
+              {
+                "unitName": "Propositional Logic: Logical operations, predicates, normal forms, quantifiers.",
+                "notesPDF": "/assets/notes/Discrete Mathematics Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit3"
+              },
+              {
+                "unitName": "Posets, Hasse diagram, Lattices, Combinatorics, Recurrence Relations, Generating Functions.",
+                "notesPDF": "/assets/notes/Discrete Mathematics Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit4"
+              },
+              {
+                "unitName": "Algebraic Structures: Groups, Rings, Fields, Commutativity, Homomorphism.",
+                "notesPDF": "/assets/notes/Discrete Mathematics Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit5"
+              },
+              {
+                "unitName": "Graph Theory: Paths, cycles, connectivity, Eulerian/Hamiltonian paths, graph coloring.",
+                "notesPDF": "/assets/notes/Discrete Mathematics Unit 6.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit6"
+              }
             ],
             "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS2-01.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS2-01.pdf" }
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
             ]
           },
+
           {
             "subjectName": "Microprocessor & Interfaces",
             "subjectCode": "4CS3-04",
             "units": [
-              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS3-04_U1_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit1" },
-              { "unitName": "Architecture of 8085 Microprocessor", "notesPDF": "/assets/notes/4CS3-04_U2_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit2" },
-              { "unitName": "8085 Instruction Set and Programming", "notesPDF": "/assets/notes/4CS3-04_U3_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit3" },
-              { "unitName": "Interfacing Memory and I/O Devices", "notesPDF": "/assets/notes/4CS3-04_U4_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit4" },
-              { "unitName": "8085 Microprocessor Interfacing (8255, 8259 etc.)", "notesPDF": "/assets/notes/4CS3-04_U5_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit5" },
-              { "unitName": "Microprocessor Application", "notesPDF": "/assets/notes/4CS3-04_U6_MP.pdf", "lectureLink": "https://youtube.com/playlist?list=mp-unit6" }
+              {
+                "unitName": "Introduction: Microprocessor basics, applications.",
+                "notesPDF": "/assets/notes/Microprocessor Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit1"
+              },
+              {
+                "unitName": "Architecture of 8085 Microprocessor: Internal blocks, instruction cycle, addressing modes.",
+                "notesPDF": "/assets/notes/Microprocessor Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit2"
+              },
+              {
+                "unitName": "8085 Instruction Set and Programming: Data transfer, arithmetic, logical, branch instructions.",
+                "notesPDF": "/assets/notes/Microprocessor Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit3"
+              },
+              {
+                "unitName": "Interfacing Memory and I/O Devices.",
+                "notesPDF": "/assets/notes/Microprocessor Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit4"
+              },
+              {
+                "unitName": "8085 Microprocessor Interfacing (8255, 8259 etc.)",
+                "notesPDF": "/assets/notes/Microprocessor Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit5"
+              },
+              {
+                "unitName": "Microprocessor Applications.",
+                "notesPDF": "/assets/notes/Microprocessor Unit 6.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit6"
+              }
             ],
             "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS3-04.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS3-04.pdf" }
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
             ]
           },
+
           {
             "subjectName": "Database Management System",
             "subjectCode": "4CS4-05",
             "units": [
-              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS4-05_U1_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit1" },
-              { "unitName": "Introduction to Database Systems, Entity Relationship Model", "notesPDF": "/assets/notes/4CS4-05_U2_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit2" },
-              { "unitName": "Relationship Algebra and Calculus, SQL Queries Programming and Triggers", "notesPDF": "/assets/notes/4CS4-05_U3_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit3" },
-              { "unitName": "Schema Refinement and Normal Forms", "notesPDF": "/assets/notes/4CS4-05_U4_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit4" },
-              { "unitName": "Transaction Processing", "notesPDF": "/assets/notes/4CS4-05_U5_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit5" },
-              { "unitName": "Concurrency Control, Database Failure and Recovery", "notesPDF": "/assets/notes/4CS4-05_U6_DBMS.pdf", "lectureLink": "https://youtube.com/playlist?list=dbms-unit6" }
+              {
+                "unitName": "Introduction: Database concepts, data models, DBMS architecture.",
+                "notesPDF": "/assets/notes/DBMS Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dbms-unit1"
+              },
+              {
+                "unitName": "Entity Relationship Model: Mapping cardinalities, keys, constraints.",
+                "notesPDF": "/assets/notes/DBMS Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dbms-unit2"
+              },
+              {
+                "unitName": "Relational Algebra and Calculus, SQL Queries, Trigger Programming.",
+                "notesPDF": "/assets/notes/DBMS Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dbms-unit3"
+              },
+              {
+                "unitName": "Schema Refinement and Normal Forms.",
+                "notesPDF": "/assets/notes/DBMS Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dbms-unit4"
+              },
+              {
+                "unitName": "Transaction Processing.",
+                "notesPDF": "/assets/notes/DBMS Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dbms-unit5"
+              },
+              {
+                "unitName": "Concurrency Control, Database Failure and Recovery.",
+                "notesPDF": "/assets/notes/DBMS Unit 6.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dbms-unit6"
+              }
             ],
             "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS4-05.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS4-05.pdf" }
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
             ]
           },
+
           {
-            "subjectName": "Theory Of Computation",
+            "subjectName": "Theory of Computation",
             "subjectCode": "4CS4-06",
             "units": [
-              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS4-06_U1_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit1" },
-              { "unitName": "Finite Automata & Regular Expression", "notesPDF": "/assets/notes/4CS4-06_U2_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit2" },
-              { "unitName": "Context-Free Grammar and Pushdown Automata", "notesPDF": "/assets/notes/4CS4-06_U3_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit3" },
-              { "unitName": "Turing Machines", "notesPDF": "/assets/notes/4CS4-06_U4_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit4" },
-              { "unitName": "Hierarchy of Formal Languages", "notesPDF": "/assets/notes/4CS4-06_U5_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit5" },
-              { "unitName": "Tractable and Untractable Problems (P and NP Classes)", "notesPDF": "/assets/notes/4CS4-06_U6_TOC.pdf", "lectureLink": "https://youtube.com/playlist?list=toc-unit6" }
+              {
+                "unitName": "Introduction: Basics of automata theory and formal languages.",
+                "notesPDF": "/assets/notes/Theory Of Computation Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=toc-unit1"
+              },
+              {
+                "unitName": "Finite Automata & Regular Expression.",
+                "notesPDF": "/assets/notes/Theory Of Computation Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=toc-unit2"
+              },
+              {
+                "unitName": "Context-Free Grammar and Pushdown Automata.",
+                "notesPDF": "/assets/notes/Theory Of Computation Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=toc-unit3"
+              },
+              {
+                "unitName": "Turing Machines.",
+                "notesPDF": "/assets/notes/Theory Of Computation Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=toc-unit4"
+              },
+              {
+                "unitName": "Hierarchy of Formal Languages.",
+                "notesPDF": "/assets/notes/Theory Of Computation Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=toc-unit5"
+              },
+              {
+                "unitName": "Tractable and Untractable Problems (P and NP Classes).",
+                "notesPDF": "/assets/notes/Theory Of Computation Unit 6.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=toc-unit6"
+              }
             ],
             "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS4-06.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS4-06.pdf" }
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
             ]
           },
+
           {
             "subjectName": "Data Communication and Computer Networks",
             "subjectCode": "4CS4-07",
             "units": [
-              { "unitName": "Introduction", "notesPDF": "/assets/notes/4CS4-07_U1_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit1" },
-              { "unitName": "Introductory Concepts (Data Transmission, Media)", "notesPDF": "/assets/notes/4CS4-07_U2_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit2" },
-              { "unitName": "Data Link Layer", "notesPDF": "/assets/notes/4CS4-07_U3_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit3" },
-              { "unitName": "Network Layer", "notesPDF": "/assets/notes/4CS4-07_U4_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit4" },
-              { "unitName": "Transport Layer", "notesPDF": "/assets/notes/4CS4-07_U5_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit5" },
-              { "unitName": "Application Layer", "notesPDF": "/assets/notes/4CS4-07_U6_DCCN.pdf", "lectureLink": "https://youtube.com/playlist?list=dccn-unit6" }
+              {
+                "unitName": "Introduction: Basics of data communication, network types, protocol architecture.",
+                "notesPDF": "/assets/notes/DCCN Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dccn-unit1"
+              },
+              {
+                "unitName": "Data Transmission, Transmission Media, Channel Capacity.",
+                "notesPDF": "/assets/notes/DCCN Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dccn-unit2"
+              },
+              {
+                "unitName": "Data Link Layer: Framing, Error control, Flow control.",
+                "notesPDF": "/assets/notes/DCCN Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dccn-unit3"
+              },
+              {
+                "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
+                "notesPDF": "/assets/notes/DCCN Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dccn-unit4"
+              },
+              {
+                "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
+                "notesPDF": "/assets/notes/DCCN Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dccn-unit5"
+              },
+              {
+                "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
+                "notesPDF": "/assets/notes/DCCN Unit 6.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dccn-unit6"
+              }
             ],
             "pyqs": [
-              { "examType": "MidTerm", "year": 2023, "pdfLink": "/assets/pyqs/mid/2023_4CS4-07.pdf" },
-              { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/pyqs/main/2022_4CS4-07.pdf" }
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
             ]
           }
         ]
       }
     ]
-  }
-}
+  },
+  
+  "third-year": {
+    "cse": [
+      {
+        "semester": "5th-sem",
+        "subjects": [
+          {
+            "subjectName": "Compiler Design",
+            "subjectCode": "5CS1-01",
+            "units": [
+              {
+                "unitName": "Introduction to Compilers: Phases, compiler structure, front-end and back-end concepts.",
+                "notesPDF": "/assets/notes/Compiler Design Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit1"
+              },
+              {
+                "unitName": "Lexical Analysis: Tokens, lexemes, regular expressions, finite automata.",
+                "notesPDF": "/assets/notes/Compiler Design Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit2"
+              },
+              {
+                "unitName": "Syntax Analysis: Parsing techniques, LL and LR parsers, error recovery.",
+                "notesPDF": "/assets/notes/Compiler Design Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit3"
+              },
+              {
+                "unitName": "Semantic Analysis: Type checking, intermediate code generation.",
+                "notesPDF": "/assets/notes/Compiler Design Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit4"
+              },
+              {
+                "unitName": "Code Optimization and Code Generation.",
+                "notesPDF": "/assets/notes/Compiler Design Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit5"
+              }
+            ],
+            "pyqs": [  
+                  { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }]
+          },
+
+          {
+            "subjectName": "Operating Systems",
+            "subjectCode": "5CS2-02",
+            "units": [
+              {
+                "unitName": "Introduction to Operating Systems: Types, system calls, OS structure.",
+                "notesPDF": "/assets/notes/Operating Systems Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=os-unit1"
+              },
+              {
+                "unitName": "Process Management: Scheduling, threads, IPC, synchronization.",
+                "notesPDF": "/assets/notes/Operating Systems Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=os-unit2"
+              },
+              {
+                "unitName": "Memory Management: Paging, segmentation, virtual memory.",
+                "notesPDF": "/assets/notes/Operating Systems Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=os-unit3"
+              },
+              {
+                "unitName": "File Systems: Directories, allocation, free space management.",
+                "notesPDF": "/assets/notes/Operating Systems Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=os-unit4"
+              },
+              {
+                "unitName": "Deadlocks: Detection, prevention, avoidance.",
+                "notesPDF": "/assets/notes/Operating Systems Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=os-unit5"
+              }
+            ],
+            "pyqs": [
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+            ]
+          },
+
+          {
+            "subjectName": "Computer Architecture and Organization",
+            "subjectCode": "5CS3-03",
+            "units": [
+              {
+                "unitName": "Basic Computer Organization: CPU, registers, buses.",
+                "notesPDF": "/assets/notes/Computer Architecture Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cao-unit1"
+              },
+              {
+                "unitName": "Instruction Set Architecture and ALU Design.",
+                "notesPDF": "/assets/notes/Computer Architecture Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cao-unit2"
+              },
+              {
+                "unitName": "Memory Organization: Cache, primary and secondary memory.",
+                "notesPDF": "/assets/notes/Computer Architecture Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cao-unit3"
+              },
+              {
+                "unitName": "Control Unit: Hardwired and microprogrammed control.",
+                "notesPDF": "/assets/notes/Computer Architecture Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cao-unit4"
+              },
+              {
+                "unitName": "Pipelining and Parallel Processing.",
+                "notesPDF": "/assets/notes/Computer Architecture Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cao-unit5"
+              }
+            ],
+            "pyqs": [
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+            ]
+          },
+
+          {
+            "subjectName": "Design and Analysis of Algorithms",
+            "subjectCode": "5CS4-04",
+            "units": [
+              {
+                "unitName": "Algorithm Analysis: Time/space complexity, asymptotic notation.",
+                "notesPDF": "/assets/notes/DAA Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=daa-unit1"
+              },
+              {
+                "unitName": "Divide and Conquer Algorithms.",
+                "notesPDF": "/assets/notes/DAA Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=daa-unit2"
+              },
+              {
+                "unitName": "Greedy Algorithms.",
+                "notesPDF": "/assets/notes/DAA Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=daa-unit3"
+              },
+              {
+                "unitName": "Dynamic Programming.",
+                "notesPDF": "/assets/notes/DAA Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=daa-unit4"
+              },
+              {
+                "unitName": "Backtracking and Branch & Bound.",
+                "notesPDF": "/assets/notes/DAA Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=daa-unit5"
+              }
+            ],
+            "pyqs": [
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+            ]
+          }
+        ],
+
+        "electives": [
+          {
+            "electiveTitle": "Program Elective – I",
+            "options": [
+              {
+                "subjectName": "Artificial Intelligence",
+                "subjectCode": "5CS5-01",
+                "units": [
+                  {
+                    "unitName": "Foundations of AI, Intelligent Agents, Problem Solving.",
+                    "notesPDF": "/assets/notes/Artificial Intelligence Unit 1.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=ai-unit1"
+                  },
+                  {
+                    "unitName": "Knowledge Representation and Reasoning.",
+                    "notesPDF": "/assets/notes/Artificial Intelligence Unit 2.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=ai-unit2"
+                  },
+                  {
+                    "unitName": "Machine Learning Basics.",
+                    "notesPDF": "/assets/notes/Artificial Intelligence Unit 3.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=ai-unit3"
+                  },
+                  {
+                    "unitName": "Neural Networks and Fuzzy Logic.",
+                    "notesPDF": "/assets/notes/Artificial Intelligence Unit 4.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=ai-unit4"
+                  },
+                  {
+                    "unitName": "Expert Systems and Applications.",
+                    "notesPDF": "/assets/notes/Artificial Intelligence Unit 5.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=ai-unit5"
+                  }
+                ]
+              },
+
+              {
+                "subjectName": "Information Security",
+                "subjectCode": "5CS5-02",
+                "units": [
+                  {
+                    "unitName": "Security Concepts, Threat Models.",
+                    "notesPDF": "/assets/notes/Information Security Unit 1.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=infosec-unit1"
+                  },
+                  {
+                    "unitName": "Cryptography Fundamentals.",
+                    "notesPDF": "/assets/notes/Information Security Unit 2.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=infosec-unit2"
+                  },
+                  {
+                    "unitName": "Network Security Protocols.",
+                    "notesPDF": "/assets/notes/Information Security Unit 3.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=infosec-unit3"
+                  },
+                  {
+                    "unitName": "Web & Application Security.",
+                    "notesPDF": "/assets/notes/Information Security Unit 4.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=infosec-unit4"
+                  },
+                  {
+                    "unitName": "Cyber Laws and Digital Forensics.",
+                    "notesPDF": "/assets/notes/Information Security Unit 5.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=infosec-unit5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+        "semester": "6th-sem",
+        "subjects": [
+          {
+            "subjectName": "Software Project Management",
+            "subjectCode": "6CS1-01",
+            "units": [
+              {
+                "unitName": "Introduction: Project life cycle, characteristics of software projects.",
+                "notesPDF": "/assets/notes/Software Project Management Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=spm-unit1"
+              },
+              {
+                "unitName": "Project Planning: Scope management, project estimation techniques.",
+                "notesPDF": "/assets/notes/Software Project Management Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=spm-unit2"
+              },
+              {
+                "unitName": "Scheduling and Risk Management.",
+                "notesPDF": "/assets/notes/Software Project Management Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=spm-unit3"
+              },
+              {
+                "unitName": "Quality Assurance and Testing Strategies.",
+                "notesPDF": "/assets/notes/Software Project Management Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=spm-unit4"
+              },
+              {
+                "unitName": "Project Monitoring, Control and Configuration Management.",
+                "notesPDF": "/assets/notes/Software Project Management Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=spm-unit5"
+              }
+            ],
+            "pyqs": [
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+            ]
+          },
+
+          {
+            "subjectName": "Computer Graphics",
+            "subjectCode": "6CS2-02",
+            "units": [
+              {
+                "unitName": "Introduction to Computer Graphics: Graphics pipeline, applications.",
+                "notesPDF": "/assets/notes/Computer Graphics Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cg-unit1"
+              },
+              {
+                "unitName": "2D Transformations: Scaling, rotation, translation, homogeneous coordinates.",
+                "notesPDF": "/assets/notes/Computer Graphics Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cg-unit2"
+              },
+              {
+                "unitName": "3D Transformations and Clipping.",
+                "notesPDF": "/assets/notes/Computer Graphics Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cg-unit3"
+              },
+              {
+                "unitName": "Curve and Surface Modeling: Bézier, B-spline curves.",
+                "notesPDF": "/assets/notes/Computer Graphics Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cg-unit4"
+              },
+              {
+                "unitName": "Rendering Techniques: Illumination models, shading, ray tracing.",
+                "notesPDF": "/assets/notes/Computer Graphics Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=cg-unit5"
+              }
+            ],
+            "pyqs": [
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+            ]
+          },
+
+          {
+            "subjectName": "Distributed Systems",
+            "subjectCode": "6CS3-03",
+            "units": [
+              {
+                "unitName": "Introduction to Distributed Systems: Goals, challenges, architecture.",
+                "notesPDF": "/assets/notes/Distributed Systems Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=ds-unit1"
+              },
+              {
+                "unitName": "Processes, Communication and Naming.",
+                "notesPDF": "/assets/notes/Distributed Systems Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=ds-unit2"
+              },
+              {
+                "unitName": "Synchronization and Coordination.",
+                "notesPDF": "/assets/notes/Distributed Systems Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=ds-unit3"
+              },
+              {
+                "unitName": "Consistency and Replication Models.",
+                "notesPDF": "/assets/notes/Distributed Systems Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=ds-unit4"
+              },
+              {
+                "unitName": "Fault Tolerance and Distributed File Systems.",
+                "notesPDF": "/assets/notes/Distributed Systems Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=ds-unit5"
+              }
+            ],
+            "pyqs": [
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+            ]
+          },
+
+          {
+            "subjectName": "Data Mining and Data Warehousing",
+            "subjectCode": "6CS4-04",
+            "units": [
+              {
+                "unitName": "Introduction to Data Mining: KDD process, types of data, data preprocessing.",
+                "notesPDF": "/assets/notes/Data Mining Unit 1.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dm-unit1"
+              },
+              {
+                "unitName": "Association Rule Mining: Apriori, FP-tree.",
+                "notesPDF": "/assets/notes/Data Mining Unit 2.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dm-unit2"
+              },
+              {
+                "unitName": "Classification Techniques: Decision trees, Bayesian classifiers.",
+                "notesPDF": "/assets/notes/Data Mining Unit 3.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dm-unit3"
+              },
+              {
+                "unitName": "Clustering Techniques: K-means, hierarchical clustering.",
+                "notesPDF": "/assets/notes/Data Mining Unit 4.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dm-unit4"
+              },
+              {
+                "unitName": "Data Warehousing Concepts.",
+                "notesPDF": "/assets/notes/Data Mining Unit 5.pdf",
+                "lectureLink": "https://youtube.com/playlist?list=dm-unit5"
+              }
+            ],
+            "pyqs": [
+                    { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+            ]
+          }
+        ],
+
+        "electives": [
+          {
+            "electiveTitle": "Program Elective – II",
+            "options": [
+              {
+                "subjectName": "Mobile Computing",
+                "subjectCode": "6CS5-01",
+                "units": [
+                  {
+                    "unitName": "Mobile Computing Architecture.",
+                    "notesPDF": "/assets/notes/Mobile Computing Unit 1.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=mc-unit1"
+                  },
+                  {
+                    "unitName": "Mobile Communication Protocols.",
+                    "notesPDF": "/assets/notes/Mobile Computing Unit 2.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=mc-unit2"
+                  },
+                  {
+                    "unitName": "Mobile IP and Transport Layer.",
+                    "notesPDF": "/assets/notes/Mobile Computing Unit 3.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=mc-unit3"
+                  },
+                  {
+                    "unitName": "Mobile Application Development.",
+                    "notesPDF": "/assets/notes/Mobile Computing Unit 4.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=mc-unit4"
+                  },
+                  {
+                    "unitName": "Security in Mobile Computing.",
+                    "notesPDF": "/assets/notes/Mobile Computing Unit 5.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=mc-unit5"
+                  }
+                ]
+              },
+
+              {
+                "subjectName": "Cloud Computing",
+                "subjectCode": "6CS5-02",
+                "units": [
+                  {
+                    "unitName": "Cloud Computing Fundamentals: Virtualization, service models.",
+                    "notesPDF": "/assets/notes/Cloud Computing Unit 1.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=cloud-unit1"
+                  },
+                  {
+                    "unitName": "Cloud Architecture and Deployment Models.",
+                    "notesPDF": "/assets/notes/Cloud Computing Unit 2.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=cloud-unit2"
+                  },
+                  {
+                    "unitName": "Cloud Storage and Virtualization Technologies.",
+                    "notesPDF": "/assets/notes/Cloud Computing Unit 3.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=cloud-unit3"
+                  },
+                  {
+                    "unitName": "Cloud Security and Privacy.",
+                    "notesPDF": "/assets/notes/Cloud Computing Unit 4.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=cloud-unit4"
+                  },
+                  {
+                    "unitName": "Cloud Platforms and Applications.",
+                    "notesPDF": "/assets/notes/Cloud Computing Unit 5.pdf",
+                    "lectureLink": "https://youtube.com/playlist?list=cloud-unit5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    
