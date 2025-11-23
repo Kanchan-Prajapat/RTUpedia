@@ -1,89 +1,299 @@
-.sgpa-container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
+/* ============================
+   SGPA CARD (HOME PAGE)
+   ============================ */
+.sgpa-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.sgpa-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+.sgpa-card h2 {
+  color: var(--color-primary);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.sgpa-card p {
+  color: var(--color-text);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.sgpa-btn {
+  background: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: bold;
 }
 
 .sgpa-title {
   text-align: center;
-  color: #0b1e6f;
-  font-size: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.sgpa-subtext {
+.sgpa-btn:hover {
+  background: var(--color-tertiary);
+}
+
+/* ============================
+   TABLE
+   ============================ */
+   .sgpa-table-wrapper {
+  max-width: 900px;
+  margin: 0 auto;   /* center horizontally */
+  width: 100%;
+}
+
+
+.course-table {
+  width: 100%;
+  max-width: 900px;     /* same width as old design */
+  margin: 0 auto;       /* center table */
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+
+.course-table th {
+  background: var(--color-primary);
+  color: var(--color-background);
+  padding: 12px;
+  border-radius: 8px 8px 0 0;
+  font-size: 15px;
+}
+
+.course-table tr {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.course-table td {
+  padding: 12px;
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+/* Row Hover */
+.course-table tr:hover {
+  background: var(--color-tertiary);
+}
+
+.course-table tr:hover td {
+  color: var(--color-background) !important;
+}
+
+/* ============================
+   GRADE DROPDOWN
+   ============================ */
+.grade-select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  width: 80px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 14px;
+}
+
+/* Grade Select – Hover Row Fix */
+.course-table tr:hover .grade-select {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+/* Dropdown Options (LIGHT MODE) */
+.grade-select option {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Dropdown Options (DARK MODE) */
+[data-theme="dark"] .grade-select {
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .grade-select option {
+  background-color: #0f2239 !important;
+  color: #ffffff !important;
+}
+
+/* ============================
+   FILTER BOX
+   ============================ */
+.filter-box {
+  display: flex;
+  gap: 25px;
+  margin: 25px auto;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: gray;
-  margin-bottom: 25px;
+  width: 100%;
+  max-width: 500px; /* prevents spreading too wide */
 }
 
-/* Grade Box */
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.filter-item label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.filter-item select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-background);
+  color: var(--color-text);
+  min-width: 120px;
+}
+
+/* ============================
+   GRADE LEGEND
+   ============================ */
 .legend-box {
-  background: #eef2ff;
+  background: var(--color-card-bg);
   padding: 15px;
   border-radius: 12px;
   margin-bottom: 25px;
-  border: 1px solid #b5baff;
-}
-
-.legend-title {
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #202a7a;
+  border: 1px solid var(--color-border);
+  text-align: center;
 }
 
 .legend-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
+  justify-items: center;
 }
 
-.legend-item {
-  font-size: 14px;
+/* ============================
+   📱 MOBILE — Up to 768px
+   ============================ */
+
+   
+@media (max-width: 768px) {
+
+  .course-table th,
+  .course-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .legend-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+   .filter-box {
+    flex-direction: column;
+    gap: 18px;
+    max-width: 100%;
+  }
+
+  .filter-item {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .filter-item select {
+    width: 100%;
+  }
 }
 
-.course-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
+/* =================================
+   📱 MOBILE — 480px
+   ================================= */
+@media (max-width: 480px) {
+  .legend-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-select {
+    width: 100%;
+  }
 }
 
-.course-table th {
-  background: #0b1e6f;
-  color: white;
-  padding: 10px;
+/* =================================
+   📱 VERY SMALL — ≤ 350px
+   ================================= */
+@media (max-width: 350px) {
+  .filter-item select {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .course-table th,
+  .course-table td {
+    font-size: 13px;
+  }
 }
 
-.course-table td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+/* ============================
+   SGPA RESULT (Centered)
+   ============================ */
+.sgpa-result-wrapper {
+  text-align: center;
+  margin: 30px auto;
 }
 
-.course-table tr:hover {
-  background: #f0f5ff;
-}
-
-.grade-select {
-  padding: 6px;
-  border-radius: 6px;
-  border: 1px solid #777;
-}
-
-.sgpa-result-box {
-  background: #e1e7ff;
-  padding: 15px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-}
-
-.sgpa-value {
-  background: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 2px solid #0b1e6f;
-  font-size: 28px;
-  color: #0b1e6f;
+.sgpa-result-wrapper h3 {
+  font-size: 20px;
   font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+/* Result Box */
+.sgpa-value-box {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px solid var(--color-primary);
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 120px;
+  text-align: center;
+}
+
+/* Dark Mode Adjustment */
+[data-theme="dark"] .sgpa-value-box {
+  background: var(--color-background);
+  border-color: var(--color-secondary);
+  color: var(--color-text);
 }

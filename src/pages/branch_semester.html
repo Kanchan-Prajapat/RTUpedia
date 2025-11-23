@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Branch & Semester | SGPA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .selector-container {
+      max-width: 420px;
+      margin: 60px auto;
+      padding: 24px;
+      border-radius: 16px;
+      background: var(--color-card-bg);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      border: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    .selector-container h1 {
+      margin-bottom: 8px;
+      color: var(--color-primary);
+      font-size: 24px;
+    }
+
+    .selector-container p {
+      margin-bottom: 18px;
+      color: var(--color-text);
+      font-size: 14px;
+    }
+
+    .selector-group {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .selector-label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: var(--color-text);
+      font-weight: 600;
+    }
+
+    .selector-select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+      background: var(--color-background);
+      color: var(--color-text);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .selector-select:focus {
+      border-color: var(--color-primary);
+    }
+
+    .selector-btn {
+      width: 100%;
+      margin-top: 12px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 10px;
+      background: var(--color-primary);
+      color: var(--color-background);
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .selector-btn:hover {
+      background: var(--color-tertiary);
+    }
+
+    .selector-error {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #e74c3c;
+      min-height: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="selector-container">
+    <h1>RTU SGPA Calculator</h1>
+    <p>Select your <strong>branch</strong> and <strong>semester</strong> to continue.</p>
+
+    <div class="selector-group">
+      <label for="branch" class="selector-label">Branch</label>
+      <select id="branch" class="selector-select">
+        <option value="">-- Select Branch --</option>
+        <option value="CSE">Computer Science & Engineering (CSE)</option>
+        <option value="CE">Civil Engineering (CE)</option>
+        <option value="EE">Electrical Engineering (EE)</option>
+        <option value="ME">Mechanical Engineering (ME)</option>
+        <option value="CHEM">Chemical Engineering (CHEM)</option>
+      </select>
+    </div>
+
+    <div class="selector-group">
+      <label for="semester" class="selector-label">Semester</label>
+      <select id="semester" class="selector-select">
+        <option value="">-- Select Semester --</option>
+        <option value="1">1st Semester</option>
+        <option value="2">2nd Semester</option>
+        <option value="3">3rd Semester</option>
+        <option value="4">4th Semester</option>
+        <option value="5">5th Semester</option>
+        <option value="6">6th Semester</option>
+        <option value="7">7th Semester</option>
+        <option value="8">8th Semester</option>
+      </select>
+    </div>
+
+    <button class="selector-btn" id="proceedBtn">Open SGPA Calculator</button>
+    <div class="selector-error" id="errorMsg"></div>
+  </div>
+
+  <script>
+    document.getElementById('proceedBtn').addEventListener('click', () => {
+      const branch = document.getElementById('branch').value;
+      const sem = document.getElementById('semester').value;
+      const errorMsg = document.getElementById('errorMsg');
+
+      if (!branch || !sem) {
+        errorMsg.textContent = 'Please select both branch and semester.';
+        return;
+      }
+
+      errorMsg.textContent = '';
+      // redirect with query params
+      window.location.href = `sgpa.html?branch=${encodeURIComponent(branch)}&sem=${encodeURIComponent(sem)}`;
+    });
+  </script>
+</body>
+</html>

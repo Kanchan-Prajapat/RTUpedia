@@ -1,0 +1,64 @@
+{
+  "CSE": {
+    "1": [
+      { "code": "", "name": "Engineering Mathematics-I", "credits": 4 },
+      { "code": "", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "", "name": "Engineering Physics / Chemistry Lab", "credits": 1 },
+      { "code": "", "name": "Language Lab / Human values and athics lab & Sports", "credits": 1 },
+      { "code": "", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "", "name": "Foundation Course", "credits": 0.5 }
+    ],
+
+    "2": [
+      { "code": "", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "", "name": "Physics / Chemistry Lab", "credits": 1 },
+      { "code": "", "name": "Language Lab / Sports", "credits": 1 },
+      { "code": "", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "", "name": "Foundation Course", "credits": 0.5 }
+    ],
+    "3" : [
+          { "code": "", "name": "Engineering Mathematics-II", "credits": 4 },
+      { "code": "", "name": "Engineering Physics / Engineering Chemistry", "credits": 4 },
+      { "code": "", "name": "Communication Skills / Human Values", "credits": 2 },
+      { "code": "", "name": "Programming and Problem Solving / Basic Mechanical Engineering", "credits": 2 },
+      { "code": "", "name": "Basic Electrical / Civil Engineering", "credits": 2 },
+      { "code": "", "name": "Physics / Chemistry Lab", "credits": 1 },
+      { "code": "", "name": "Language Lab / Sports", "credits": 1 },
+      { "code": "", "name": "Computer Programming lab / mechanical Workshop", "credits": 1.5 },
+      { "code": "", "name": "Electrical / Civil Lab", "credits": 1 },
+      { "code": "", "name": "Computer Aided Engineering Graphics/ Computer Aided Machine Drawing", "credits": 1.5 },
+      { "code": "", "name": "Foundation Course", "credits": 0.5 }
+    ]
+  },
+
+  "EE": {
+    "1": [{ "code": "NA", "name": "No Data", "credits": 0 }],
+    "2": [{ "code": "NA", "name": "No Data", "credits": 0 }]
+  },
+
+  "ME": {
+    "1": [{ "code": "NA", "name": "No Data", "credits": 0 }],
+    "2": [{ "code": "NA", "name": "No Data", "credits": 0 }]
+  },
+
+  "CE": {
+    "1": [{ "code": "NA", "name": "No Data", "credits": 0 }],
+    "2": [{ "code": "NA", "name": "No Data", "credits": 0 }]
+  },
+
+  "CHEM": {
+    "1": [{ "code": "NA", "name": "No Data", "credits": 0 }],
+    "2": [{ "code": "NA", "name": "No Data", "credits": 0 }]
+  }
+}

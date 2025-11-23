@@ -107,7 +107,10 @@ const YearSelection = () => {
       <div className="sgpa-card" onClick={() => navigate("/SGPACalculator")}>
         <h2>SGPA Calculator</h2>
         <p>Calculate your RTU SGPA instantly using semester-wise credits.</p>
-        <button className="sgpa-btn">Select Semester</button>
+        <button class="sgpa-btn" onclick="window.location.href='branch_semester.html'">
+  Open Calculator
+</button>
+
       </div>
 
     </div>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>SGPA Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .sgpa-wrapper {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 24px;
+      border-radius: 16px;
+      background: var(--color-card-bg);
+      border: 1px solid var(--color-border);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .sgpa-header {
+      margin-bottom: 16px;
+    }
+    .sgpa-header h1 {
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+    .sgpa-header p {
+      color: var(--color-text);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      padding: 10px;
+      font-size: 14px;
+      border-bottom: 1px solid var(--color-border);
+      text-align: left;
+    }
+    th {
+      background: var(--color-background);
+      color: var(--color-text);
+    }
+    select {
+      padding: 6px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--color-border);
+      background: var(--color-background);
+      color: var(--color-text);
+    }
+    .actions {
+      margin-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .sgpa-calc-btn {
+      padding: 10px 18px;
+      border-radius: 10px;
+      border: none;
+      background: var(--color-primary);
+      color: var(--color-background);
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .sgpa-calc-btn:hover {
+      background: var(--color-tertiary);
+    }
+    .sgpa-result {
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    .sgpa-error {
+      color: #e74c3c;
+      font-size: 13px;
+      min-height: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sgpa-wrapper">
+    <div class="sgpa-header">
+      <h1>SGPA Calculator</h1>
+      <p id="context"></p>
+    </div>
+
+    <div class="sgpa-error" id="error"></div>
+
+    <table id="subjectsTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Subject</th>
+          <th>Credits</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows injected by JS -->
+      </tbody>
+    </table>
+
+    <div class="actions">
+      <button class="sgpa-calc-btn" id="calcBtn">Calculate SGPA</button>
+      <div class="sgpa-result" id="result"></div>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const branch = params.get('branch');
+    const sem = params.get('sem');
+
+    document.getElementById('context').textContent =
+      `Branch: ${branch || 'N/A'} | Semester: ${sem || 'N/A'}`;
+
+    const subjectsTableBody = document.querySelector('#subjectsTable tbody');
+    const errorEl = document.getElementById('error');
+    const resultEl = document.getElementById('result');
+
+    let gradeConfig = null;
+    let subjects = [];
+
+    async function loadData() {
+      try {
+        const [gradeRes, coursesRes] = await Promise.all([
+          fetch('data/grade_points.json'),
+          fetch('data/default_rtu_courses.json')
+        ]);
+
+        gradeConfig = await gradeRes.json();
+        const defaultCourses = await coursesRes.json();
+
+        // 🔹 For now, we use default_rtu_courses.json for ALL
+        // (1st year common). Later you can create a bigger JSON
+        // with branch+sem-wise subjects and pick from there.
+        subjects = defaultCourses;
+
+        if (!Array.isArray(subjects) || subjects.length === 0) {
+          errorEl.textContent = 'No subjects found for this branch/semester yet.';
+          return;
+        }
+
+        renderTable();
+      } catch (e) {
+        console.error(e);
+        errorEl.textContent = 'Failed to load configuration files.';
+      }
+    }
+
+    function renderTable() {
+      subjectsTableBody.innerHTML = '';
+      const allowedGrades = gradeConfig.allowedGrades || [];
+
+      subjects.forEach((subj, index) => {
+        const tr = document.createElement('tr');
+
+        // # column
+        const tdIndex = document.createElement('td');
+        tdIndex.textContent = index + 1;
+        tr.appendChild(tdIndex);
+
+        // Name
+        const tdName = document.createElement('td');
+        tdName.textContent = subj.name;
+        tr.appendChild(tdName);
+
+        // Credits
+        const tdCredits = document.createElement('td');
+        tdCredits.textContent = subj.credits;
+        tr.appendChild(tdCredits);
+
+        // Grade select (default A++)
+        const tdGrade = document.createElement('td');
+        const select = document.createElement('select');
+        select.className = 'grade-select';
+
+        allowedGrades.forEach(grade => {
+          const opt = document.createElement('option');
+          opt.value = grade;
+          opt.textContent = grade;
+          // 🔹 Force default = A++ (ignoring defaultGrade from JSON)
+          if (grade === 'A++') {
+            opt.selected = true;
+          }
+          select.appendChild(opt);
+        });
+
+        tdGrade.appendChild(select);
+        tr.appendChild(tdGrade);
+
+        subjectsTableBody.appendChild(tr);
+      });
+    }
+
+    function calculateSGPA() {
+      if (!gradeConfig || !subjects.length) return;
+
+      const gradePoints = gradeConfig.gradePoints || {};
+      const selects = document.querySelectorAll('.grade-select');
+
+      let totalCredits = 0;
+      let totalWeighted = 0;
+
+      subjects.forEach((subj, i) => {
+        const grade = selects[i].value;
+        const gp = gradePoints[grade];
+
+        if (gp === undefined) return; // skip weird grade
+
+        const credits = Number(subj.credits) || 0;
+        totalCredits += credits;
+        totalWeighted += credits * gp;
+      });
+
+      if (totalCredits === 0) {
+        resultEl.textContent = '';
+        errorEl.textContent = 'Total credits are zero. Please check your subject data.';
+        return;
+      }
+
+      const sgpa = totalWeighted / totalCredits;
+      errorEl.textContent = '';
+      resultEl.textContent = `Your SGPA is: ${sgpa.toFixed(2)}`;
+    }
+
+    document.getElementById('calcBtn').addEventListener('click', calculateSGPA);
+
+    loadData();
+  </script>
+</body>
+</html>
