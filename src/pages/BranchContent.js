@@ -6,8 +6,8 @@ import Breadcrumbs from '../components/Navigation/Breadcrumbs';
 import LoadingSpinner from '../components/UI/LoadingSpinner';
 import Button from '../components/UI/Button';
 import { fetchBranchContent, fetchData } from '../utils/dataFetcher';
-
-
+import { FaRegFilePdf } from "react-icons/fa6";
+import { SiYoutubemusic } from "react-icons/si";
 
 const BranchContent = () => {
   const { yearSlug } = useParams();
@@ -178,7 +178,7 @@ const BranchContent = () => {
                     {subject.units.length > 0 ? (
                       subject.units.map((unit, index) => (
                         <div key={index} style={{ marginBottom: '10px' }}>
-                          <p style={{ fontWeight: '600' }}>
+                          <p style={{ fontWeight: '600' ,fontSize:'20px', color: 'var(--color-tertiary)'}}>
                             Unit {index + 1}: {unit.unitName}
                           </p>
                           <div
@@ -195,10 +195,11 @@ const BranchContent = () => {
                               rel="noopener noreferrer"
                               style={{
                                 color: 'var(--color-primary)',
-                                textDecoration: 'underline',
+                                textDecoration: 'none',
+                                fontSize:'15px'
                               }}
                             >
-                              [📄 PDF Notes]
+                              <FaRegFilePdf /> PDF Notes
                             </a>
                             <a
                               href={unit.lectureLink}
@@ -206,10 +207,12 @@ const BranchContent = () => {
                               rel="noopener noreferrer"
                               style={{
                                 color: 'var(--color-primary)',
-                                textDecoration: 'underline',
+                                textDecoration: 'none',
+                                fontSize:'15px',
+                                marginLeft: '20px',
                               }}
                             >
-                              [▶️ YouTube Lecture]
+                              <SiYoutubemusic /> YouTube Lecture
                             </a>
                           </div>
                         </div>
@@ -240,6 +243,7 @@ const BranchContent = () => {
                       borderLeft: '3px solid var(--color-secondary)',
                       backgroundColor: 'var(--color-card-bg)',
                       borderRadius: '5px',
+                      fontSize:'19px'
                     }}
                   >
                     <h4 style={{ marginBottom: '10px' }}>
@@ -256,7 +260,7 @@ const BranchContent = () => {
                               rel="noopener noreferrer"
                               style={{
                                 color: 'var(--color-primary)',
-                                textDecoration: 'underline',
+                                textDecoration: 'none',
                               }}
                             >
                               {pyq.year} {pyq.sem} Paper (PDF Download)

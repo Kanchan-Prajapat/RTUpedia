@@ -16,8 +16,8 @@
   --color-primary: #F4F4F4;     /* Cyan: Buttons, Headers, Links */
   --color-secondary: #FBC02D;   /* Charcoal: Card Accent/Border */
   --color-tertiary: #b3c7da;    /* Blue: Secondary button/Link hover */
-  --color-background: #0C2B4E;   /* Navy: Main BG */
-  --color-text: #f8f9fa;        /* White Text */
+  --color-background: #425264;   /* Navy: Main BG */
+  --color-text: #e3e4e6;        /* White Text */
   --color-card-bg: #2c3e50;     /* Darker Card BG */
   --color-border: #444444;
 }

@@ -15,7 +15,15 @@ const Footer = () => {
       }}
     >
       <div className="container">
-        &copy; {new Date().getFullYear()} RTUpedia. Your centralized RTU Notes and PYQ hub.
+        <a
+          href="/about"
+          style={{
+            textDecoration: "none",
+            color: "var(--color-background)",
+          }}
+        >
+          &copy; {new Date().getFullYear()} RTUpedia. All rights reserved.
+        </a>
       </div>
 
       {/* Responsive Footer Style */}

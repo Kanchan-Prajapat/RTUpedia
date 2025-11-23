@@ -6,6 +6,10 @@ import LoadingSpinner from '../components/UI/LoadingSpinner';
 import { fetchData } from '../utils/dataFetcher';
 import syllabusLinks from '../data/syllabus_links';
 import './YearSelection.css';
+import { FaRegHandshake } from "react-icons/fa6";
+import { GiBookshelf } from "react-icons/gi";
+import { MdVideoSettings } from "react-icons/md";
+import { PiMedalFill } from "react-icons/pi";
 
 const YearSelection = () => {
   const [yearData, setYearData] = useState([]);
@@ -31,17 +35,16 @@ const YearSelection = () => {
     return <LoadingSpinner />;
   }
 
-  //  Extract all unique branches from syllabusLinks
   const branches = [...new Set(syllabusLinks.map(item => item.branch))];
 
-  //  Get syllabus per branch
   const getSyllabusForBranch = (branchName) => {
     return syllabusLinks.filter(item => item.branch === branchName);
   };
 
   return (
     <>
-      {/*  Year Selection Section */}
+
+      {/* Year Selection Section */}
       <h2>Select Your Academic Year</h2>
       <p>Choose your current B.Tech year to access notes, PYQs, and resources.</p>
 
@@ -61,11 +64,11 @@ const YearSelection = () => {
 
       <hr style={{ margin: '30px 0', borderColor: 'var(--color-border)' }} />
 
-      {/*  Syllabus Download Section (Cards for Branches) */}
+      {/* Syllabus Section */}
       <div style={{ textAlign: 'center' }}>
         <h2>Official RTU Syllabus</h2>
         <p style={{ marginBottom: '20px' }}>
-          Download the official B.Tech syllabus (Local PDFs for each branch).
+          Download the official B.Tech syllabus
         </p>
 
         <div className="card-grid">
@@ -88,7 +91,7 @@ const YearSelection = () => {
                         fontSize: '0.9rem',
                       }}
                     >
-                      {linkItem.year} Year
+                      {linkItem.year} 
                     </Button>
                   ))
                 ) : (
@@ -99,28 +102,62 @@ const YearSelection = () => {
           })}
         </div>
       </div>
- 
-      {/* SGPA Calculator Card */}
-   <div className="home-container">
-      
-      {/* SGPA Calculator Card */}
-      <div className="sgpa-card" onClick={() => navigate("/SGPACalculator")}>
-        <h2>SGPA Calculator</h2>
-        <p>Calculate your RTU SGPA instantly using semester-wise credits.</p>
-        <button class="sgpa-btn" onclick="window.location.href='branch_semester.html'">
-  Open Calculator
-</button>
 
+      {/* SGPA Calculator Card */}
+      <div className="home-container">
+        <div className="sgpa-card" onClick={() => navigate("/SGPACalculator")}>
+          <h2>SGPA Calculator</h2>
+          <p>Calculate your RTU SGPA instantly using semester-wise credits.</p>
+          <button className="sgpa-btn">Open Calculator</button>
+        </div>
       </div>
 
-    </div>
+      {/* WHY CHOOSE US SECTION */}
+      <div className="why-container">
+        <h2 className="why-title">Why Choose RTUpedia?</h2>
 
+        <div className="why-grid">
+
+          <div className="why-card">
+            <div className="why-icon"><FaRegHandshake /></div>
+            <h3 className="why-heading">Student-Driven Platform</h3>
+            <p className="why-text">
+             Designed by RTU students to simplify the journey for every RTU student.
+            </p>
+          </div>
+
+          <div className="why-card">
+            <div className="why-icon"><GiBookshelf /></div>
+            <h3 className="why-heading">Comprehensive Coverage</h3>
+            <p className="why-text">
+              Notes, PYQs, syllabus, tools, and branch-wise content — everything organized semester-wise.
+            </p>
+          </div>
+
+          <div className="why-card">
+            <div className="why-icon"><MdVideoSettings /></div>
+            <h3 className="why-heading">Fast & Modern Tools</h3>
+            <p className="why-text">
+              SGPA calculators, utilities, and smart study features designed for speed and accuracy with reference videos.
+            </p>
+          </div>
+
+          <div className="why-card">
+            <div className="why-icon"><PiMedalFill /></div>
+            <h3 className="why-heading">Reliable & Trusted</h3>
+            <p className="why-text">
+              Clean UI, accurate tools, and verified content make RTUpedia a dependable study companion.
+            </p>
+          </div>
+
+        </div>
+      </div>
 
     </>
   );
 };
 
-//  Helper: full branch names for clarity
+/* BRANCH NAME MAPPER (must be OUTSIDE component) */
 const branchFullName = (code) => {
   const map = {
     CSE: 'Computer Science & Engineering',
@@ -137,4 +174,3 @@ const branchFullName = (code) => {
 };
 
 export default YearSelection;
-
