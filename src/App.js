@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import Home from './pages/Home';
@@ -72,6 +73,7 @@ const App = () => {
       </main>
 
       <Footer />
+      <Analytics />
     </Router>
   );
 };
