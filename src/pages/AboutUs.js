@@ -112,19 +112,19 @@ useEffect(() => {
         <h1 style={styles.title}>About RTUpedia</h1>
 
         {/* Intro */}
-       <b> <p style={styles.introText}>
+      <p style={{...styles.introText, fontWeight: "600"}}>
           RTUpedia is a student-powered platform built to bring together 
           notes, PYQs, study tools, and resources for every RTU B.tech. student — 
           all in one organized, clean and reliable place.  
           Our mission is to simplify academics and help students succeed 
           with the right guidance and accessible study material.
-        </p></b>
+        </p>
 
 
         {/* What We Offer */}
         <div style={styles.card}>
           <h2 style={styles.sectionTitle}>What We Offer</h2>
-      <b> <p style={styles.text}>
+       <p style={{...styles.text, fontWeight: "600"}}>
             ※ Initially Focused on B.tech (Computer science and engineering) students <br></br>
             ※ Complete Notes  <br></br>
             ※ Branch-wise and Semester-wise PYQs<br></br>  
@@ -132,8 +132,120 @@ useEffect(() => {
             ※ Modern and intuitive interface  <br></br>
             ※ Verified and curated study material  <br></br>
             ※ Student-first features and tools  
-          </p> </b>   
+          </p>    
         </div>
+
+        {/* ================= HOME SEO CONTENT ================= */}
+
+
+
+      <div style={styles.card}>
+  <h2 style={styles.title2}>※ What is RTUpedia?</h2>
+
+  <p>
+    RTUpedia is a student-focused educational platform designed specially for
+    Rajasthan Technical University (RTU) B.Tech students. The platform helps
+    students access semester-wise notes, previous year question papers (PYQs),
+    lab manuals, SGPA calculators, study materials, and important academic resources
+    in one organized place.
+  </p>
+
+  <p>
+    Many RTU students struggle to find proper study resources during semester exams.
+    RTUpedia aims to simplify exam preparation by providing subject-wise materials,
+    important questions, practical resources, and useful academic tools for engineering students.
+  </p>
+  <br></br>
+
+  <h2 style={styles.title2}>※ Why RTU Students Use RTUpedia</h2>
+
+  <p>
+    Engineering students often waste a lot of time searching for notes,
+    PYQs, formulas, and study materials across multiple websites and groups.
+    RTUpedia helps students save time by organizing everything semester-wise
+    and branch-wise in a clean and simple interface.
+  </p>
+
+  <p>
+    The platform is useful for students from branches like Computer Science,
+    Civil Engineering, Mechanical Engineering, Electrical Engineering,
+    Artificial Intelligence, Cyber Security, IoT, and other RTU branches.
+  </p>
+  <br></br>
+
+  <h2 style={styles.title2}>※ RTU Notes & Study Materials</h2>
+
+  <p>
+    RTUpedia provides unit-wise notes and study materials to help students
+    understand difficult engineering concepts more effectively. Students can
+    access important topics, derivations, formulas, and concept explanations
+    for semester preparation and revision.
+  </p>
+
+  <p>
+    Video lectures and additional resources are also provided for selected
+    subjects to improve conceptual understanding and make learning easier.
+  </p>
+  <br></br>
+
+  <h2 style={styles.title2}>※ Previous Year Question Papers (PYQs)</h2>
+
+  <p>
+    RTU Previous Year Question Papers (PYQs) are one of the best resources
+    for exam preparation. Solving PYQs helps students understand exam patterns,
+    important units, repeated questions, and marking schemes.
+  </p>
+
+  <p>
+    Regular PYQ practice improves confidence, time management, and overall
+    exam performance. RTUpedia organizes PYQs semester-wise and subject-wise
+    for quick access and better preparation.
+  </p>
+  <br></br>
+
+  <h2 style={styles.title2}>※ RTU SGPA Calculator</h2>
+
+  <p>
+    The RTU SGPA Calculator available on RTUpedia helps students calculate
+    their semester performance easily using the official RTU grading system.
+    Students can select grades and instantly estimate their SGPA without
+    manual calculations.
+  </p>
+
+  <p>
+    This tool is especially useful after exams and during result time when
+    students want to predict their academic performance quickly and accurately.
+  </p>
+  <br></br>
+
+  <h2 style={styles.title2}>※ Lab Manuals & Practical Resources</h2>
+
+  <p>
+    Practical exams and lab work are important components of RTU engineering courses.
+    RTUpedia provides lab manuals, practical files, viva resources, and experiment-related
+    materials to help students prepare effectively for practical examinations.
+  </p>
+  <br></br>
+
+  <h2 style={styles.title2}>※ Why Choose RTUpedia?</h2>
+
+  <ul style={{ paddingLeft: "20px" }}>
+    <li>Semester-wise organized study materials</li>
+    <li>Easy access to RTU notes and PYQs</li>
+    <li>Helpful SGPA calculator tool</li>
+    <li>Student-friendly and responsive interface</li>
+    <li>Useful resources for semester exam preparation</li>
+    <li>Free educational support for RTU students</li>
+  </ul>
+
+  <p>
+    RTUpedia continues to improve its educational resources and tools to help
+    engineering students learn efficiently, prepare smartly, and perform better
+    in university exams.
+  </p>
+  </div>
+
+
 
    {/* STUDENT REVIEWS PREVIEW */}
 <div style={{ marginTop: "60px", textAlign: "center",  }}>
@@ -158,7 +270,7 @@ useEffect(() => {
 
           <div style={styles.teamCard}>
             <p style={styles.teamName}>Kanchan Prajapat</p>
-            <p style={styles.teamRole}><b>Founder & Lead Developer</b></p>
+            <p style={{...styles.teamRole, fontWeight: "600"}}>Founder & Lead Developer</p>
             <p style={styles.text}>
               Handles full-stack development, UI/UX design, optimization, 
               and keeps RTUpedia running smoothly with new tools and features.
@@ -167,7 +279,7 @@ useEffect(() => {
 
            <div style={styles.teamCard}>
             <p style={styles.teamName}>Mayank Phalodia</p>
-            <p style={styles.teamRole}><b>Co-Founder & Developer</b></p>
+            <p style={{...styles.teamRole, fontWeight: "600"}}>Co-Founder & Developer</p>
             <p style={styles.text}>
               Focuses on backend development, security, Marketing and growth strategies,
               and keeps RTUpedia running smoothly with new tools and features.
@@ -176,7 +288,7 @@ useEffect(() => {
 
           {/* <div style={styles.teamCard}>
             <p style={styles.teamName}>Manan Gupta</p>
-            <p style={styles.teamRole}><b>UI/UX Designer</b></p>
+            <p style={{...styles.teamRole, fontWeight: "600"}}>UI/UX Designer</p>
             <p style={styles.text}>
                Designs visuals, icons, and enhances the user experience 
               with clean, modern interface elements.
@@ -185,7 +297,7 @@ useEffect(() => {
 
           <div style={styles.teamCard}>
             <p style={styles.teamName}>Koustubh Chouhan</p>
-            <p style={styles.teamRole}><b>Content Advisor</b></p>
+            <p style={{...styles.teamRole, fontWeight: "600"}}>Content Advisor</p>
             <p style={styles.text}>
               ensure that all notes and PYQs are accurate, relevant, 
               and organized for easy access.

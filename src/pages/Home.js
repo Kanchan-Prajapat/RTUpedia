@@ -11,9 +11,11 @@ const Home = () => {
           <div style={{ textAlign: "center", marginTop: "50px" }}>
             Loading subjects...
           </div>
+          
         }
       >
         <YearSelection />
+        
       </Suspense>
     </div>
   );

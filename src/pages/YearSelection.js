@@ -120,7 +120,7 @@ useEffect(() => {
   <h2>RTU Notes, PYQs & Study Resources in One Place</h2>
 
   <p>
-    RTUpedia is a dedicated learning platform designed for students of Rajasthan Technical University (RTU) Specially for B.Tech.
+    RTUpedia is a dedicated learning platform designed for students of <b>Rajasthan Technical University (RTU)</b> Specially for B.Tech.
     It provides organized access to semester-wise notes, previous year question papers (PYQs),
     syllabus resources, and smart academic tools to help students prepare efficiently.
   </p>
@@ -132,7 +132,7 @@ useEffect(() => {
   </p>
 <br></br>
   <p>
-    In addition to notes and PYQs, the platform also offers useful tools like SGPA calculators and curated
+    In addition to notes and PYQs, the platform also offers useful tools like <Link style={{ color: "var(--color-primary)" }} to="/SGPACalculator">RTU SGPA Calculator</Link> and curated
     learning resources to improve academic performance. All content is organized year-wise and branch-wise
     to ensure a smooth and simple learning experience.
   </p>
@@ -271,6 +271,28 @@ useEffect(() => {
           </div>
         </div>
       </div>
+
+      <div className="seo-optimized-footer-content" style={{ 
+  maxWidth: "1200px", 
+  margin: "60px auto", 
+  padding: "0 20px", 
+  lineHeight: "1.8",
+  color: "var(--color-text-muted)", 
+  fontSize: "0.95rem" 
+}}>
+  <h3 style={{ color: "var(--color-primary)", marginBottom: "15px" }}>
+    Empowering RTU Students Across Rajasthan
+  </h3>
+
+
+  <p style={{ marginBottom: "20px" }}>
+    RTUpedia serves as a digital bridge for students across all RTU-affiliated colleges in Jaipur, Kota, Udaipur, Jodhpur, and Bikaner. We understand the specific challenges of the <b>Rajasthan Technical University</b> examination pattern. That’s why our platform specifically highlights frequently asked questions (FAQs) and high-weightage topics that often appear in <b>RTU Main and Back examinations</b>. Our platform ensures that whether you are studying from a remote college or a top-tier institute in the city, you have equal access to the highest quality <b>B.Tech engineering notes</b>.
+  </p>
+    <h3>How RTUpedia Helps Engineering Students</h3>
+  <p>
+    Beyond standard academics, RTUpedia is built to support students during critical semester transitions and Mercy attempts. By providing the most recent <b>RTU Syllabus</b> and <b>digital lab manuals</b>, we help reduce the last-minute exam stress that engineering students often face. Our goal is to create a sustainable open-source education ecosystem where RTU scholars can find everything from <b>First-year</b> and <b>Second-year (CSE related department only)</b>, ensuring a smooth path toward graduation and successful career placements.
+  </p>
+</div>
 
       <div className="section-divider" data-aos="fade-up"></div>
 
