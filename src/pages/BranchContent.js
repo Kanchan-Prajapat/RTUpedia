@@ -134,7 +134,7 @@ const BranchContent = () => {
 
   useEffect(() => {
 document.title = `${selectedBranch} Semester ${selectedSemester} RTU Notes, PYQs & Lab Manuals | RTUpedia`;
-}, [yearSlug]); 
+}, [yearSlug, selectedBranch, selectedSemester]); 
 
 
   /* =========================
