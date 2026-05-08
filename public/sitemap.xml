@@ -33,4 +33,13 @@
     <loc>https://rtupedia.vercel.app/year/fourth-year</loc>
   </url>
 
+  <url>
+    <loc>https://rtupedia.vercel.app/terms</loc>
+  </url>
+
+    <url>
+    <loc>https://rtupedia.vercel.app/privacy</loc>
+  </url>
+
+
 </urlset>
