@@ -38,6 +38,7 @@
       { "code": "3CS4-22", "name": "Object Oriented Programming Lab", "credits": 1.5 },
       { "code": "3CS4-23", "name": "Software Engineering Lab", "credits": 1.5 },
       { "code": "3CS4-24", "name": "Digital Electronics Lab", "credits": 1.5},
+      {"code" : "3CS4-X", "name": "ITS", "credits": 1 },
       {"code" : "3CS4-25", "name": "Logical Reasoning", "credits": 0.5 }
     ],
     "4" : [
