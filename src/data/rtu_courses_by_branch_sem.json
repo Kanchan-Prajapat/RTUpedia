@@ -37,7 +37,8 @@
       { "code": "3CS4-21", "name": "Data Structures and Algorithms Lab", "credits": 1.5 },
       { "code": "3CS4-22", "name": "Object Oriented Programming Lab", "credits": 1.5 },
       { "code": "3CS4-23", "name": "Software Engineering Lab", "credits": 1.5 },
-      { "code": "3CS4-24", "name": "Digital Electronics Lab", "credits": 1.5}
+      { "code": "3CS4-24", "name": "Digital Electronics Lab", "credits": 1.5},
+      {"code" : "3CS4-25", "name": "Logical Reasoning", "credits": 0.5 }
     ],
     "4" : [
       { "code": "4CS2-01", "name": "Discrete Mathematics Structure", "credits": 3 },
@@ -50,7 +51,8 @@
       { "code": "4CS4-22", "name": "Database Management System Lab", "credits": 1.5 },
       { "code": "4CS4-23", "name": "Network Programming Lab", "credits": 1.5 },
       { "code": "4CS4-24", "name": "Linux Shell Programming Lab", "credits": 1},
-      { "code": "4CS4-25", "name": "Java Lab", "credits": 1 }
+      { "code": "4CS4-25", "name": "Java Lab", "credits": 1 },
+      {"code" : "4CS4-26", "name": "Foundation Course", "credits": 0.5 }
     ],
     "5" : [
       { "code": "5CS3-01", "name": "Information Theory & Coding", "credits": 2 },
