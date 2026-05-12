@@ -157,6 +157,10 @@
                     {
                         "examType":"Exp 5-8",
                         "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 5 to 8.pdf"
+                    },
+                    {
+                        "examType":"Exp 8-10",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 8 to 10.pdf"
                     }
                 ]
             },
@@ -185,10 +189,26 @@
                         "pdfLink":"/assets/lab/CSE/4/NP Lab exp 6 to 10.pdf"
                     }
                 ]
-            },{
+            }, {
                 "subjectName":"Linux Shell Programming Lab",
                 "subjectCode":"4CS4-24",
                 "examPapers":[
+                    {
+                        "examType":"Linux Shell Programming Lab exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 3-4",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 3 and 4.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 5-6",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 5 and 6.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 7-8",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 7 and 8.pdf"
+                    }
                    
                 ]
             },
@@ -376,6 +396,10 @@
                     {
                         "examType":"Exp 5-8",
                         "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 5 to 8.pdf"
+                    },
+                     {
+                        "examType":"Exp 8-10",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 8 to 10.pdf"
                     }
                 ]
             },
@@ -404,10 +428,26 @@
                         "pdfLink":"/assets/lab/CSE/4/NP Lab exp 6 to 10.pdf"
                     }
                 ]
-            },{
+            }, {
                 "subjectName":"Linux Shell Programming Lab",
                 "subjectCode":"4CS4-24",
                 "examPapers":[
+                    {
+                        "examType":"Linux Shell Programming Lab exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 3-4",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 3 and 4.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 5-6",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 5 and 6.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 7-8",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 7 and 8.pdf"
+                    }
                    
                 ]
             },
@@ -595,6 +635,10 @@
                     {
                         "examType":"Exp 5-8",
                         "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 5 to 8.pdf"
+                    },
+                     {
+                        "examType":"Exp 8-10",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 8 to 10.pdf"
                     }
                 ]
             },
@@ -623,10 +667,26 @@
                         "pdfLink":"/assets/lab/CSE/4/NP Lab exp 6 to 10.pdf"
                     }
                 ]
-            },{
+            }, {
                 "subjectName":"Linux Shell Programming Lab",
                 "subjectCode":"4CS4-24",
                 "examPapers":[
+                    {
+                        "examType":"Linux Shell Programming Lab exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 3-4",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 3 and 4.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 5-6",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 5 and 6.pdf"
+                    },
+                    {
+                        "examType":"Linux Shell Programming Lab exp 7-8",
+                        "pdfLink":"/assets/lab/CSE/4/Linux lab exp 7 and 8.pdf"
+                    }
                    
                 ]
             },
@@ -813,6 +873,10 @@
                     {
                         "examType":"Exp 5-8",
                         "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 5 to 8.pdf"
+                    },
+                     {
+                        "examType":"Exp 8-10",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 8 to 10.pdf"
                     }
                 ]
             },
@@ -841,7 +905,8 @@
                         "pdfLink":"/assets/lab/CSE/4/NP Lab exp 6 to 10.pdf"
                     }
                 ]
-            },{
+            },
+            {
                 "subjectName":"Linux Shell Programming Lab",
                 "subjectCode":"4CS4-24",
                 "examPapers":[

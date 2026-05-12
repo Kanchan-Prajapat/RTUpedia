@@ -1,0 +1,1582 @@
+import React, { useState, useEffect } from "react";
+import gradeData from "../data/grade_points.json";
+import courseData from "../data/rtu_courses_by_branch_sem.json";
+import "./SGPACalculator.css";
+import axios from "axios";
+
+const { REACT_APP_API_URL } = process.env;
+
+const SGPACalculator = () => {
+  const branchOptions = ["CSE", "CE", "EE", "ME", "CHEM", "IOT", "CY", "AIDS"];
+  const semesterOptions = ["1", "2", "3", "4", "5", "6", "7", "8"];
+
+  // Default selection
+  const [branch, setBranch] = useState("CSE");
+  const [semester, setSemester] = useState("1");
+
+  const [courses, setCourses] = useState([]);
+  const [grades, setGrades] = useState([]);
+
+  const [file, setFile] = useState(null);
+  const [ocrResult, setOCRResult] = useState(null);
+  const [loadingOCR, setLoadingOCR] =
+    useState(false);
+
+    const [ocrSubjects, setOCRSubjects] = useState([]);
+
+  // Load subjects when branch/semester changes
+  useEffect(() => {
+    let selectedCourses = courseData[branch]?.[semester] || [];
+
+    // Remove placeholder object
+    if (selectedCourses.length === 1 && selectedCourses[0].code === "NA") {
+      selectedCourses = [];
+    }
+
+    setCourses(selectedCourses);
+
+    // Default Grade = A++
+    setGrades(selectedCourses.map(() => "A++"));
+  }, [branch, semester]);
+
+  useEffect(() => {
+
+  if (!ocrSubjects?.length) return;
+  if (!courses?.length) return;
+
+  console.log("COURSES:", courses);
+  console.log("OCR SUBJECTS:", ocrSubjects);
+
+  const updatedGrades = courses.map((course) => {
+
+    const cleanCourseCode = course.code
+      ?.replace(/\s+/g, "")
+      .replace(/[^\w-]/g, "")
+      .toUpperCase();
+
+    const found = ocrSubjects.find((s) => {
+
+      const cleanOCRCode = s.subjectCode
+        ?.replace(/\s+/g, "")
+        .replace(/[^\w-]/g, "")
+        .toUpperCase();
+
+      return cleanOCRCode === cleanCourseCode;
+    });
+
+    console.log(
+      "MATCH:",
+      cleanCourseCode,
+      found
+    );
+
+    return found?.grade || "A++";
+  });
+
+  setGrades(updatedGrades);
+
+}, [ocrSubjects, courses]);
+
+
+  const handleGradeChange = (i, grade) => {
+    const updated = [...grades];
+    updated[i] = grade;
+    setGrades(updated);
+  };
+
+  const calculateSGPA = () => {
+    let totalCredits = 0;
+    let totalWeighted = 0;
+
+    courses.forEach((course, i) => {
+      const gp = gradeData.gradePoints[grades[i]] || 0;
+      totalCredits += course.credits;
+      totalWeighted += course.credits * gp;
+    });
+
+    return totalCredits ? (totalWeighted / totalCredits).toFixed(2) : "0.00";
+  };
+
+  const handleOCRUpload = async () => {
+    try {
+      if (!file) {
+        alert("Please upload RTU PDF");
+        return;
+      }
+
+      setLoadingOCR(true);
+
+      const formData = new FormData();
+
+      formData.append("marksheet", file);
+
+      const response = await axios.post(
+        REACT_APP_API_URL + "/api/sgpa/upload-result",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+
+const data = response.data;
+
+setOCRResult(data);
+
+setBranch(data.branch || "CSE");
+setSemester(String(data.semester || "1"));
+
+setOCRSubjects(data.subjects || []);
+
+console.log(courses);
+
+    } catch (error) {
+      console.error(error);
+
+      alert(
+        error?.response?.data?.message ||
+        "Failed to process RTU PDF"
+      );
+
+    } finally {
+      setLoadingOCR(false);
+    }
+  };
+
+
+
+  return (
+    <div className="sgpa-container">
+      <h1 className="sgpa-title">RTU SGPA Calculator</h1>
+
+      <div className="result-links">
+        <p className="result-title">📄 Download Official Result</p>
+
+        <div className="result-buttons">
+          <a
+            href="https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="result-btn primary"
+          >
+            RTU Gradesheet Portal
+          </a>
+
+          <a
+            href="https://www.esuvidha.info/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="result-btn secondary"
+          >
+            e-Suvidha Portal
+          </a>
+        </div>
+      </div>
+
+      <div style={{ maxWidth: "900px", margin: "25px auto", lineHeight: "1.8" }}>
+
+        <h2>RTU SGPA Calculator – Calculate Your Semester Performance</h2>
+
+        <p>
+          The RTU SGPA Calculator helps Rajasthan Technical University (RTU) B.tech students
+          quickly calculate their Semester Grade Point Average (SGPA) based on subject
+          credits and grades. It provides an accurate and instant way to evaluate
+          academic performance without manual calculations.
+        </p>
+
+        <p>
+          To calculate SGPA, students need to select their branch and semester, then
+          choose grades for each subject. The calculator automatically applies RTU’s
+          official grade point system and computes the final SGPA.
+        </p>
+
+        <h3>How SGPA is Calculated</h3>
+        <p>
+          SGPA is calculated using the formula:
+          <br />
+          <strong>SGPA = (Sum of (Credits × Grade Points)) / Total Credits</strong>
+        </p>
+
+        <h3>Why Use This SGPA Calculator?</h3>
+        <ul style={{ textAlign: "left", marginLeft: "20px" }}>
+          <li>Instant and accurate SGPA calculation</li>
+          <li>Based on official RTU grading system</li>
+          <li>No manual calculations required</li>
+          <li>Helps track academic performance easily</li>
+        </ul>
+
+        <p>
+          Use the calculator below to estimate your SGPA and plan your academic goals
+          effectively.
+        </p>
+
+      </div>
+
+      <div className="ocr-upload-box">
+
+        <h3>Upload RTU Marksheet</h3>
+
+        <input
+          type="file"
+          accept=".pdf"
+          onChange={(e) =>
+            setFile(e.target.files[0])
+          }
+        />
+
+        <button onClick={handleOCRUpload}>
+          Calculate from Marksheet
+        </button>
+
+       {ocrResult && (
+  <div className="ocr-result-box">
+
+    <h2 className="ocr-sgpa">
+      SGPA: {ocrResult.sgpa}
+    </h2>
+
+    <div className="ocr-summary">
+
+      <p>
+        <strong>Branch:</strong> {ocrResult.branch}
+      </p>
+
+      <p>
+        <strong>Semester:</strong> {ocrResult.semester}
+      </p>
+
+      <p>
+        <strong>Total Credits:</strong> {ocrResult.totalCredits}
+      </p>
+
+    </div>
+
+    <p className="ocr-success">
+      ✅ Marksheet processed successfully.
+      Please verify grades below.
+    </p>
+
+  </div>
+)}
+
+
+      </div>
+
+
+      {/* 🔹 Branch & Semester Filters */}
+      <div className="filter-box">
+        <div className="filter-item" >
+          <label>Branch</label>
+          <select value={branch} onChange={(e) => setBranch(e.target.value)}>
+            {branchOptions.map((b) => (
+              <option key={b} value={b}>{b}</option>
+            ))}
+          </select>
+        </div>
+
+        <div className="filter-item">
+          <label>Semester</label>
+          <select value={semester} onChange={(e) => setSemester(e.target.value)}>
+            {semesterOptions.map((s) => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      {/* Grade Legend */}
+      <div className="legend-box">
+        <h2 className="legend-title">Grade Point Legend</h2>
+        <div className="legend-grid">
+          {Object.entries(gradeData.gradePoints).map(([g, p]) => (
+            <div key={g} className="legend-item">
+              <strong>{g}:</strong> {p}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Course Table */}
+      <table className="course-table">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Credits</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {courses.length > 0 ? (
+            courses.map((course, index) => (
+              <tr key={index}>
+                <td>{course.name}</td>
+                <td>{course.credits}</td>
+                <td>
+                  <select
+                    value={grades[index]}
+                    onChange={(e) => handleGradeChange(index, e.target.value)}
+                    className="grade-select"
+                  >
+                    {gradeData.allowedGrades.map((g) => (
+                      <option key={g} value={g}>{g}</option>
+                    ))}
+                  </select>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="3" style={{ textAlign: "center", padding: "20px" }}>
+                ⚠ No subjects available for this branch & semester.
+              </td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+      {loadingOCR && <p>Processing PDF...</p>}
+
+      {/* SGPA Result */}
+      <div className="sgpa-result-box">
+        <div className="sgpa-result-wrapper">
+          <h3>Calculated SGPA:</h3>
+          <div className="sgpa-value-box">{calculateSGPA()}</div>
+        </div>
+      </div>
+    </div>
+  );
+
+
+};
+
+export default SGPACalculator;
+
+
+
+
+
+
+/* ============================
+   SGPA CARD (HOME PAGE)
+   ============================ */
+
+.sgpa-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sgpa-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.sgpa-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+.sgpa-card h2 {
+  color: var(--color-primary);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.sgpa-card p {
+  color: var(--color-text);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.sgpa-btn {
+  background: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: bold;
+}
+
+.sgpa-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sgpa-btn:hover {
+  background: var(--color-tertiary);
+}
+
+/* ============================
+   TABLE
+   ============================ */
+   .sgpa-table-wrapper {
+  max-width: 900px;
+  margin: 0 auto;   /* center horizontally */
+  width: 100%;
+}
+
+
+.course-table {
+  width: 100%;
+  max-width: 900px;     /* same width as old design */
+  margin: 0 auto;       /* center table */
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+
+.course-table th {
+  background: var(--color-primary);
+  color: var(--color-background);
+  padding: 12px;
+  border-radius: 8px 8px 0 0;
+  font-size: 15px;
+}
+
+.course-table tr {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.course-table td {
+  padding: 12px;
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+/* Row Hover */
+.course-table tr:hover {
+  background: var(--color-tertiary);
+}
+
+.course-table tr:hover td {
+  color: var(--color-background) !important;
+}
+
+/* ============================
+   GRADE DROPDOWN
+   ============================ */
+.grade-select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  width: 80px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 14px;
+}
+
+/* Grade Select – Hover Row Fix */
+.course-table tr:hover .grade-select {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+/* Dropdown Options (LIGHT MODE) */
+.grade-select option {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Dropdown Options (DARK MODE) */
+[data-theme="dark"] .grade-select {
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .grade-select option {
+  background-color: #0f2239 !important;
+  color: #ffffff !important;
+}
+
+/* ============================
+   FILTER BOX
+   ============================ */
+.filter-box {
+  display: flex;
+  gap: 25px;
+  margin: 25px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* prevents spreading too wide */
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* equal width */
+}
+
+
+.filter-item label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.filter-item select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-background);
+  color: var(--color-text);
+  min-width: 120px;
+}
+
+/* ============================
+   GRADE LEGEND
+   ============================ */
+.legend-box {
+  background: var(--color-card-bg);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  justify-items: center;
+}
+
+
+.ocr-upload-box {
+  margin: 30px auto;
+  padding: 25px;
+  background: var(--card-bg);
+  border-radius: 18px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.ocr-upload-box h3 {
+  margin-bottom: 15px;
+}
+
+.ocr-upload-box input {
+  margin-bottom: 15px;
+}
+
+.ocr-upload-box button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #0b2a4a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ocr-result-box {
+  margin-top: 40px;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 18px;
+  overflow-x: auto;
+}
+
+.ocr-sgpa {
+  color: #0b2a4a;
+  margin-bottom: 20px;
+}
+
+.ocr-summary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.ocr-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ocr-table th,
+.ocr-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.ocr-table th {
+  background: #0b2a4a;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .ocr-summary {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ocr-table th,
+  .ocr-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+
+/* ============================
+   📱 MOBILE — Up to 768px
+   ============================ */
+
+   
+@media (max-width: 768px) {
+
+  .course-table th,
+  .course-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .legend-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+   .filter-box {
+   flex-direction: row;
+    gap: 18px;
+    max-width: 90%;
+  }
+
+  .filter-item {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .filter-item select {
+    width: 100%;
+  }
+}
+
+/* =================================
+   📱 MOBILE — 480px
+   ================================= */
+@media (max-width: 480px) {
+  .legend-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-select {
+    width: 100%;
+  }
+}
+
+/* =================================
+   📱 VERY SMALL — ≤ 350px
+   ================================= */
+@media (max-width: 350px) {
+  .filter-item select {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .course-table th,
+  .course-table td {
+    font-size: 13px;
+  }
+}
+
+/* ============================
+   SGPA RESULT (Centered)
+   ============================ */
+.sgpa-result-wrapper {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.sgpa-result-wrapper h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+/* Result Box */
+.sgpa-value-box {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px solid var(--color-primary);
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 120px;
+  text-align: center;
+}
+
+/* Dark Mode Adjustment */
+[data-theme="dark"] .sgpa-value-box {
+  background: var(--color-background);
+  border-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+/* =========================
+   PYQ SECTION STYLING
+========================= */
+
+.pyq-subject-box {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+}
+
+.pyq-subject-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.pyq-paper-link {
+  display: block;
+  padding: 4px 0;
+  color: var(--color-primary);
+  text-decoration: none;        /* ✅ NO underline */
+  font-weight: 500;
+}
+
+.pyq-paper-link:hover {
+  text-decoration: none;        /* ✅ still no underline */
+  opacity: 0.85;
+}
+
+/* Remove underline from all resource links */
+.resource-link,
+.pyq-paper-link,
+.notes-link {
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+.resource-link:hover,
+.pyq-paper-link:hover,
+.notes-link:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+/* Notes Subject Box (same as PYQ) */
+.pyq-subject-box {
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  background: var(--color-card-bg);
+  padding: 15px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+}
+
+.pyq-subject-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+/* Notes unit styling */
+.notes-unit {
+  margin-bottom: 12px;
+}
+
+.unit-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.unit-links {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+
+.result-links {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.result-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.result-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.result-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+/* Light/Dark compatible */
+.result-btn.primary {
+  background: var(--color-secondary);
+  color: #000;
+}
+
+.result-btn.secondary {
+  background: var(--color-tertiary);
+  color: #fff;
+}
+
+.result-btn:hover {
+  opacity: 0.85;
+}
+
+
+
+/* ================================
+   TABS FIX (Notes / PYQ)
+================================ */
+.tab-row {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+/* Default tab */
+.rt-tab-btn {
+  padding: 8px 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  background: var(--tab-bg);
+  color: var(--color-primary);
+
+  transition: all 0.2s ease;
+}
+
+/* Active tab */
+.rt-tab-btn.active {
+  background: var(--tab-active-bg);
+  color: var(--tab-active-text);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+/* Hover */
+.rt-tab-btn:not(.active):hover {
+  opacity: 0.85;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 16px;
+  background: var(--color-card-bg);
+  margin-bottom: 30px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-form textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  resize: none;
+  font-size: 14px;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.review-form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-form button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Page container */
+.all-reviews-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Page title */
+.all-reviews-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ✅ GRID LAYOUT */
+.all-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 🖥 2-2 layout */
+  gap: 28px;
+}
+
+/* 📱 MOBILE: 1-1 layout */
+@media (max-width: 768px) {
+  .all-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================
+   REVIEW POPUP STYLING*/
+
+.review-popup {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #16a34a;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 9999;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+}
+
+
+.pdf-modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#000;
+  z-index:9999;
+}
+
+/* iframe */
+.pdf-frame{
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+/* 🔥 invisible layer ABOVE pdf */
+/* TOP TOOLBAR BLOCK (keep this) */
+.pdf-protection-top{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:80px;
+  z-index:10001;
+  background:transparent;
+}
+
+/* close button */
+.close-btn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:10001;
+
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:10px 14px;
+  cursor:pointer;
+}
+
+.resource-link {
+  cursor: pointer;
+  border: none;
+}
+
+
+
+
+
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import {
+  fetchBranches,
+  loadNotes,
+  fetchPYQFromBackend,
+  loadLabs,
+  loadExtraMore
+} from "../utils/dataFetcher";
+import "./SGPACalculator.css";
+import "../styles/global.css";
+
+const yearSemesterMap = {
+  "first-year": ["1", "2"],
+  "second-year": ["3", "4"],
+  "third-year": ["5", "6"],
+  "fourth-year": ["7", "8"]
+};
+
+const BranchContent = () => {
+  const { yearSlug } = useParams();
+
+  /* =========================
+     STATE
+  ========================= */
+  const [branches, setBranches] = useState([]);
+
+
+  const [selectedBranch, setSelectedBranch] = useState("");
+
+  const [semesters, setSemesters] = useState([]);
+  const [selectedSemester, setSelectedSemester] = useState("");
+
+  const [tab, setTab] = useState("notes");
+
+  const [notes, setNotes] = useState([]);
+  const [pyqGrouped, setPyqGrouped] = useState([]);
+  const [labGrouped, setLabGrouped] = useState([]);
+  const [moreGrouped, setMoreGrouped] = useState([]);
+  const [extraMore, setExtraMore] = useState([]);
+
+  const [loadingPYQ, setLoadingPYQ] = useState(false);
+
+  const openPDF = (pdfPath) => {
+    const encoded = encodeURIComponent(pdfPath);
+    window.open(`/pdfview?file=${encoded}`, "_blank");
+  };
+  /* =========================
+     LOAD BRANCHES
+  ========================= */
+  useEffect(() => {
+    const list = fetchBranches(yearSlug);
+    setBranches(list);
+    setSelectedBranch(list[0] || "");
+  }, [yearSlug]);
+
+  /* =========================
+     LOAD SEMESTERS
+  ========================= */
+  useEffect(() => {
+    const semList = yearSemesterMap[yearSlug] || [];
+    setSemesters(semList);
+    setSelectedSemester(semList[0] || "");
+  }, [yearSlug]);
+
+  /* =========================
+     RESET VIEW ON SELECTION CHANGE
+  ========================= */
+  useEffect(() => {
+    setTab("notes");
+    setPyqGrouped([]);
+    setLabGrouped([]);
+    setMoreGrouped([]);
+    setExtraMore([]);
+  }, [yearSlug, selectedBranch, selectedSemester]);
+
+  /* =========================
+     LOAD NOTES
+  ========================= */
+  useEffect(() => {
+    if (!selectedBranch || !selectedSemester) return;
+
+    const data = loadNotes(yearSlug, selectedBranch, selectedSemester);
+    setNotes(Array.isArray(data) ? data : []);
+  }, [yearSlug, selectedBranch, selectedSemester]);
+
+  /* =========================
+     LOAD PYQs (BACKEND)
+  ========================= */
+  useEffect(() => {
+    if (tab !== "pyq" || notes.length === 0) return;
+
+    setLoadingPYQ(true);
+
+    fetchPYQFromBackend(yearSlug, selectedBranch, selectedSemester, notes)
+      .then((data) => setPyqGrouped(Array.isArray(data) ? data : []))
+      .finally(() => setLoadingPYQ(false));
+
+  }, [tab, yearSlug, selectedBranch, selectedSemester, notes]);
+
+  /* =========================
+     LOAD LABS
+  ========================= */
+  useEffect(() => {
+    if (tab !== "lab") return;
+
+    const labs = loadLabs(yearSlug, selectedBranch, selectedSemester);
+    setLabGrouped(Array.isArray(labs) ? labs : []);
+
+  }, [tab, yearSlug, selectedBranch, selectedSemester]);
+
+  /* =========================
+     LOAD MORE (SUBJECT + EXTRA)
+  ========================= */
+  useEffect(() => {
+    if (tab !== "more") return;
+
+    // SUBJECT-WISE MORE
+    const subjectMore = notes
+      .filter((s) => Array.isArray(s.More) && s.More.length > 0)
+      .map((s) => ({
+        subjectName: s.subjectName,
+        subjectCode: s.subjectCode,
+        items: s.More
+      }));
+
+    setMoreGrouped(subjectMore);
+
+    // SEMESTER-LEVEL EXTRA
+    const extra = loadExtraMore(yearSlug, selectedBranch, selectedSemester);
+    setExtraMore(Array.isArray(extra) ? extra : []);
+
+  }, [tab, notes, yearSlug, selectedBranch, selectedSemester]);
+
+  useEffect(() => {
+document.title = `${selectedBranch} Semester ${selectedSemester} RTU Notes, PYQs & Lab Manuals | RTUpedia`;
+}, [yearSlug, selectedBranch, selectedSemester]); 
+
+
+  /* =========================
+     UI
+  ========================= */
+  return (
+    <div style={{ padding: 25 }}>
+      <h2> RTU {yearSlug.replace("-", " ")} Notes, PYQs, Lab Manuals and Study Material</h2>
+      <h4 style={{marginBottom:"20px", fontWeight:"normal"}}>RTU {yearSlug.replace("-", " ").toUpperCase()} is crucial for building core engineering concepts given the right approach. Students should focus on understanding concepts and practicing PYQs. <br></br>
+      Below you can find subject-wise notes, video lectures, and important resources.</h4>
+
+      {/* Branch + Semester */}
+      <div className="select-row">
+        <select
+          value={selectedBranch}
+          onChange={(e) => setSelectedBranch(e.target.value)}
+        >
+          {branches.map((b) => (
+            <option key={b} value={b}>{b}</option>
+          ))}
+        </select>
+
+        <select
+          value={selectedSemester}
+          onChange={(e) => setSelectedSemester(e.target.value)}
+        >
+          {semesters.map((s) => (
+            <option key={s} value={s}>Semester {s}</option>
+          ))}
+        </select>
+      </div>
+
+      {/* Tabs */}
+      <div className="tab-row">
+        {[
+          { id: "notes", label: "Notes" },
+          { id: "pyq", label: "PYQ (Main Exam)" },
+          { id: "lab", label: "Lab" },
+          { id: "more", label: "More" }
+        ].map((t) => (
+          <button
+            key={t.id}
+            className={`rt-tab-btn ${tab === t.id ? "active" : ""}`}
+            onClick={() => setTab(t.id)}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      {/* NOTES */}
+     {tab === "notes" && (
+  <>
+    {/* ✅ SEO Content Block */}
+    <div style={{ maxWidth: "100%", marginBottom: "25px", lineHeight: "1.8" }}>
+      
+      <h2>RTU Notes, Video Lectures & Study Materials</h2>
+
+
+      {/* ⚠️ Copyright Disclaimer */}
+      <p style={{ fontSize: "14px", color: "gray" }}>
+        ⚠️ Note: Due to copyright policies, students are not allowed to download the PDF notes.
+        These materials are provided only for online viewing and educational purposes.
+      </p>
+
+        <p>
+        <b>Scroll down </b> to find subject-wise notes, unit-wise materials, and video lectures for RTU {yearSlug.replace("-", " ").toUpperCase()}. 
+      </p>
+     
+
+
+      <div style={{ maxWidth: "100%", marginBottom: "25px", lineHeight: "1.8", justifyContent: "center",  alignItems: "center"  , marginLeft: "auto", marginRight: "auto"}}>
+
+      <p>
+        RTU notes are essential for understanding core engineering subjects and preparing
+        effectively for exams. Students should focus on unit-wise concepts, important topics,
+        and practice regularly to score well in Rajasthan Technical University exams.
+      </p>
+
+      <p>
+        This section provides subject-wise notes, unit-wise materials, and video lectures
+        to help students learn concepts clearly and revise efficiently before exams.
+      </p>
+
+      <p>
+        You can explore all subjects below and access notes along with video explanations
+        for better understanding.
+      </p>
+
+    </div>
+
+    </div>
+
+
+   
+    {notes.map((sub, i) => (
+      <div className="resource-card subject-card" key={i} data-aos="fade-up">
+        
+        <details>
+          <summary style={{ fontWeight: "bold" }}>
+            {sub.subjectName} ({sub.subjectCode})
+            <span className="subject-units">
+              {sub.units.length} Units
+            </span>
+          
+          </summary>
+
+          {sub.units.map((u, j) => (
+            <div key={j} className="unit-row" style={{ marginTop: 10 }}>
+              
+              <strong>{u.unitName}</strong>
+
+                <div>{u.unitTopic}</div>
+
+              <div style={{ display: "flex", gap: 12 }}>
+                <button
+                  className="resource-link-notes"
+                  onClick={() => openPDF(u.notesPDF || u.pdf)}
+                >
+                  📑 View Notes
+                </button>
+
+                <a
+                  className="resource-link"
+                  href={u.lectureLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ▶ Video
+                </a>
+              </div>
+
+            </div>
+          ))}
+
+        </details>
+
+      </div>
+    ))}
+
+
+  </>
+)}
+
+      {/* PYQs */}
+   {tab === "pyq" && (
+  <>
+ <div style={{ maxWidth: "900px", marginBottom: "25px", lineHeight: "1.8" }}>
+      
+      <h2>RTU Previous Year Question Papers (PYQs)</h2>
+
+      <p>
+        Previous Year Question Papers (PYQs) are one of the most effective ways to prepare
+        for RTU exams. They help students understand the exam pattern, important topics,
+        and frequently asked questions.
+      </p>
+
+      <p>
+        By solving PYQs regularly, students can improve time management, identify important
+        concepts, and gain confidence before exams. Many questions in RTU exams follow
+        similar patterns, making PYQs a valuable resource.
+      </p>
+
+      <p>
+        Below, you can find subject-wise RTU PYQs for your semester. Practice them properly
+        to maximize your exam performance.
+      </p>
+
+    </div>
+
+    {/* Loading */}
+    {loadingPYQ && <p>Loading PYQs...</p>}
+
+    {/* ✅ Your existing data */}
+    {pyqGrouped.map((grp, i) => (
+      <div className="pyq-subject-box" key={i} data-aos="fade-up">
+        
+        <div className="pyq-subject-title">
+          {grp.subjectName} ({grp.subjectCode})
+        </div>
+
+        {grp.pyqs.map((q, idx) => (
+          <a
+            key={idx}
+            className="pyq-paper-link"
+            href={`${q.pdf}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📄 {q.title}
+          </a>
+        ))}
+
+      </div>
+    ))}
+    
+  </>
+)}
+
+      {/* LABS */}
+    {tab === "lab" && (
+  <>
+
+   <div style={{ maxWidth: "900px", marginBottom: "25px", lineHeight: "1.8" }}>
+      
+      <h2>RTU Lab Manuals, Files & Practical Resources</h2>
+
+      <p>
+        Lab work is an important part of RTU B.Tech curriculum, helping students understand
+        practical applications of theoretical concepts. Subjects like programming, electronics,
+        and mechanical labs require proper documentation and regular practice.
+      </p>
+
+      <p>
+        To perform well in lab exams, students should focus on writing proper lab files,
+        understanding experiments, and practicing viva questions. Referring to previous
+        lab manuals and records can help in scoring better marks.
+      </p>
+
+      <p>
+        Below, you can find subject-wise lab manuals, practical files, and important resources
+        for your semester.
+      </p>
+
+    </div>
+
+    {/* ✅ Your existing lab data */}
+    {labGrouped.map((grp, i) => (
+      <div className="pyq-subject-box" key={i} data-aos="fade-up">
+
+        
+        <div className="pyq-subject-title">
+          {grp.subjectName} ({grp.subjectCode})
+        </div>
+
+        {grp.examPapers?.map((paper, idx) => (
+          <button
+            key={idx}
+            className="pyq-paper-link"
+            onClick={() => openPDF(paper.pdfLink)}
+          >
+            📄 {paper.examType}
+          </button>
+        ))}
+
+      </div>
+    ))}
+   
+   
+  </>
+)}
+
+      {/* MORE (SUBJECT-WISE) */}
+    {tab === "more" && (
+  <>
+    {/* ✅ Show only once */}
+    <h4 style={{ marginBottom: "15px" }}>
+      How to pass RTU exams in 1 week
+    </h4>
+
+    <p>Scroll for Guess papers and Important topics and short Notes</p>
+
+       <div style={{ maxWidth: "900px", marginTop: "25px", marginBottom: "25px", lineHeight: "1.8" }}>
+  
+  <h2>RTU Exams Preparation tips in 1 Week (Smart Strategy)</h2>
+
+  <p>
+    Preparing for RTU exams in a short time can feel overwhelming, but with the right strategy,
+    students can still score well. The key is to focus on important topics, practice previous
+    year questions (PYQs), and revise concepts efficiently instead of trying to cover everything.
+  </p>
+
+  <h3>1. Focus on Important Topics</h3>
+  <p>
+    Start by identifying high-weightage topics from the syllabus. Subjects often have repeated patterns in exams.
+    Prioritize these areas first.
+  </p>
+
+  <h3>2. Practice Previous Year Questions (PYQs)</h3>
+  <p>
+    Solving PYQs is one of the fastest ways to prepare for RTU exams. Many questions are repeated
+    or follow similar patterns, so practicing them helps you understand exam trends and boosts confidence.
+  </p>
+
+  <h3>3. Use Short Notes and Formulas</h3>
+  <p>
+    Instead of reading full books, focus on short notes, formulas, and key concepts.
+    This helps in quick revision during the last days before exams.
+  </p>
+
+  <h3>4. Revise Smartly</h3>
+  <p>
+    Allocate time for revision daily. Even 1–2 hours of focused revision can improve retention
+    and help you recall concepts during the exam.
+  </p>
+
+  <p>
+    Below, you can find subject-wise important resources, notes, and materials to help you
+    prepare efficiently for your RTU exams.
+  </p>
+
+</div>
+
+    {moreGrouped.map((grp, i) => (
+      <div key={i} style={{ marginBottom: "30px" }}>
+        <div className="pyq-subject-box" data-aos="fade-up">
+          
+          <div className="pyq-subject-title">
+            {grp.subjectName} ({grp.subjectCode})
+          </div>
+
+          {grp.items.map((m, idx) => (
+            <button
+              key={idx}
+              className="pyq-paper-link"
+              onClick={() => openPDF(m.pdfLink)}
+            >
+              📄 {m.examType}
+            </button>
+          ))}
+
+        </div>
+      </div>
+    ))}
+   
+  </>
+)}
+
+      {/* EXTRA (SEMESTER-LEVEL) */}
+      {tab === "more"
+      
+      
+       && (
+        <div className="pyq-subject-box" data-aos="fade-up" >
+          <div className="pyq-subject-title">Extra Resources</div>
+
+
+
+          {extraMore.length > 0 ? (
+            extraMore.map((m, idx) => (
+              <button
+                key={idx}
+                className="pyq-paper-link"
+                onClick={() =>openPDF(m.pdfLink)}
+              >
+                📄 {m.examType}
+              </button>
+            ))
+          ) : (
+            <div className="pyq-empty-text">
+              No extra resources available for this selection.
+            </div>
+          )}
+        
+        </div>
+      )}
+
+
+
+
+    </div>
+  );
+};
+
+export default BranchContent;
