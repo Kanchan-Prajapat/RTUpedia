@@ -8,26 +8,31 @@
         "units": [
           {
             "unitName": "Calculus",
+            "unitTopic": "Improper integrals (Beta and Gamma functions) and their properties, Applications of definite integrals to evaluate surface areas and volumes of revolutions. ",
             "notesPDF": "/assets/notes/Maths I Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2pfcp7PoTuLDlp0gV0GhLD&si=iDHFdhNLued7fQsv"
           },
           {
             "unitName": "Sequence & Series",
+            "unitTopic": "Convergence of sequence and series, tests for convergence; Power series, Taylor's series, series for exponential, trigonometric and logarithm functions",
             "notesPDF": "/assets/notes/Maths I Unit 2.pdf",
             "lectureLink": "https://www.youtube.com/watch?v=mm478gK-MlY&list=PLU6SqdYcYsfIAbLwyyWUiWJPV6qFbPC13"
           },
           {
             "unitName": "Fourier Series",
+            "unitTopic": "Periodic functions, Fourier series, Euler’s formula, Change of intervals, Half range sine and cosine series, Parseval’s theorem. ",
             "notesPDF": "/assets/notes/Maths I Unit 3.pdf",
             "lectureLink": "https://www.youtube.com/watch?v=NdouX5-KD6Y&list=PLU6SqdYcYsfIXjT49bVTz4KjqHD5fGQY8"
           },
           {
             "unitName": "Multivariable Calculus(Differentaition)",
+            "unitTopic": "Limit, continuity and partial derivatives, directional derivatives, total derivative; Tangent plane and normal line; Maxima, minima and saddle points; Method of Lagrange multipliers; Gradient, curl and divergence. ",
             "notesPDF": "/assets/notes/Maths I Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1Zg0rHgjZZZh724xFjrCUJ&si=4HhM_7JeMbHkI_E-"
           },
           {
             "unitName": "Multivariable Calculus(Integration)",
+            "unitTopic": "Multiple Integration: Double integrals (Cartesian), change of order of integration in double integrals, Change of variables (Cartesian to polar), Applications: areas and volumes, Centre of mass and Gravity (constant and variable densities); Triple integrals (Cartesian), Simple applications involving cubes, sphere and rectangular parallelepipeds; Scalar line integrals, vector line integrals, scalar surface integrals, vector surface integrals, Theorems of Green, Gauss and Stokes." ,
             "notesPDF": "/assets/notes/Maths I Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1stxPwSVYgQzYM0rnq-GUF&si=mbPVJ_Fai2GjtV2i"
           }

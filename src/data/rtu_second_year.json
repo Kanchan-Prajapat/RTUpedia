@@ -422,27 +422,32 @@
         "subjectCode": "4CS4-06",
         "units": [
           {
-            "unitName": "Introduction: Basics of automata theory and formal languages. Finite Automata & Regular Expression.",
+            "unitName": "Introduction:",
+            "unitTopic": " Finite Automata & Regular Expression: Basic machine, Finite state machine, Transition graph, Transition matrix, Deterministic and nondeterministic finite automation, Equivalence of DFA and NDFA, Decision properties, minimization of finite automata, Mealy & Moore machines. Alphabet, words, Operations, Regular sets, relationship and conversion between Finite automata and regular expression and vice versa, designing regular expressions, closure properties of regular sets, Pumping lemma and regular sets, Myhill- Nerode theorem , Application of pumping lemma, Power of the languages",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3ZWF3M-DsnEm7JY9wXIFC3&si=Xo61yaFSUo4-bOQs"
           },
           {
             "unitName": "Context-Free Grammar and Context-free Language.",
+            "unitTopic": "Context Free Grammars (CFG), Derivations and Languages, Relationship between derivation and derivation trees, leftmost and rightmost derivation, sentential forms, parsing and ambiguity, simplification of CFG, normal forms, Greibach and Chomsky Normal form , Problems related to CNF and GNF including membership problem",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbq-b4N1l46tZSl7l01rMzP8&si=8nMdw5R93d7axHkh"
           },
           {
             "unitName": "Pushdown Automata.",
+            "unitTopic": "Nondeterministic PDA, Definitions, PDA and CFL, CFG for PDA, Deterministic PDA, and Deterministic PDA and Deterministic CFL , The pumping lemma for CFL’s, Closure Properties and Decision properties for CFL, Deciding properties of CFL. ",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbouzs1xFgpH4SbxdkdRPcCy&si=OwibTccLEOF5OGG1"
           },
           {
             "unitName": "Turing Machine and Hierarchy of Formal Languages.",
+            "unitTopic":"Turing Machines: Introduction, Definition of Turing Machine, TM as language Acceptors and Transducers, Computable Languages and functions, Universal TM & Other modification, multiple tracks Turing Machine. Hierarchy of Formal languages: Recursive & recursively enumerable languages, Properties of RL and REL, Introduction of Context sensitive grammars and languages, The Chomsky Hierarchy",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Xatjq6HY-mGEfx9rqiJbu&si=1fklZLA7O9QdVc_U"
           },
           {
             "unitName": "Tractable Problems And Complexity Classes.",
+            "unitTopic": "Tractable and Untractable Problems: P, NP, NP complete and NP hard problems, Un-decidability, examples of these problems like vertex cover problem, Hamiltonian path problem, traveling sales man problem.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RDlJiR7YZLxY0uzR-HTLZ&si=8DzsnRVDUBlGu1l-"
           }
@@ -458,27 +463,33 @@
         "units": [
         
           {
-            "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
+            "unitName": "Introduction:",
+             "unitTopic" : "Introductory Concepts: Network hardware, Network software, topologies, Protocols and standards, OSI model, TCP model, TCP/IP model, Physical Layer: Digital and Analog Signals, Periodic Analog Signals, Signal Transmission, Limitations of Data Rate, Digital Data Transmission, Performance Measures, Line Coding, Digital Modulation, Media and Digital Transmission System ",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPtP0jPTqqapV2AvoZlT3j2&si=XNbzbT707k7n91Yn"
           },
           {
-            "unitName": "Data Link Layer: Framing, Error control, Flow control.",
+            "unitName": "Data Link Layer:",
+                "unitTopic": "Data Link Layer: Error Detection and Correction, Types of Errors, Two dimensional parity check, Detection verses correction, Block Coding, Linear Block Coding, Cyclic Codes, Checksum, Standardized Polynomial Code, Error Correction Methods, Forward Error Correction, Protocols: Stop and wait, Go-back-N ARQ, Selective Repeat ARQ, Sliding window, Piggy backing, Pure ALOHA, Slotted ALOHA, CSMA/CD, CSMA/CA",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
+
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM1OtT98OMKJzf60lxhb5bN&si=p2HlkPWapud7F6iD"
           },
           {
-            "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
+            "unitName": "Network Layer:",
+            "unitTopic": "Network Layer: Design issues, Routing algorithms: IPV4, IPV6, Address mapping: ARQ, RARQ, Congestion control, Unicast, Multicast, Broadcast routing protocols, Quality of Service, Internetworking",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZMbpDKA-safrja8BxcpCH39&si=OfMoF-vZ90vnMJUK"
           },
           {
-            "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
+            "unitName": "Transport Layer:",
+            "unitTopic": "Transport Layer: Transport service, Elements of transport protocols, User Datagram Protocol, Transmission Control Protocol, Quality of service, Leaky Bucket and Token Bucket algorithm",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPNbS94GD_iTUDh9qNaeWJ-&si=jvYZto1sGqqRHCSq"
           },
           {
-            "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
+            "unitName": "Application Layer:",
+              "unitTopic": "Application Layer: WWW, DNS, Multimedia, Electronic mail, FTP, HTTP, SMTP, Introduction to network security",  
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM7NpzuV1N_Tm6aLwCdtGwK&si=JaHeUMJyyrwF03g1"
           }
@@ -919,30 +930,38 @@
         "subjectCode": "4CS4-06",
         "units": [
           {
-            "unitName": "Introduction: Basics of automata theory and formal languages. Finite Automata & Regular Expression.",
+            "unitName": "Introduction:",
+            "unitTopic": " Finite Automata & Regular Expression: Basic machine, Finite state machine, Transition graph, Transition matrix, Deterministic and nondeterministic finite automation, Equivalence of DFA and NDFA, Decision properties, minimization of finite automata, Mealy & Moore machines. Alphabet, words, Operations, Regular sets, relationship and conversion between Finite automata and regular expression and vice versa, designing regular expressions, closure properties of regular sets, Pumping lemma and regular sets, Myhill- Nerode theorem , Application of pumping lemma, Power of the languages",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3ZWF3M-DsnEm7JY9wXIFC3&si=Xo61yaFSUo4-bOQs"
           },
           {
             "unitName": "Context-Free Grammar and Context-free Language.",
+            "unitTopic": "Context Free Grammars (CFG), Derivations and Languages, Relationship between derivation and derivation trees, leftmost and rightmost derivation, sentential forms, parsing and ambiguity, simplification of CFG, normal forms, Greibach and Chomsky Normal form , Problems related to CNF and GNF including membership problem",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbq-b4N1l46tZSl7l01rMzP8&si=8nMdw5R93d7axHkh"
           },
           {
             "unitName": "Pushdown Automata.",
+            "unitTopic": "Nondeterministic PDA, Definitions, PDA and CFL, CFG for PDA, Deterministic PDA, and Deterministic PDA and Deterministic CFL , The pumping lemma for CFL’s, Closure Properties and Decision properties for CFL, Deciding properties of CFL. ",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbouzs1xFgpH4SbxdkdRPcCy&si=OwibTccLEOF5OGG1"
           },
           {
             "unitName": "Turing Machine and Hierarchy of Formal Languages.",
+            "unitTopic":"Turing Machines: Introduction, Definition of Turing Machine, TM as language Acceptors and Transducers, Computable Languages and functions, Universal TM & Other modification, multiple tracks Turing Machine. Hierarchy of Formal languages: Recursive & recursively enumerable languages, Properties of RL and REL, Introduction of Context sensitive grammars and languages, The Chomsky Hierarchy",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Xatjq6HY-mGEfx9rqiJbu&si=1fklZLA7O9QdVc_U"
           },
           {
             "unitName": "Tractable Problems And Complexity Classes.",
+            "unitTopic": "Tractable and Untractable Problems: P, NP, NP complete and NP hard problems, Un-decidability, examples of these problems like vertex cover problem, Hamiltonian path problem, traveling sales man problem.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RDlJiR7YZLxY0uzR-HTLZ&si=8DzsnRVDUBlGu1l-"
           }
+
+
+          
         ],
         "pyqs": [
           { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
@@ -955,27 +974,33 @@
         "units": [
         
           {
-            "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
+            "unitName": "Introduction",
+             "unitTopic" : "Introductory Concepts: Network hardware, Network software, topologies, Protocols and standards, OSI model, TCP model, TCP/IP model, Physical Layer: Digital and Analog Signals, Periodic Analog Signals, Signal Transmission, Limitations of Data Rate, Digital Data Transmission, Performance Measures, Line Coding, Digital Modulation, Media and Digital Transmission System ",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPtP0jPTqqapV2AvoZlT3j2&si=XNbzbT707k7n91Yn"
           },
           {
-            "unitName": "Data Link Layer: Framing, Error control, Flow control.",
+            "unitName": "Data Link Layer:",
+                "unitTopic": "Data Link Layer: Error Detection and Correction, Types of Errors, Two dimensional parity check, Detection verses correction, Block Coding, Linear Block Coding, Cyclic Codes, Checksum, Standardized Polynomial Code, Error Correction Methods, Forward Error Correction, Protocols: Stop and wait, Go-back-N ARQ, Selective Repeat ARQ, Sliding window, Piggy backing, Pure ALOHA, Slotted ALOHA, CSMA/CD, CSMA/CA",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
+
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM1OtT98OMKJzf60lxhb5bN&si=p2HlkPWapud7F6iD"
           },
           {
-            "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
+            "unitName": "Network Layer:",
+            "unitTopic": "Network Layer: Design issues, Routing algorithms: IPV4, IPV6, Address mapping: ARQ, RARQ, Congestion control, Unicast, Multicast, Broadcast routing protocols, Quality of Service, Internetworking",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZMbpDKA-safrja8BxcpCH39&si=OfMoF-vZ90vnMJUK"
           },
           {
-            "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
+            "unitName": "Transport Layer:",
+            "unitTopic": "Transport Layer: Transport service, Elements of transport protocols, User Datagram Protocol, Transmission Control Protocol, Quality of service, Leaky Bucket and Token Bucket algorithm",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPNbS94GD_iTUDh9qNaeWJ-&si=jvYZto1sGqqRHCSq"
           },
           {
-            "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
+            "unitName": "Application Layer:",
+              "unitTopic": "Application Layer: WWW, DNS, Multimedia, Electronic mail, FTP, HTTP, SMTP, Introduction to network security",  
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM7NpzuV1N_Tm6aLwCdtGwK&si=JaHeUMJyyrwF03g1"
           }
@@ -1411,28 +1436,33 @@
         "subjectName": "Theory of Computation",
         "subjectCode": "4CS4-06",
         "units": [
-          {
-            "unitName": "Introduction: Basics of automata theory and formal languages. Finite Automata & Regular Expression.",
+        {
+            "unitName": "Introduction:",
+            "unitTopic": " Finite Automata & Regular Expression: Basic machine, Finite state machine, Transition graph, Transition matrix, Deterministic and nondeterministic finite automation, Equivalence of DFA and NDFA, Decision properties, minimization of finite automata, Mealy & Moore machines. Alphabet, words, Operations, Regular sets, relationship and conversion between Finite automata and regular expression and vice versa, designing regular expressions, closure properties of regular sets, Pumping lemma and regular sets, Myhill- Nerode theorem , Application of pumping lemma, Power of the languages",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3ZWF3M-DsnEm7JY9wXIFC3&si=Xo61yaFSUo4-bOQs"
           },
           {
             "unitName": "Context-Free Grammar and Context-free Language.",
+            "unitTopic": "Context Free Grammars (CFG), Derivations and Languages, Relationship between derivation and derivation trees, leftmost and rightmost derivation, sentential forms, parsing and ambiguity, simplification of CFG, normal forms, Greibach and Chomsky Normal form , Problems related to CNF and GNF including membership problem",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbq-b4N1l46tZSl7l01rMzP8&si=8nMdw5R93d7axHkh"
           },
           {
             "unitName": "Pushdown Automata.",
+            "unitTopic": "Nondeterministic PDA, Definitions, PDA and CFL, CFG for PDA, Deterministic PDA, and Deterministic PDA and Deterministic CFL , The pumping lemma for CFL’s, Closure Properties and Decision properties for CFL, Deciding properties of CFL. ",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbouzs1xFgpH4SbxdkdRPcCy&si=OwibTccLEOF5OGG1"
           },
           {
             "unitName": "Turing Machine and Hierarchy of Formal Languages.",
+            "unitTopic":"Turing Machines: Introduction, Definition of Turing Machine, TM as language Acceptors and Transducers, Computable Languages and functions, Universal TM & Other modification, multiple tracks Turing Machine. Hierarchy of Formal languages: Recursive & recursively enumerable languages, Properties of RL and REL, Introduction of Context sensitive grammars and languages, The Chomsky Hierarchy",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Xatjq6HY-mGEfx9rqiJbu&si=1fklZLA7O9QdVc_U"
           },
           {
             "unitName": "Tractable Problems And Complexity Classes.",
+            "unitTopic": "Tractable and Untractable Problems: P, NP, NP complete and NP hard problems, Un-decidability, examples of these problems like vertex cover problem, Hamiltonian path problem, traveling sales man problem.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RDlJiR7YZLxY0uzR-HTLZ&si=8DzsnRVDUBlGu1l-"
           }
@@ -1447,28 +1477,34 @@
         "subjectCode": "4CS4-07",
         "units": [
         
-          {
-            "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
+         {
+            "unitName": "Introduction:",
+             "unitTopic" : "Introductory Concepts: Network hardware, Network software, topologies, Protocols and standards, OSI model, TCP model, TCP/IP model, Physical Layer: Digital and Analog Signals, Periodic Analog Signals, Signal Transmission, Limitations of Data Rate, Digital Data Transmission, Performance Measures, Line Coding, Digital Modulation, Media and Digital Transmission System ",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPtP0jPTqqapV2AvoZlT3j2&si=XNbzbT707k7n91Yn"
           },
           {
-            "unitName": "Data Link Layer: Framing, Error control, Flow control.",
+            "unitName": "Data Link Layer:",
+                "unitTopic": "Data Link Layer: Error Detection and Correction, Types of Errors, Two dimensional parity check, Detection verses correction, Block Coding, Linear Block Coding, Cyclic Codes, Checksum, Standardized Polynomial Code, Error Correction Methods, Forward Error Correction, Protocols: Stop and wait, Go-back-N ARQ, Selective Repeat ARQ, Sliding window, Piggy backing, Pure ALOHA, Slotted ALOHA, CSMA/CD, CSMA/CA",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
+
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM1OtT98OMKJzf60lxhb5bN&si=p2HlkPWapud7F6iD"
           },
           {
-            "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
+            "unitName": "Network Layer:",
+            "unitTopic": "Network Layer: Design issues, Routing algorithms: IPV4, IPV6, Address mapping: ARQ, RARQ, Congestion control, Unicast, Multicast, Broadcast routing protocols, Quality of Service, Internetworking",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZMbpDKA-safrja8BxcpCH39&si=OfMoF-vZ90vnMJUK"
           },
           {
-            "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
+            "unitName": "Transport Layer:",
+            "unitTopic": "Transport Layer: Transport service, Elements of transport protocols, User Datagram Protocol, Transmission Control Protocol, Quality of service, Leaky Bucket and Token Bucket algorithm",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPNbS94GD_iTUDh9qNaeWJ-&si=jvYZto1sGqqRHCSq"
           },
           {
-            "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
+            "unitName": "Application Layer:",
+              "unitTopic": "Application Layer: WWW, DNS, Multimedia, Electronic mail, FTP, HTTP, SMTP, Introduction to network security",  
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM7NpzuV1N_Tm6aLwCdtGwK&si=JaHeUMJyyrwF03g1"
           }
@@ -1941,27 +1977,33 @@
         "units": [
         
           {
-            "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
+            "unitName": "Introduction:",
+            "unitTopic" : "Introductory Concepts: Network hardware, Network software, topologies, Protocols and standards, OSI model, TCP model, TCP/IP model, Physical Layer: Digital and Analog Signals, Periodic Analog Signals, Signal Transmission, Limitations of Data Rate, Digital Data Transmission, Performance Measures, Line Coding, Digital Modulation, Media and Digital Transmission System ",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPtP0jPTqqapV2AvoZlT3j2&si=XNbzbT707k7n91Yn"
           },
           {
-            "unitName": "Data Link Layer: Framing, Error control, Flow control.",
+            "unitName": "Data Link Layer:",
+                "unitTopic": "Data Link Layer: Error Detection and Correction, Types of Errors, Two dimensional parity check, Detection verses correction, Block Coding, Linear Block Coding, Cyclic Codes, Checksum, Standardized Polynomial Code, Error Correction Methods, Forward Error Correction, Protocols: Stop and wait, Go-back-N ARQ, Selective Repeat ARQ, Sliding window, Piggy backing, Pure ALOHA, Slotted ALOHA, CSMA/CD, CSMA/CA",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
+
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM1OtT98OMKJzf60lxhb5bN&si=p2HlkPWapud7F6iD"
           },
           {
-            "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
+            "unitName": "Network Layer:",
+            "unitTopic": "Network Layer: Design issues, Routing algorithms: IPV4, IPV6, Address mapping: ARQ, RARQ, Congestion control, Unicast, Multicast, Broadcast routing protocols, Quality of Service, Internetworking",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZMbpDKA-safrja8BxcpCH39&si=OfMoF-vZ90vnMJUK"
           },
           {
-            "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
+            "unitName": "Transport Layer:",
+            "unitTopic": "Transport Layer: Transport service, Elements of transport protocols, User Datagram Protocol, Transmission Control Protocol, Quality of service, Leaky Bucket and Token Bucket algorithm",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPNbS94GD_iTUDh9qNaeWJ-&si=jvYZto1sGqqRHCSq"
           },
           {
-            "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
+            "unitName": "Application Layer:",
+              "unitTopic": "Application Layer: WWW, DNS, Multimedia, Electronic mail, FTP, HTTP, SMTP, Introduction to network security",  
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM7NpzuV1N_Tm6aLwCdtGwK&si=JaHeUMJyyrwF03g1"
           }
