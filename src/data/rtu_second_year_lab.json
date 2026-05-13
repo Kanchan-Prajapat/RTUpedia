@@ -231,7 +231,20 @@
                     {
                         "examType":"Java lab exp 6",
                         "pdfLink":"/assets/lab/CSE/4/Java lab exp 6.pdf"
-                    }
+                    },
+                    
+                    {
+                        "examType":"Java lab exp 7 and 8",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 7 and 8.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 9 and 10",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 9 and 10.pdf"
+                    },
+                        {
+                            "examType":"Java lab exp 11 and 12",
+                            "pdfLink":"/assets/lab/CSE/4/Java lab exp 11 and 12.pdf"
+                        }
                 ]
             }
         
@@ -470,7 +483,20 @@
                     {
                         "examType":"Java lab exp 6",
                         "pdfLink":"/assets/lab/CSE/4/Java lab exp 6.pdf"
-                    }
+                    },
+                    
+                    {
+                        "examType":"Java lab exp 7 and 8",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 7 and 8.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 9 and 10",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 9 and 10.pdf"
+                    },
+                        {
+                            "examType":"Java lab exp 11 and 12",
+                            "pdfLink":"/assets/lab/CSE/4/Java lab exp 11 and 12.pdf"
+                        }
                 ]
             }
         
@@ -709,7 +735,20 @@
                     {
                         "examType":"Java lab exp 6",
                         "pdfLink":"/assets/lab/CSE/4/Java lab exp 6.pdf"
-                    }
+                    },
+                    
+                    {
+                        "examType":"Java lab exp 7 and 8",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 7 and 8.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 9 and 10",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 9 and 10.pdf"
+                    },
+                        {
+                            "examType":"Java lab exp 11 and 12",
+                            "pdfLink":"/assets/lab/CSE/4/Java lab exp 11 and 12.pdf"
+                        }
                 ]
             }
         
@@ -948,7 +987,20 @@
                     {
                         "examType":"Java lab exp 6",
                         "pdfLink":"/assets/lab/CSE/4/Java lab exp 6.pdf"
-                    }
+                    },
+                    {
+                        "examType":"Java lab exp 7 and 8",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 7 and 8.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 9 and 10",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 9 and 10.pdf"
+                    },
+                        {
+                            "examType":"Java lab exp 11 and 12",
+                            "pdfLink":"/assets/lab/CSE/4/Java lab exp 11 and 12.pdf"
+                        }
+                
                 ]
             }
         
