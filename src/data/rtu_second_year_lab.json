@@ -164,11 +164,30 @@
                     }
                 ]
             },
-            {
+           {
                 "subjectName":"DataBase Manangement System Lab",
                 "subjectCode":"4CS4-22",
                 "examPapers":[
-                    
+                    {
+                        "examType":"DBMS Lab exp 1 and 2",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 3 and 4",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 3 and 4.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 5 and 6",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 5 and 6.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 7 to 8",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 7 and 8.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 9 to 11",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 9 , 10 and 11.pdf"
+                    }
                 ]
             },
             {
@@ -416,11 +435,30 @@
                     }
                 ]
             },
-            {
+          {
                 "subjectName":"DataBase Manangement System Lab",
                 "subjectCode":"4CS4-22",
                 "examPapers":[
-                    
+                    {
+                        "examType":"DBMS Lab exp 1 and 2",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 3 and 4",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 3 and 4.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 5 and 6",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 5 and 6.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 7 to 8",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 7 and 8.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 9 to 11",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 9 , 10 and 11.pdf"
+                    }
                 ]
             },
             {
@@ -668,11 +706,30 @@
                     }
                 ]
             },
-            {
+         {
                 "subjectName":"DataBase Manangement System Lab",
                 "subjectCode":"4CS4-22",
                 "examPapers":[
-                    
+                    {
+                        "examType":"DBMS Lab exp 1 and 2",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 3 and 4",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 3 and 4.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 5 and 6",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 5 and 6.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 7 to 8",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 7 and 8.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 9 to 11",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 9 , 10 and 11.pdf"
+                    }
                 ]
             },
             {
@@ -923,7 +980,26 @@
                 "subjectName":"DataBase Manangement System Lab",
                 "subjectCode":"4CS4-22",
                 "examPapers":[
-                    
+                    {
+                        "examType":"DBMS Lab exp 1 and 2",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 3 and 4",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 3 and 4.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 5 and 6",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 5 and 6.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 7 to 8",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 7 and 8.pdf"
+                    },
+                    {
+                        "examType":"DBMS Lab exp 9 to 11",
+                        "pdfLink":"/assets/lab/CSE/4/DBMS lab exp 9 , 10 and 11.pdf"
+                    }
                 ]
             },
             {
@@ -968,6 +1044,7 @@
                    
                 ]
             },
+            
             {
                 "subjectName":"Java Lab",
                 "subjectCode":"4CS4-25",
