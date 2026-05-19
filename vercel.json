@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "rtupedia.vercel.app"
+        }
+      ],
+      "destination": "https://rtupedia.online/$1",
+      "permanent": true
+    }
+  ]
+}
