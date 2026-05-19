@@ -208,7 +208,7 @@
           },
           {
             "examType": "Imp Question",
-            "pdfLink": "/assets/more/COMMON/Chemistry Imp Topics.md"
+            "pdfLink": "/assets/more/COMMON/Chemistry Imp Topics.pdf"
           }
         ]
       },
@@ -341,7 +341,7 @@
           },
           {
             "examType": "Imp Topic",
-            "pdfLink": "/assets/more/COMMON/Mechanical Important Topic.md"
+            "pdfLink": "/assets/more/COMMON/Mechanical Important Topic.pdf"
           }
         ]
       },
@@ -453,7 +453,7 @@
           },
           {
             "examType": "IMP RTU Topics",
-            "pdfLink" : "/assets/more/COMMON/IMPORTANT Topics for RTU.md"
+            "pdfLink" : "/assets/more/COMMON/IMPORTANT Topics for RTU.pdf"
           }
     ]
     },
@@ -761,7 +761,7 @@
           },
           {
             "examType": "Imp Question",
-            "pdfLink": "/assets/more/COMMON/Chemistry Imp Topics.md"
+            "pdfLink": "/assets/more/COMMON/Chemistry Imp Topics.pdf"
           }
         ]
       },
@@ -904,9 +904,12 @@
             "examType": "Imp Question",
             "pdfLink": "/assets/more/COMMON/Imp Questions Programming for Problem Solving.pdf"
           }
-        ],
-        
-      "Extra": [
+        ]
+      
+     
+      }
+    ],
+     "Extra": [
           {
             "examType": "Mid Term Papers GIT",
             "pdfLink": "/assets/more/COMMON/1st Year Mid Term Paper All Subjects.pdf"
@@ -917,11 +920,9 @@
           },
           {
             "examType": "IMP RTU Topics",
-            "pdfLink" : "/assets/more/COMMON/IMPORTANT Topics for RTU.md"
+            "pdfLink" : "/assets/more/COMMON/IMPORTANT Topics for RTU.pdf"
           }
             ]
-      }
-    ]
   }
   
   }
