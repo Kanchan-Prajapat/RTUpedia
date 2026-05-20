@@ -1,14 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "rtupedia.vercel.app"
-        }
-      ],
-      "destination": "https://rtupedia.online/:path*",
+      "source": "/(.*)",
+      "destination": "https://rtupedia.online/$1",
       "permanent": true
     }
   ]
