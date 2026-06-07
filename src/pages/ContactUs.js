@@ -153,7 +153,7 @@ const ContactUs = () => {
             </div>
 
             {/* Manan */}
-            {/* <div className="team-card">
+            <div className="team-card">
               <img src="/assets/team/manan.jpg" className="team-photo" alt="Manan" />
               <p className="member-name">Manan Gupta</p>
 
@@ -164,7 +164,7 @@ const ContactUs = () => {
               <p className="member-contact">
                 ✉️ <a href="mailto:manangupta902@gmail.com">manangupta902@gmail.com</a>
               </p>
-            </div> */}
+            </div>
 
             {/* Koustubh */}
             <div className="team-card">

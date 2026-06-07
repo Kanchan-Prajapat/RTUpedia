@@ -286,14 +286,14 @@ useEffect(() => {
             </p>
           </div>
 
-          {/* <div style={styles.teamCard}>
+          <div style={styles.teamCard}>
             <p style={styles.teamName}>Manan Gupta</p>
             <p style={{...styles.teamRole, fontWeight: "600"}}>UI/UX Designer</p>
             <p style={styles.text}>
                Designs visuals, icons, and enhances the user experience 
               with clean, modern interface elements.
             </p>
-          </div> */}
+          </div>
 
           <div style={styles.teamCard}>
             <p style={styles.teamName}>Koustubh Chouhan</p>
