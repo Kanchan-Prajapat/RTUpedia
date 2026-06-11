@@ -106,7 +106,7 @@ const ContactUs = () => {
     <FaYoutube />
   </a>
 
-  <a href="https://www.linkedin.com/in/kanchan-prajapat-829336327/" target="_blank" rel="noreferrer" className="social-icon linkedin">
+  <a href="https://www.linkedin.com/in/kanchan-prajapat92577/" target="_blank" rel="noreferrer" className="social-icon linkedin">
     <FaLinkedin />
   </a>
 
