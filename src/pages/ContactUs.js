@@ -98,7 +98,7 @@ const ContactUs = () => {
   <div className="card">
     {/* Team section */}
  
-        ================= SOCIAL =================
+        {/* ================= SOCIAL ================= */}
         <div className="follow-section">
   <h2 className="follow-title">Follow Us</h2>
 <div className="social-container">
@@ -123,7 +123,7 @@ const ContactUs = () => {
 </div>
 
 
-        ================= TEAM =================
+        {/* ================= TEAM ================= */}
         <div className="card">
           <h2 className="card-title" >Team Contacts</h2>
 
