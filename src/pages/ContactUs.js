@@ -7,6 +7,7 @@ import "./ContactUs.css";
 import "./SGPACalculator.css"; 
 
 const ContactUs = () => {
+  const SHOW_TEAM = false;
 
   const [showPopup, setShowPopup] = useState(false);
   const { user } = useAuth();
@@ -64,9 +65,10 @@ const ContactUs = () => {
 
     {/* REVIEW SECTION */}
     <div className="review-section">
+    
       <h2 className="card-title">Share your experience</h2>
 
-      <p style={{marginTop:'10px', marginBottom:'10px'}}>Reviewing as <b>{user?.name}</b></p>
+      <p style={{marginTop:'10px', marginBottom:'10px'}}>Reviewing as <b>{user?.name}</b> <br></br> or contact us via Mail- rtupedia@gmail.com</p>
 
       <form className="review-form" onSubmit={handleSubmit}>
         <textarea
@@ -92,8 +94,11 @@ const ContactUs = () => {
         )}
 
      
-
-        {/* ================= SOCIAL ================= */}
+{SHOW_TEAM && (
+  <div className="card">
+    {/* Team section */}
+ 
+        ================= SOCIAL =================
         <div className="follow-section">
   <h2 className="follow-title">Follow Us</h2>
 <div className="social-container">
@@ -118,7 +123,7 @@ const ContactUs = () => {
 </div>
 
 
-        {/* ================= TEAM ================= */}
+        ================= TEAM =================
         <div className="card">
           <h2 className="card-title" >Team Contacts</h2>
 
@@ -182,6 +187,9 @@ const ContactUs = () => {
 
           </div>
         </div>
+
+         </div>
+)}
 
       </div>
     </div>
