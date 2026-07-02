@@ -7,7 +7,7 @@ import "./ContactUs.css";
 import "./SGPACalculator.css"; 
 
 const ContactUs = () => {
-  const SHOW_TEAM = false;
+  const SHOW_TEAM = true;
 
   const [showPopup, setShowPopup] = useState(false);
   const { user } = useAuth();

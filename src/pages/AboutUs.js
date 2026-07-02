@@ -264,7 +264,7 @@ useEffect(() => {
    
 
         {/* Team Section */}
-        {/* <h2 style={styles.sectionTitle}>Meet Our Team</h2>
+        <h2 style={styles.sectionTitle}>Meet Our Team</h2>
 
         <div style={styles.teamContainer}>
 
@@ -304,7 +304,7 @@ useEffect(() => {
             </p>
           </div>
 
-        </div> */}
+        </div>
 
         {/* Achievements */}
         <div style={styles.card}>
