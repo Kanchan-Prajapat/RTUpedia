@@ -297,10 +297,19 @@ useEffect(() => {
 
           <div style={styles.teamCard}>
             <p style={styles.teamName}>Koustubh Chouhan</p>
-            <p style={{...styles.teamRole, fontWeight: "600"}}>Content Advisor</p>
+            <p style={{...styles.teamRole, fontWeight: "600"}}>Project & Content Advisor</p>
             <p style={styles.text}>
-              ensure that all notes and PYQs are accurate, relevant, 
-              and organized for easy access.
+                Contributes to project ideation, testing, and deployment, 
+    while ensuring the academic content remains relevant and reliable.
+            </p>
+          </div>
+
+           <div style={styles.teamCard}>
+            <p style={styles.teamName}>Ishan Mathur</p>
+            <p style={{...styles.teamRole, fontWeight: "600"}}>Content Provider</p>
+            <p style={styles.text}>
+               Contributes and organizes notes and PYQs, helping maintain 
+    useful and accessible academic resources for students.
             </p>
           </div>
 
