@@ -54,22 +54,50 @@ export const fetchBranches = (yearSlug) => {
 ========================= */
 export const loadNotes = (yearSlug, branch, semester) => {
   const key = `${yearSlug}-${branch}-${semester}`;
-  if (cache.notes[key]) return cache.notes[key];
+
+  if (cache.notes[key]) {
+    return cache.notes[key];
+  }
 
   const data = getYearJSON(yearSlug);
-  if (!data) return [];
+
+  if (!data) {
+    console.error("❌ Year JSON not found:", yearSlug);
+    return [];
+  }
 
   let subjects = [];
 
+  // =========================
+  // FIRST YEAR
+  // =========================
   if (yearSlug === "first-year") {
-    subjects = data.COMMON?.[semester]?.subjects || [];
-  } else {
-    subjects = data[branch]?.[semester]?.subjects || [];
+    subjects = data.COMMON?.[String(semester)] || [];
   }
 
+  // =========================
+  // OTHER YEARS
+  // =========================
+  else {
+    const branchKey = Object.keys(data).find(
+      (key) => key.toLowerCase() === String(branch).toLowerCase()
+    );
+
+    if (!branchKey) {
+      console.error("❌ Branch not found:", branch);
+      console.log("Available branches:", Object.keys(data));
+      return [];
+    }
+
+    subjects = data[branchKey]?.[String(semester)] || [];
+  }
+
+
   cache.notes[key] = subjects;
+
   return subjects;
 };
+
 
 /* =========================
    FETCH PYQs (BACKEND – UNCHANGED LOGIC)

@@ -243,7 +243,8 @@
       }
   ], 
          "Extra" :[
-          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" }
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" },
+          {"examType" : "Mid Term Paper for 3rd SEM", "pdfLink":"/assets/more/CSE/3rd sem mid term paper.pdf"}
     ]
     },
     "4": {
@@ -501,7 +502,8 @@
       }
     ],
     "Extra" :[
-          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/RTU Imp topic for 4th Semester.pdf" }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/RTU Imp topic for 4th Semester.pdf" },
+                {"examType" : "Mid Term Paper for 4th SEM", "pdfLink":"/assets/more/CSE/4th sem Mid term paper.pdf"}
     ]
     }
   },
@@ -751,7 +753,8 @@
       }
   ], 
          "Extra" :[
-          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" }
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" },
+                {"examType" : "Mid Term Paper for 3rd SEM", "pdfLink":"/assets/more/CSE/3rd sem mid term paper.pdf"}
     ]
     },
     "4": {
@@ -1012,7 +1015,8 @@
       }
     ],
     "Extra" :[
-          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" },
+           {"examType" : "Mid Term Paper for 4th SEM", "pdfLink":"/assets/more/CSE/4th sem Mid term paper.pdf"}
     ]
     }},
   "IT": {   "3": 
@@ -1258,7 +1262,8 @@
       }
   ], 
          "Extra" :[
-          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" }
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" },
+                {"examType" : "Mid Term Paper for 3rd SEM", "pdfLink":"/assets/more/CSE/3rd sem mid term paper.pdf"}
     ]
     },
     "4": {
@@ -1516,7 +1521,8 @@
       }
     ],
     "Extra" :[
-          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" },
+           {"examType" : "Mid Term Paper for 4th SEM", "pdfLink":"/assets/more/CSE/4th sem Mid term paper.pdf"}
     ]
     }},
   "CY": {   "3": 
@@ -1762,7 +1768,8 @@
       }
   ], 
          "Extra" :[
-          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" }
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" },
+                {"examType" : "Mid Term Paper for 3rd SEM", "pdfLink":"/assets/more/CSE/3rd sem mid term paper.pdf"}
     ]
     },
     "4": {
@@ -2015,7 +2022,8 @@
       }
     ],
     "Extra" :[
-          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" },
+           {"examType" : "Mid Term Paper for 4th SEM", "pdfLink":"/assets/more/CSE/4th sem Mid term paper.pdf"}
     ]
     } },
   "CHEM": { "3": [], "4": [] }
