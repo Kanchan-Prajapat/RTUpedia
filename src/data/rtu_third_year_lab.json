@@ -1,0 +1,951 @@
+{
+    "CSE": {
+        "5": [
+            {
+                "subjectName": "Computer Graphics & Multimedia Lab",
+                "subjectCode": "5CS4-21",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-5: Pixel,Line, Line Attributes; Pixel Plotting; DDA Line Drawing; Mid-Point Circle ",
+                        "pdfLink": "/assets/lab/CSE/5/CGM Lab exp 1 to 5.pdf"
+                    },
+                    {
+                       "examType": "Experiments 6-10: Ellipse Generation , Polygon, hoist a flag, Create a balloon and robot",
+                        "pdfLink": "/assets/lab/CSE/5/CGM Lab exp 6 to 10.pdf"
+                    }
+                  
+                ]
+            },
+            {
+                "subjectName": "Compiler Design Lab",
+                "subjectCode": "5CS4-22",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1: Introduction and count consonants and vowels",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiments 2: Count number of lines, words and spaces",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiments 3: Keyword/operator recognizing",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 3.pdf"
+                    },
+                     {
+                        "examType": "Experiments 4: Validate mobile number , URL and date",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 4.pdf"
+                    },
+                     {
+                        "examType": "Experiments 5 to 7: counting keywords/operators",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 5 to 7.pdf"
+                    },
+                     {
+                        "examType": "Experiments 8 to 10: symbol table and patterns",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 8 to 10.pdf"
+                    }
+
+                    
+                ]
+            },
+            {
+                "subjectName": "Analysis of Algorithms Lab",
+                "subjectCode": "5CS4-23",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Quicksort and execution-time graph",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: Parallelized Merge Sort and execution-time graph",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiments 3-4: Topological ordering, Warshall, 0/1 Knapsack",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 3 and 4.pdf"
+                    },
+                    {
+                        "examType": "Experiments 5-7:Dijsktra, Kruskal",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 5 to 7.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Advance Java Lab",
+                "subjectCode": "5CS4-24",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Swing, MVC, applets and basic Swing components",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: JDBC and Java network programming",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: RMI, JNDI, serialization and internationalization",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: J2EE architecture and web application concepts",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Servlets, request/response, sessions and filters",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType": "Experiment 6: JSP, EL, tag extensions and JSTL",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 6.pdf"
+                    }
+                ]
+            }
+        ],
+        "6": [
+            {
+                "subjectName": "Digital Image Processing Lab",
+                "subjectCode": "6CS4-21",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Point transformations, thresholding, histogram and histogram equalization",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: Geometric transformations and 2D Fourier transform",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: Linear filtering using convolution and highly selective filters",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: Frequency-domain filters, nonlinear filtering and edge detection",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Morphological operations: erosion, dilation, opening and closing",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 5.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Machine Learning Lab",
+                "subjectCode": "6CS4-22",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-2: FIND-S and Candidate-Elimination algorithms using CSV data",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: Decision tree using ID3",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: Artificial Neural Network with backpropagation",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiments 5-6: Naive Bayes classification and evaluation metrics",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 5-6.pdf"
+                    },
+                    {
+                        "examType": "Experiment 7: Bayesian network for heart-disease diagnosis",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 7.pdf"
+                    },
+                    {
+                        "examType": "Experiment 8: EM and k-Means clustering comparison",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 8.pdf"
+                    },
+                    {
+                        "examType": "Experiment 9: k-Nearest Neighbour classification on Iris dataset",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Locally Weighted Regression with graph",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Python Lab",
+                "subjectCode": "6CS4-23",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-3: Data types, distance, command-line arguments, even numbers and loops",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 1-3.pdf"
+                    },
+                    {
+                        "examType": "Experiments 4-5: Lists, tuples, loops, primes and Fibonacci sequence",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 4-5.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7: Strings, dictionaries and character frequency in files",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 6-7.pdf"
+                    },
+                    {
+                        "examType": "Experiments 8-9: File processing, nearly-equal strings, GCD and LCM",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 8-9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Merge, Selection and Insertion sort",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Mobile Application Development Lab",
+                "subjectCode": "6CS4-24",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-2: Android Studio, Hello World, Activity, Intent and login module",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: GUI calculator using activities and intents",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: RSS Feed application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Drawing graphical primitives",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType": "Experiment 6: SQLite database application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 6.pdf"
+                    },
+                    {
+                        "examType": "Experiment 7: GPS location application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 7.pdf"
+                    },
+                    {
+                        "examType": "Experiment 8: Writing data to SD card",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 8.pdf"
+                    },
+                    {
+                        "examType": "Experiment 9: Gaming application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Image and video handling by size",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 10.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "IT": {
+        "5": [
+            {
+                "subjectName": "Computer Graphics & Multimedia Lab",
+                "subjectCode": "5CS4-21",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-5: Line, pixel, DDA, midpoint circle and ellipse algorithms",
+                        "pdfLink": "/assets/lab/CSE/5/CGM Lab exp 1-5.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7: 2D and composite 2D transformations",
+                        "pdfLink": "/assets/lab/CSE/5/CGM Lab exp 6-10.pdf"
+                    }
+                  
+                ]
+            },
+            {
+                "subjectName": "Compiler Design Lab",
+                "subjectCode": "5CS4-22",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1: Introduction",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiments 2: Keyword/operator counting",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiments 3",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 3.pdf"
+                    },
+                     {
+                        "examType": "Experiments 4",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 4.pdf"
+                    },
+                     {
+                        "examType": "Experiments 5 to 7",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 5 to 7.pdf"
+                    },
+                     {
+                        "examType": "Experiments 8 to 10",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 8 to 10.pdf"
+                    }
+
+                    
+                ]
+            },
+            {
+                "subjectName": "Analysis of Algorithms Lab",
+                "subjectCode": "5CS4-23",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Quicksort and execution-time graph",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: Parallelized Merge Sort and execution-time graph",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiments 3-5: Topological ordering, Warshall, 0/1 Knapsack",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 3-4.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7:Dijsktra, Kruskal",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 6-8.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Advance Java Lab",
+                "subjectCode": "5CS4-24",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Swing, MVC, applets and basic Swing components",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: JDBC and Java network programming",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: RMI, JNDI, serialization and internationalization",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: J2EE architecture and web application concepts",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Servlets, request/response, sessions and filters",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType": "Experiment 6: JSP, EL, tag extensions and JSTL",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 6.pdf"
+                    }
+                ]
+            }
+            
+        ],
+        "6": [
+            {
+                "subjectName": "Digital Image Processing Lab",
+                "subjectCode": "6CS4-21",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Point transformations, thresholding, histogram and histogram equalization",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: Geometric transformations and 2D Fourier transform",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: Linear filtering using convolution and highly selective filters",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: Frequency-domain filters, nonlinear filtering and edge detection",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Morphological operations: erosion, dilation, opening and closing",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 5.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Machine Learning Lab",
+                "subjectCode": "6CS4-22",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-2: FIND-S and Candidate-Elimination algorithms using CSV data",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: Decision tree using ID3",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: Artificial Neural Network with backpropagation",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiments 5-6: Naive Bayes classification and evaluation metrics",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 5-6.pdf"
+                    },
+                    {
+                        "examType": "Experiment 7: Bayesian network for heart-disease diagnosis",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 7.pdf"
+                    },
+                    {
+                        "examType": "Experiment 8: EM and k-Means clustering comparison",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 8.pdf"
+                    },
+                    {
+                        "examType": "Experiment 9: k-Nearest Neighbour classification on Iris dataset",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Locally Weighted Regression with graph",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Python Lab",
+                "subjectCode": "6CS4-23",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-3: Data types, distance, command-line arguments, even numbers and loops",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 1-3.pdf"
+                    },
+                    {
+                        "examType": "Experiments 4-5: Lists, tuples, loops, primes and Fibonacci sequence",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 4-5.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7: Strings, dictionaries and character frequency in files",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 6-7.pdf"
+                    },
+                    {
+                        "examType": "Experiments 8-9: File processing, nearly-equal strings, GCD and LCM",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 8-9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Merge, Selection and Insertion sort",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Mobile Application Development Lab",
+                "subjectCode": "6CS4-24",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-2: Android Studio, Hello World, Activity, Intent and login module",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: GUI calculator using activities and intents",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: RSS Feed application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Drawing graphical primitives",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType": "Experiment 6: SQLite database application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 6.pdf"
+                    },
+                    {
+                        "examType": "Experiment 7: GPS location application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 7.pdf"
+                    },
+                    {
+                        "examType": "Experiment 8: Writing data to SD card",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 8.pdf"
+                    },
+                    {
+                        "examType": "Experiment 9: Gaming application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Image and video handling by size",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 10.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "AIDS": {
+        "5": [
+            {
+                "subjectName": "Computer Graphics & Multimedia Lab",
+                "subjectCode": "5CS4-21",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-5: Line, pixel, DDA, midpoint circle and ellipse algorithms",
+                        "pdfLink": "/assets/lab/CSE/5/CGM Lab exp 1-5.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7: 2D and composite 2D transformations",
+                        "pdfLink": "/assets/lab/CSE/5/CGM Lab exp 6-10.pdf"
+                    }
+                  
+                ]
+            },
+            {
+                "subjectName": "Compiler Design Lab",
+                "subjectCode": "5CS4-22",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1: Introduction",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiments 2: Keyword/operator counting",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiments 3",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 3.pdf"
+                    },
+                     {
+                        "examType": "Experiments 4",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 4.pdf"
+                    },
+                     {
+                        "examType": "Experiments 5 to 7",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 5 to 7.pdf"
+                    },
+                     {
+                        "examType": "Experiments 8 to 10",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 8 to 10.pdf"
+                    }
+
+                    
+                ]
+            },
+            {
+                "subjectName": "Analysis of Algorithms Lab",
+                "subjectCode": "5CS4-23",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Quicksort and execution-time graph",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: Parallelized Merge Sort and execution-time graph",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiments 3-5: Topological ordering, Warshall, 0/1 Knapsack",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 3-4.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7:Dijsktra, Kruskal",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 6-8.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Advance Java Lab",
+                "subjectCode": "5CS4-24",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Swing, MVC, applets and basic Swing components",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: JDBC and Java network programming",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: RMI, JNDI, serialization and internationalization",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: J2EE architecture and web application concepts",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Servlets, request/response, sessions and filters",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType": "Experiment 6: JSP, EL, tag extensions and JSTL",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 6.pdf"
+                    }
+                ]
+            }
+        ],
+        "6": [
+            {
+                "subjectName": "Digital Image Processing Lab",
+                "subjectCode": "6CS4-21",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Point transformations, thresholding, histogram and histogram equalization",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: Geometric transformations and 2D Fourier transform",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: Linear filtering using convolution and highly selective filters",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: Frequency-domain filters, nonlinear filtering and edge detection",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Morphological operations: erosion, dilation, opening and closing",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 5.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Machine Learning Lab",
+                "subjectCode": "6CS4-22",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-2: FIND-S and Candidate-Elimination algorithms using CSV data",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: Decision tree using ID3",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: Artificial Neural Network with backpropagation",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiments 5-6: Naive Bayes classification and evaluation metrics",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 5-6.pdf"
+                    },
+                    {
+                        "examType": "Experiment 7: Bayesian network for heart-disease diagnosis",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 7.pdf"
+                    },
+                    {
+                        "examType": "Experiment 8: EM and k-Means clustering comparison",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 8.pdf"
+                    },
+                    {
+                        "examType": "Experiment 9: k-Nearest Neighbour classification on Iris dataset",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Locally Weighted Regression with graph",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Python Lab",
+                "subjectCode": "6CS4-23",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-3: Data types, distance, command-line arguments, even numbers and loops",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 1-3.pdf"
+                    },
+                    {
+                        "examType": "Experiments 4-5: Lists, tuples, loops, primes and Fibonacci sequence",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 4-5.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7: Strings, dictionaries and character frequency in files",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 6-7.pdf"
+                    },
+                    {
+                        "examType": "Experiments 8-9: File processing, nearly-equal strings, GCD and LCM",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 8-9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Merge, Selection and Insertion sort",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Mobile Application Development Lab",
+                "subjectCode": "6CS4-24",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-2: Android Studio, Hello World, Activity, Intent and login module",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: GUI calculator using activities and intents",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: RSS Feed application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Drawing graphical primitives",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType": "Experiment 6: SQLite database application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 6.pdf"
+                    },
+                    {
+                        "examType": "Experiment 7: GPS location application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 7.pdf"
+                    },
+                    {
+                        "examType": "Experiment 8: Writing data to SD card",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 8.pdf"
+                    },
+                    {
+                        "examType": "Experiment 9: Gaming application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Image and video handling by size",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 10.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "CY": {
+        "5": [
+             {
+                "subjectName": "Computer Graphics & Multimedia Lab",
+                "subjectCode": "5CS4-21",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-5: Line, pixel, DDA, midpoint circle and ellipse algorithms",
+                        "pdfLink": "/assets/lab/CSE/5/CGM Lab exp 1-5.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7: 2D and composite 2D transformations",
+                        "pdfLink": "/assets/lab/CSE/5/CGM Lab exp 6-10.pdf"
+                    }
+                  
+                ]
+            },
+            {
+                "subjectName": "Compiler Design Lab",
+                "subjectCode": "5CS4-22",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1: Introduction",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiments 2: Keyword/operator counting",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiments 3",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 3.pdf"
+                    },
+                     {
+                        "examType": "Experiments 4",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 4.pdf"
+                    },
+                     {
+                        "examType": "Experiments 5 to 7",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 5 to 7.pdf"
+                    },
+                     {
+                        "examType": "Experiments 8 to 10",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 8 to 10.pdf"
+                    }
+
+                    
+                ]
+            },
+            {
+                "subjectName": "Analysis of Algorithms Lab",
+                "subjectCode": "5CS4-23",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Quicksort and execution-time graph",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: Parallelized Merge Sort and execution-time graph",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiments 3-5: Topological ordering, Warshall, 0/1 Knapsack",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 3-4.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7:Dijsktra, Kruskal",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 6-8.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Advance Java Lab",
+                "subjectCode": "5CS4-24",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Swing, MVC, applets and basic Swing components",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: JDBC and Java network programming",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: RMI, JNDI, serialization and internationalization",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: J2EE architecture and web application concepts",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Servlets, request/response, sessions and filters",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType": "Experiment 6: JSP, EL, tag extensions and JSTL",
+                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 6.pdf"
+                    }
+                ]
+            }
+        ],
+        "6": [
+            {
+                "subjectName": "Digital Image Processing Lab",
+                "subjectCode": "6CS4-21",
+                "examPapers": [
+                    {
+                        "examType": "Experiment 1: Point transformations, thresholding, histogram and histogram equalization",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 1.pdf"
+                    },
+                    {
+                        "examType": "Experiment 2: Geometric transformations and 2D Fourier transform",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: Linear filtering using convolution and highly selective filters",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: Frequency-domain filters, nonlinear filtering and edge detection",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Morphological operations: erosion, dilation, opening and closing",
+                        "pdfLink": "/assets/lab/CSE/6/Digital Image Processing Lab Exp 5.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Machine Learning Lab",
+                "subjectCode": "6CS4-22",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-2: FIND-S and Candidate-Elimination algorithms using CSV data",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: Decision tree using ID3",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: Artificial Neural Network with backpropagation",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiments 5-6: Naive Bayes classification and evaluation metrics",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 5-6.pdf"
+                    },
+                    {
+                        "examType": "Experiment 7: Bayesian network for heart-disease diagnosis",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 7.pdf"
+                    },
+                    {
+                        "examType": "Experiment 8: EM and k-Means clustering comparison",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 8.pdf"
+                    },
+                    {
+                        "examType": "Experiment 9: k-Nearest Neighbour classification on Iris dataset",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Locally Weighted Regression with graph",
+                        "pdfLink": "/assets/lab/CSE/6/Machine Learning Lab Exp 10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Python Lab",
+                "subjectCode": "6CS4-23",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-3: Data types, distance, command-line arguments, even numbers and loops",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 1-3.pdf"
+                    },
+                    {
+                        "examType": "Experiments 4-5: Lists, tuples, loops, primes and Fibonacci sequence",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 4-5.pdf"
+                    },
+                    {
+                        "examType": "Experiments 6-7: Strings, dictionaries and character frequency in files",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 6-7.pdf"
+                    },
+                    {
+                        "examType": "Experiments 8-9: File processing, nearly-equal strings, GCD and LCM",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 8-9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Merge, Selection and Insertion sort",
+                        "pdfLink": "/assets/lab/CSE/6/Python Lab Exp 10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName": "Mobile Application Development Lab",
+                "subjectCode": "6CS4-24",
+                "examPapers": [
+                    {
+                        "examType": "Experiments 1-2: Android Studio, Hello World, Activity, Intent and login module",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType": "Experiment 3: GUI calculator using activities and intents",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 3.pdf"
+                    },
+                    {
+                        "examType": "Experiment 4: RSS Feed application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 4.pdf"
+                    },
+                    {
+                        "examType": "Experiment 5: Drawing graphical primitives",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType": "Experiment 6: SQLite database application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 6.pdf"
+                    },
+                    {
+                        "examType": "Experiment 7: GPS location application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 7.pdf"
+                    },
+                    {
+                        "examType": "Experiment 8: Writing data to SD card",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 8.pdf"
+                    },
+                    {
+                        "examType": "Experiment 9: Gaming application",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 9.pdf"
+                    },
+                    {
+                        "examType": "Experiment 10: Image and video handling by size",
+                        "pdfLink": "/assets/lab/CSE/6/Mobile Application Development Lab Exp 10.pdf"
+                    }
+                ]
+            }
+        ]
+    }
+}

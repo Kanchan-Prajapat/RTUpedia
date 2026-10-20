@@ -5,6 +5,7 @@ import yearFourth from "../data/rtu_fourth_year.json";
 
 import yearFirstLab from "../data/rtu_first_year_lab.json";
 import yearSecondLab from "../data/rtu_second_year_lab.json";
+import yearThirdLab from "../data/rtu_third_year_lab.json";
 
 /* =========================
    BACKEND
@@ -90,9 +91,7 @@ export const fetchBranches = (yearSlug) => {
   );
 };
 
-/* =========================
-   LOAD NOTES
-========================= */
+
 
 /* =========================
    LOAD NOTES
@@ -297,6 +296,7 @@ export const fetchPYQFromBackend = async (
    LOAD LABS
 ========================= */
 
+
 export const loadLabs = (
   yearSlug,
   branch,
@@ -307,7 +307,12 @@ export const loadLabs = (
   const cacheKey =
     `${yearSlug}-${branch}-${sem}`;
 
-  if (cache.lab[cacheKey]) {
+  if (
+    Object.prototype.hasOwnProperty.call(
+      cache.lab,
+      cacheKey
+    )
+  ) {
     return cache.lab[cacheKey];
   }
 
@@ -322,19 +327,25 @@ export const loadLabs = (
 
   /* ---------- SECOND YEAR ---------- */
 
-  else if (
-    yearSlug === "second-year"
-  ) {
+  else if (yearSlug === "second-year") {
     const branchKey =
-      findBranchKey(
-        yearSecondLab,
-        branch
-      );
+      findBranchKey(yearSecondLab, branch);
 
     if (branchKey) {
       subjects =
-        yearSecondLab?.[branchKey]?.[sem] ||
-        [];
+        yearSecondLab?.[branchKey]?.[sem] || [];
+    }
+  }
+
+  /* ---------- THIRD YEAR ---------- */
+
+  else if (yearSlug === "third-year") {
+    const branchKey =
+      findBranchKey(yearThirdLab, branch);
+
+    if (branchKey) {
+      subjects =
+        yearThirdLab?.[branchKey]?.[sem] || [];
     }
   }
 
@@ -342,8 +353,7 @@ export const loadLabs = (
     subjects = [];
   }
 
-  cache.lab[cacheKey] =
-    subjects;
+  cache.lab[cacheKey] = subjects;
 
   return subjects;
 };

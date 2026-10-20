@@ -62,8 +62,6 @@
       { "code": "5CS4-04", "name": "Computer Graphics & Multimedia", "credits": 3 },
       { "code": "5CS4-05", "name": " Analysis of Algorithms", "credits": 3 },
       { "code": "5CS4-11", "name": " Wireless Communication", "credits": 2 },
-      { "code": "5CS4-12", "name": "Human Computer Interaction", "credits": 2 },
-      { "code": "5CS4-13", "name": "Bioinformatics", "credits": 2 },
       { "code": "5CS4-21", "name": "Computer Graphics & Multimedia Lab", "credits": 1 },
       { "code": "5CS4-22", "name": "Compiler Design Lab", "credits": 1 },
       { "code": "5CS4-23", "name": "Analysis of Algorithms Lab", "credits": 1 },
