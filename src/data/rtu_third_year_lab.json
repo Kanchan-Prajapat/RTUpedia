@@ -43,7 +43,12 @@
                      {
                         "examType": "Experiments 8 to 10: symbol table and patterns",
                         "pdfLink": "/assets/lab/CSE/5/CD Lab exp 8 to 10.pdf"
+                    },
+                     {
+                        "examType": "Experiments 11 to 13: YACC and CFG",
+                        "pdfLink": "/assets/lab/CSE/5/CD Lab exp 11 to 13.pdf"
                     }
+
 
                     
                 ]
@@ -67,7 +72,12 @@
                     {
                         "examType": "Experiments 5-7:Dijsktra, Kruskal",
                         "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 5 to 7.pdf"
+                    },
+                       {
+                        "examType": "Experiments 8-10:Prims, DFS, BFS and n-Queens",
+                        "pdfLink": "/assets/lab/CSE/5/AOA Lab exp 8 to 10.pdf"
                     }
+
                 ]
             },
             {
