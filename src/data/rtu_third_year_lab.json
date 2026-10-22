@@ -85,28 +85,16 @@
                 "subjectCode": "5CS4-24",
                 "examPapers": [
                     {
-                        "examType": "Experiment 1: Swing, MVC, applets and basic Swing components",
-                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 1.pdf"
+                        "examType": "Experiment 1 to 3: Swing, MVC, applets and basic Swing components, JDBC",
+                        "pdfLink": "/assets/lab/CSE/5/Adv Java Lab exp 1 to 3.pdf"
                     },
                     {
-                        "examType": "Experiment 2: JDBC and Java network programming",
-                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 2.pdf"
+                        "examType": "Experiment 4 to 6: RMI, Server-client and Apache tomcat",
+                        "pdfLink": "/assets/lab/CSE/5/Adv Java Lab exp 4 to 6.pdf"
                     },
                     {
-                        "examType": "Experiment 3: RMI, JNDI, serialization and internationalization",
-                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 3.pdf"
-                    },
-                    {
-                        "examType": "Experiment 4: J2EE architecture and web application concepts",
-                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 4.pdf"
-                    },
-                    {
-                        "examType": "Experiment 5: Servlets, request/response, sessions and filters",
-                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 5.pdf"
-                    },
-                    {
-                        "examType": "Experiment 6: JSP, EL, tag extensions and JSTL",
-                        "pdfLink": "/assets/lab/CSE/5/Advance Java Lab Exp 6.pdf"
+                        "examType": "Experiment 7 and 8: Servlet and JSP",
+                        "pdfLink": "/assets/lab/CSE/5/Adv Java Lab exp 7 and 8.pdf"
                     }
                 ]
             }
