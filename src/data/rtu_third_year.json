@@ -96,23 +96,18 @@
         "subjectCode": "5CS4-03",
         "units": [
           {
-            "unitName": "Introduction: Objective, scope and outcome of the course.",
-            "notesPDF": "/assets/notes/CSE/5/OS Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=operating-system-unit1"
-          },
-          {
             "unitName": "Introduction and history of operating systems: structure and operations; processes and files. IPC, mutual exclusion, semaphores, wait/signal, process scheduling, critical sections, threads and multithreading.",
-            "notesPDF": "/assets/notes/CSE/5/OS Unit 2.pdf",
+            "notesPDF": "/assets/notes/CSE/5/OS Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=operating-system-unit2"
           },
           {
             "unitName": "Memory management: contiguous allocation, virtual memory, paging, page-table structure, demand paging, page replacement, thrashing, segmentation and case study.",
-            "notesPDF": "/assets/notes/CSE/5/OS Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/5/OS Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=operating-system-unit3"
           },
           {
             "unitName": "Deadlock: shared resources, resource allocation and scheduling, resource graphs, detection, avoidance and prevention. Device management: devices, drivers, device handling, disk scheduling algorithms and policies.",
-            "notesPDF": "/assets/notes/CSE/5/OS Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/5/OS Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=operating-system-unit4"
           },
           {
@@ -122,7 +117,7 @@
           },
           {
             "unitName": "UNIX and Linux operating systems as case studies; real-time operating systems and mobile OS case studies.",
-            "notesPDF": "/assets/notes/CSE/5/OS Unit 6.pdf",
+            "notesPDF": "/assets/notes/CSE/5/OS Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=operating-system-unit6"
           }
         ],
