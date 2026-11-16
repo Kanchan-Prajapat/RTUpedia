@@ -24,6 +24,16 @@ const cache = {
   extraMore: {}
 };
 
+
+/* =========================
+   NORMALIZE
+========================= */
+
+const normalize = (str) =>
+  String(str || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+    
 /* =========================
    GET YEAR JSON
 ========================= */
