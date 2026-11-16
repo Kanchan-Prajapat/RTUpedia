@@ -47,14 +47,6 @@ const getYearJSON = (yearSlug) => {
   }
 };
 
-/* =========================
-   NORMALIZE
-========================= */
-
-const normalize = (str) =>
-  String(str || "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]/g, "");
 
 /* =========================
    FIND BRANCH KEY
@@ -171,6 +163,8 @@ export const loadNotes = (yearSlug, branch, semester) => {
 
 
 
+
+
 /* =========================
    FETCH PYQs
 ========================= */
@@ -183,49 +177,24 @@ export const fetchPYQFromBackend = async (
 ) => {
   const sem = String(semester);
 
-  if (!Array.isArray(subjects) || subjects.length === 0) {
-    return [];
-  }
-
-  // Include subject names to prevent incorrect cache reuse
-  const subjectSignature = subjects
-    .map((s) => `${s.subjectCode}-${s.subjectName}`)
-    .join("|");
-
   const cacheKey =
-    `${yearSlug}-${branch}-${sem}-${subjectSignature}`;
+    `${yearSlug}-${branch}-${sem}`;
 
-  if (
-    Object.prototype.hasOwnProperty.call(
-      cache.pyq,
-      cacheKey
-    )
-  ) {
+  if (cache.pyq[cacheKey]) {
     return cache.pyq[cacheKey];
   }
 
-  // Normalize spaces, punctuation, and "&" / "and"
-  const normalizeSubject = (str) =>
-    String(str || "")
-      .toLowerCase()
-      .replace(/&/g, " and ")
-      .replace(/\band\b/g, " ")
-      .replace(/[^a-z0-9]/g, "");
+  try {
+    /* Prevent crash */
+    if (!Array.isArray(subjects)) {
+      console.error(
+        "Subjects is not an array:",
+        subjects
+      );
 
-  // Handle known subject naming variations
-  const getSubjectAliases = (name) => {
-    const normalized = normalizeSubject(name);
-
-    const aliases = [normalized];
-
-    if (normalized === "analysisofalgorithms") {
-      aliases.push("analysisofalgorithm");
+      return [];
     }
 
-    return [...new Set(aliases)];
-  };
-
-  try {
     const response = await fetch(
       `${BACKEND_BASE}/api/pyq/${encodeURIComponent(
         branch
@@ -233,7 +202,11 @@ export const fetchPYQFromBackend = async (
     );
 
     if (!response.ok) {
-      console.error("PYQ API failed:", response.status);
+      console.error(
+        "PYQ API failed:",
+        response.status
+      );
+
       return [];
     }
 
@@ -250,31 +223,36 @@ export const fetchPYQFromBackend = async (
     }));
 
     files.forEach((file) => {
-      const fileName = normalizeSubject(file.title);
+      const fileName =
+        normalize(file.title);
 
       groups.forEach((group) => {
-        const aliases = getSubjectAliases(group.subjectName);
+        const subjectName =
+          normalize(group.subjectName);
 
-        const nameMatch = aliases.some((alias) =>
-          fileName.includes(alias)
-        );
+        const subjectCode =
+          normalize(group.subjectCode);
 
-        const subjectCode = normalizeSubject(
-          group.subjectCode
-        );
+        if (
+          subjectName &&
+          fileName.includes(subjectName)
+        ) {
+          const year =
+            file.title.match(/\d{4}/)?.[0] ||
+            "Unknown";
 
-        const codeMatch =
+          group.pyqs.push({
+            title: `${year} Paper`,
+            pdf: file.pdf
+          });
+
+          return;
+        }
+
+        if (
           subjectCode &&
-          fileName.includes(subjectCode);
-
-        if (nameMatch || codeMatch) {
-          // Avoid duplicate entries
-          const alreadyAdded = group.pyqs.some(
-            (paper) => paper.pdf === file.pdf
-          );
-
-          if (alreadyAdded) return;
-
+          fileName.includes(subjectCode)
+        ) {
           const year =
             file.title.match(/\d{4}/)?.[0] ||
             "Unknown";
@@ -287,21 +265,27 @@ export const fetchPYQFromBackend = async (
       });
     });
 
-    const finalGroups = groups.filter(
-      (group) => group.pyqs.length > 0
-    );
+    const finalGroups =
+      groups.filter(
+        (group) =>
+          group.pyqs.length > 0
+      );
 
-    cache.pyq[cacheKey] = finalGroups;
-
-    console.log("✅ PYQ matching result:", finalGroups);
+    cache.pyq[cacheKey] =
+      finalGroups;
 
     return finalGroups;
 
   } catch (error) {
-    console.error("PYQ fetch failed:", error);
+    console.error(
+      "PYQ fetch failed:",
+      error
+    );
+
     return [];
   }
 };
+
 
 /* =========================
    LOAD LABS
