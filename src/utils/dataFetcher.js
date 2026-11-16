@@ -183,24 +183,49 @@ export const fetchPYQFromBackend = async (
 ) => {
   const sem = String(semester);
 
-  const cacheKey =
-    `${yearSlug}-${branch}-${sem}`;
+  if (!Array.isArray(subjects) || subjects.length === 0) {
+    return [];
+  }
 
-  if (cache.pyq[cacheKey]) {
+  // Include subject names to prevent incorrect cache reuse
+  const subjectSignature = subjects
+    .map((s) => `${s.subjectCode}-${s.subjectName}`)
+    .join("|");
+
+  const cacheKey =
+    `${yearSlug}-${branch}-${sem}-${subjectSignature}`;
+
+  if (
+    Object.prototype.hasOwnProperty.call(
+      cache.pyq,
+      cacheKey
+    )
+  ) {
     return cache.pyq[cacheKey];
   }
 
-  try {
-    /* Prevent crash */
-    if (!Array.isArray(subjects)) {
-      console.error(
-        "Subjects is not an array:",
-        subjects
-      );
+  // Normalize spaces, punctuation, and "&" / "and"
+  const normalizeSubject = (str) =>
+    String(str || "")
+      .toLowerCase()
+      .replace(/&/g, " and ")
+      .replace(/\band\b/g, " ")
+      .replace(/[^a-z0-9]/g, "");
 
-      return [];
+  // Handle known subject naming variations
+  const getSubjectAliases = (name) => {
+    const normalized = normalizeSubject(name);
+
+    const aliases = [normalized];
+
+    if (normalized === "analysisofalgorithms") {
+      aliases.push("analysisofalgorithm");
     }
 
+    return [...new Set(aliases)];
+  };
+
+  try {
     const response = await fetch(
       `${BACKEND_BASE}/api/pyq/${encodeURIComponent(
         branch
@@ -208,11 +233,7 @@ export const fetchPYQFromBackend = async (
     );
 
     if (!response.ok) {
-      console.error(
-        "PYQ API failed:",
-        response.status
-      );
-
+      console.error("PYQ API failed:", response.status);
       return [];
     }
 
@@ -229,36 +250,31 @@ export const fetchPYQFromBackend = async (
     }));
 
     files.forEach((file) => {
-      const fileName =
-        normalize(file.title);
+      const fileName = normalizeSubject(file.title);
 
       groups.forEach((group) => {
-        const subjectName =
-          normalize(group.subjectName);
+        const aliases = getSubjectAliases(group.subjectName);
 
-        const subjectCode =
-          normalize(group.subjectCode);
+        const nameMatch = aliases.some((alias) =>
+          fileName.includes(alias)
+        );
 
-        if (
-          subjectName &&
-          fileName.includes(subjectName)
-        ) {
-          const year =
-            file.title.match(/\d{4}/)?.[0] ||
-            "Unknown";
+        const subjectCode = normalizeSubject(
+          group.subjectCode
+        );
 
-          group.pyqs.push({
-            title: `${year} Paper`,
-            pdf: file.pdf
-          });
-
-          return;
-        }
-
-        if (
+        const codeMatch =
           subjectCode &&
-          fileName.includes(subjectCode)
-        ) {
+          fileName.includes(subjectCode);
+
+        if (nameMatch || codeMatch) {
+          // Avoid duplicate entries
+          const alreadyAdded = group.pyqs.some(
+            (paper) => paper.pdf === file.pdf
+          );
+
+          if (alreadyAdded) return;
+
           const year =
             file.title.match(/\d{4}/)?.[0] ||
             "Unknown";
@@ -271,23 +287,18 @@ export const fetchPYQFromBackend = async (
       });
     });
 
-    const finalGroups =
-      groups.filter(
-        (group) =>
-          group.pyqs.length > 0
-      );
+    const finalGroups = groups.filter(
+      (group) => group.pyqs.length > 0
+    );
 
-    cache.pyq[cacheKey] =
-      finalGroups;
+    cache.pyq[cacheKey] = finalGroups;
+
+    console.log("✅ PYQ matching result:", finalGroups);
 
     return finalGroups;
 
   } catch (error) {
-    console.error(
-      "PYQ fetch failed:",
-      error
-    );
-
+    console.error("PYQ fetch failed:", error);
     return [];
   }
 };
