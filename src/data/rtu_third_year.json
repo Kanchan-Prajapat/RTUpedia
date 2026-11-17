@@ -8,27 +8,27 @@
           {
             "unitName": "Introduction to information theory: Uncertainty, Information and Entropy, Information measures for continuous random variables, source coding theorem. Discrete Memoryless channels, Mutual information, Conditional entropy.",
             "notesPDF": "/assets/notes/CSE/5/ITC Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=itc-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLdFco-rRUDt0ppHzJFRVvrKia5gjwFOwc&si=dLWzx9u3DAm8nSav"
           },
           {
             "unitName": "Source coding schemes for data compaction: Prefix code, Huffman code, Shannon-Fano code & Lempel-Ziv coding; channel capacity. Channel coding theorem. Shannon limit.",
             "notesPDF": "/assets/notes/CSE/5/ITC Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=itc-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLdFco-rRUDt09gkxIg65CQY_JJTtMvkoC&si=HHu2sf_vYF1x8YLd"
           },
           {
             "unitName": "Linear Block Code: Introduction to error correcting codes, coding & decoding of linear block code, minimum distance consideration, conversion of non-systematic form of matrices into systematic form.",
             "notesPDF": "/assets/notes/CSE/5/ITC Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=itc-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLdFco-rRUDt0XgoL4XU6WLWbGerGEOwCn&si=rsdO4OS9k3VsDMVG"
           },
           {
             "unitName": "Cyclic Code: Code Algebra, basic properties of Galois fields (GF), polynomial operations over Galois fields, generating cyclic code by generating polynomial, parity check polynomial. Encoder & decoder for cyclic codes.",
             "notesPDF": "/assets/notes/CSE/5/ITC Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=itc-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdFco-rRUDt0HRh9DqnZBpGQ3K6ran5LE&si=QAsDsvqT8cHmJ2CK"
           },
           {
             "unitName": "Convolutional Code: Convolutional encoders of different rates, code tree, trellis and state diagram. Maximum likelihood decoding of convolutional code: Viterbi Algorithm, free distance of a convolutional code.",
             "notesPDF": "/assets/notes/CSE/5/ITC Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=itc-unit6"
+            "lectureLink": "https://youtube.com/playlist?list=PLdFco-rRUDt13Jp24BGWWX_pnh3F2ox_l&si=lUMh9gT2H0Tds_2_"
           }
         ],
         "pyqs": [
@@ -53,27 +53,27 @@
           {
             "unitName": "Compiler, Translator, Interpreter definition, phases of compiler, bootstrapping, review of finite automata, lexical analyzer, input, recognition of tokens, LEX and lexical analyzer generator, error handling.",
             "notesPDF": "/assets/notes/CSE/5/CD Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLXjUVD4JNLqE&si=9TeMizKME5gJB2iK"
           },
           {
             "unitName": "Review of CFG, ambiguity of grammars, introduction to parsing. Top-down parsing, LL grammars and parsers, recursive descent parsing, predictive parsers, bottom-up parsing, shift-reduce parsing, LR parsers, SLR, CLR and LALR parsing tables, operator precedence parsing, YACC and error handling.",
             "notesPDF": "/assets/notes/CSE/3/CD Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLNIZqTaf1QaI&si=2UD2tzf0k6rTgiWs"
           },
           {
             "unitName": "Syntax directed definitions; syntax trees, S-attributed and L-attributed definitions, top-down translation. Postfix notation, DAG, three-address code, TAC for control structures, triples and quadruples, Boolean expressions and control structures.",
             "notesPDF": "/assets/notes/CSE/5/CD Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLARU4gs6uePE&si=5NoCmgg0fusf8SHM"
           },
           {
             "unitName": "Storage organization; storage allocation strategies, activation records, local/non-local names, parameter passing, symbol table organization and data structures.",
             "notesPDF": "/assets/notes/CSE/5/CD Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLYi6jmNjs_vQ&si=2PNHfAkz_7QwAzm7"
           },
           {
             "unitName": "Basic blocks and control-flow graphs; DAG representation, optimization, loop optimization, global data-flow analysis, loop-invariant computation, peephole optimization, code-generator design and code generation from DAG.",
             "notesPDF": "/assets/notes/CSE/5/CD Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit6"
+            "lectureLink": "https://youtube.com/playlist?list=PLZhb5tDk91Eg&si=u0rsl9uaDKJ8NQBa"
           }
         ],
         "pyqs": [
@@ -103,7 +103,7 @@
           {
             "unitName": "Memory management: contiguous allocation, virtual memory, paging, page-table structure, demand paging, page replacement, thrashing, segmentation and case study.",
             "notesPDF": "/assets/notes/CSE/5/OS Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=operating-system-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PL8tc66sMn9Kjt2Wf5H9O-TMqZFQukoCQ1&si=NguF7iwnQNA1mQG5"
           },
           {
             "unitName": "Deadlock: shared resources, resource allocation and scheduling, resource graphs, detection, avoidance and prevention. Device management: devices, drivers, device handling, disk scheduling algorithms and policies.",
@@ -113,12 +113,12 @@
           {
             "unitName": "File management: file concept, types and structures, directory structure, case studies, access methods and matrices, file security and user authentication.",
             "notesPDF": "/assets/notes/CSE/5/OS Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=operating-system-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLySKRj7KSLYgS9jVyonZTFpiYkIzZXF2-&si=FqMc5rjHQX9jlxN3"
           },
           {
             "unitName": "UNIX and Linux operating systems as case studies; real-time operating systems and mobile OS case studies.",
             "notesPDF": "/assets/notes/CSE/5/OS Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=operating-system-unit6"
+            "lectureLink": "https://youtube.com/playlist?list=PLbsxm8kDXL_w&si=s13Ew9c_56XQNFRs"
           }
         ],
         "pyqs": [
