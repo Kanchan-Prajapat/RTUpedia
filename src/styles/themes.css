@@ -1,8 +1,9 @@
-/* ================================
-   LIGHT THEME (Default)
-================================ */
-:root {
 
+/* =================================
+   LIGHT THEME (DEFAULT)
+================================= */
+
+:root {
   --color-primary: #0C2B4E;
   --color-secondary: #FFC107;
   --color-tertiary: #17243B;
@@ -12,6 +13,14 @@
 
   --color-card-bg: #FFFFFF;
   --color-border: #D6D9DD;
+
+  /* Additional text colors */
+  --color-heading: #0C2B4E;
+  --color-muted: #64748B;
+
+  /* Surfaces */
+  --color-surface: #F1F5F9;
+  --color-surface-hover: #E8EEF5;
 
   /* Accordion */
   --accordion-bg: #F7F7F7;
@@ -27,82 +36,134 @@
   --select-bg: #FFFFFF;
   --select-border: #B8B8B8;
 
-    --pdf-color: #ef4444;
-  --pdf-bg: rgba(239,68,68,0.08);
+  /* Resources */
+  --pdf-color: #DC2626;
+  --pdf-bg: rgba(239, 68, 68, 0.08);
 
-  --video-color: #3b82f6;
-  --video-bg: rgba(59,130,246,0.08);
+  --video-color: #2563EB;
+  --video-bg: rgba(59, 130, 246, 0.08);
+
+  /* Status */
+  --success-color: #15803D;
+  --warning-color: #B45309;
+  --danger-color: #DC2626;
 
 
+ --navbar-bg: #0C2B4E;
+  --navbar-text: #FFFFFF;
+  --navbar-icon: #FFFFFF;
+  --navbar-hover: #FFC107;
+  --navbar-active: #FFC107;
+  --navbar-border: #1E4168;
 }
 
 
-/* ================================
-   DARK MODE (New Modern Theme)
-================================ */
+/* =================================
+   DARK THEME
+   MIDNIGHT NAVY + ELECTRIC BLUE
+================================= */
+
 [data-theme="dark"] {
-
   /* TEXT */
-  --color-primary: #FFFFFF;
-  --color-text: #94A3B8;
+  --color-primary: #F8FAFC;
+  --color-text: #CBD5E1;
 
-  /* ACCENT */
-  --color-secondary: #3B82F6;
-  --color-tertiary: #2563EB;
+  --color-heading: #F8FAFC;
+  --color-muted: #94A3B8;
+
+  /* ACCENTS */
+  --color-secondary: #F5C451;
+  --color-tertiary: #60A5FA;
 
   /* BACKGROUNDS */
-  --color-background: #0F172A;
-  --color-card-bg: #1E293B;
+  --color-background: #0B1120;
+  --color-card-bg: #141F33;
+
+  --color-surface: #1C2A42;
+  --color-surface-hover: #243650;
 
   /* BORDERS */
-  --color-border: #334155;
+  --color-border: #26364F;
 
   /* ACCORDION */
-  --accordion-bg: #1E293B;
-  --accordion-hover: #263449;
-  --accordion-text: #FFFFFF;
+  --accordion-bg: #141F33;
+  --accordion-hover: #1C2A42;
+  --accordion-text: #F8FAFC;
 
   /* TABS */
-  --tab-bg: #1E293B;
-  --tab-active-bg: #3B82F6;
+  --tab-bg: #1C2A42;
+  --tab-active-bg: #2563EB;
   --tab-active-text: #FFFFFF;
 
   /* SELECT */
-  --select-bg: #1E293B;
-  --select-border: #334155;
+  --select-bg: #141F33;
+  --select-border: #33445F;
 
-   --pdf-bg: rgba(239,68,68,0.15);
-  --video-bg: rgba(59,130,246,0.15);
+  /* RESOURCES */
+  --pdf-color: #F87171;
+  --pdf-bg: rgba(248, 113, 113, 0.13);
+
+  --video-color: #60A5FA;
+  --video-bg: rgba(96, 165, 250, 0.13);
+
+  /* STATUS */
+  --success-color: #4ADE80;
+  --warning-color: #FBBF24;
+  --danger-color: #F87171;
+
+
+  /* NAVBAR */
+--navbar-bg: #111C30;
+--navbar-text: #F8FAFC;
+--navbar-icon: #CBD5E1;
+--navbar-hover: #60A5FA;
+--navbar-active: #F5C451;
+--navbar-border: #26364F;
 }
 
 
-/* ================================
-   APPLY COLORS
-================================ */
+/* =================================
+   GLOBAL THEME APPLICATION
+================================= */
 
-/* BODY */
 body {
   background-color: var(--color-background);
   color: var(--color-text);
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* CARDS */
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+}
+
+/* Cards */
+
 .resource-card,
 .pyq-subject-box,
 .ui-card {
-
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
-
+  color: var(--color-text);
+  transition: background-color 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease;
 }
 
-/* SUBJECT LEFT ACCENT */
+/* Subject left accent */
+
 .resource-card {
   border-left: 4px solid var(--color-secondary);
 }
 
+/* Accordion */
 
-/* ACCORDION */
 .accordion {
   background: var(--accordion-bg);
   border: 1px solid var(--color-border);
@@ -117,25 +178,25 @@ body {
   background: var(--accordion-hover);
 }
 
-
-/* ACCORDION BODY */
 .accordion-body {
   background: var(--color-card-bg);
+  color: var(--color-text);
 }
 
+/* Select */
 
-/* SELECT */
 select {
   background: var(--select-bg);
   border: 1px solid var(--select-border);
   color: var(--color-primary);
 }
 
+/* Tabs */
 
-/* TABS */
 .rt-tab-btn {
   background: var(--tab-bg);
-  color: var(--color-primary);
+  color: var(--color-text);
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 .rt-tab-btn.active {
@@ -143,11 +204,11 @@ select {
   color: var(--tab-active-text);
 }
 
+/* Links */
 
-/* LINKS */
 .resource-link,
 .pyq-paper-link {
-  color: var(--color-primary);
+  color: var(--color-tertiary);
 }
 
 .resource-link:hover,
@@ -155,21 +216,37 @@ select {
   opacity: 0.8;
 }
 
+/* Unit rows */
 
-/* UNIT ROW */
 .unit-row {
-  background: rgba(255,255,255,0.04);
+  background: var(--color-surface);
 }
 
 .unit-row:hover {
-  background: rgba(255,255,255,0.08);
+  background: var(--color-surface-hover);
 }
 
+/* Form controls */
 
-body,
+input,
+textarea {
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+/* Theme transitions */
+
 .resource-card,
 .ui-card,
-.rt-tab-btn,
-select {
-  transition: background 0.25s ease, color 0.25s ease, border 0.25s ease;
+.pyq-subject-box,
+.accordion,
+.accordion-header,
+.accordion-body,
+select,
+input,
+textarea {
+  transition: background-color 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease;
 }

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-
+import "../styles/about.css";
 import { getReviews } from "../utils/reviewApi";
 import ReviewCard from "../components/Review/ReviewCard";
 import  { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBullseye } from "@fortawesome/free-solid-svg-icons";
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 const AboutUs = () => {
   const [reviews, setReviews] = useState([]);
@@ -121,6 +124,61 @@ useEffect(() => {
         </p>
 
 
+          <div className="mission-vision">
+
+        <div className="about-info-card">
+         {/* Mission Icon */}
+<div className="about-icon">
+  <FontAwesomeIcon icon={faBullseye} />
+</div>
+
+          <h2>Our Mission</h2>
+
+          <p>
+            Our mission is to make academic preparation simpler,
+            more accessible, and more organized for Rajasthan
+            Technical University (RTU) students. We aim to bring
+            essential study materials, previous year question
+            papers, syllabus resources, and academic tools
+            together on one platform.
+          </p>
+
+          <p>
+            Through structured learning resources and a
+            student-friendly experience, RTUpedia helps students
+            prepare confidently for their semester examinations
+            and achieve their academic goals.
+          </p>
+        </div>
+
+        <div className="about-info-card">
+        {/* Vision Icon */}
+<div className="about-icon">
+  <FontAwesomeIcon icon={faRocket} />
+</div>
+
+          <h2>Our Vision</h2>
+
+          <p>
+            Our vision is to build a reliable and accessible
+            digital learning platform that supports engineering
+            students throughout their academic journey.
+          </p>
+
+          <p>
+            We aspire to continuously improve RTUpedia by
+            expanding academic resources, introducing useful
+            learning tools, and creating a supportive educational
+            ecosystem where students can find the resources they
+            need in one place.
+          </p>
+        </div>
+
+      </div>
+
+
+
+
         {/* What We Offer */}
         <div style={styles.card}>
           <h2 style={styles.sectionTitle}>What We Offer</h2>
@@ -134,6 +192,85 @@ useEffect(() => {
             ※ Student-first features and tools  
           </p>    
         </div>
+
+          <div className="resource-organization">
+
+        <div className="section-heading">
+          <h2>How We Organize Academic Resources</h2>
+
+          <p>
+            Finding the right study material should not be
+            complicated. RTUpedia organizes academic resources
+            systematically so students can easily find materials
+            according to their academic requirements.
+          </p>
+        </div>
+
+        <div className="resource-grid">
+
+          <div className="resource-card">
+            <span className="resource-number">01</span>
+            <h3>Academic Year</h3>
+            <p>
+              Resources are divided into first, second, third,
+              and fourth academic years to help students
+              navigate according to their current year.
+            </p>
+          </div>
+
+          <div className="resource-card">
+            <span className="resource-number">02</span>
+            <h3>Branch-wise Organization</h3>
+            <p>
+              Study materials are organized according to
+              engineering branches, making it easier to find
+              relevant subjects and resources.
+            </p>
+          </div>
+
+          <div className="resource-card">
+            <span className="resource-number">03</span>
+            <h3>Semester-wise Subjects</h3>
+            <p>
+              Subjects are arranged semester-wise so students
+              can access the academic content relevant to
+              their current semester.
+            </p>
+          </div>
+
+          <div className="resource-card">
+            <span className="resource-number">04</span>
+            <h3>Multiple Learning Resources</h3>
+            <p>
+              Students can explore subject notes, previous year
+              question papers, lab materials, syllabus,
+              important questions, and additional study resources.
+            </p>
+          </div>
+
+          <div className="resource-card">
+            <span className="resource-number">05</span>
+            <h3>Academic Tools</h3>
+            <p>
+              Useful tools such as the RTU SGPA Calculator help
+              students with academic calculations and make
+              their learning experience more convenient.
+            </p>
+          </div>
+
+          <div className="resource-card">
+            <span className="resource-number">06</span>
+            <h3>Continuous Improvement</h3>
+            <p>
+              We aim to improve our platform by updating
+              available resources, considering student feedback,
+              and making academic information easier to access.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
 
         {/* ================= HOME SEO CONTENT ================= */}
 

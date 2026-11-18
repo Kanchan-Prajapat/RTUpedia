@@ -1,12 +1,12 @@
-// src/components/UI/LoadingSpinner.js
 
 import React from 'react';
+import './LoadingSpinner.css';
 
 const LoadingSpinner = () => {
   return (
-    <div style={{ textAlign: 'center', padding: '40px' }}>
+    <div className="loading-container">
       <div className="spinner"></div>
-      <p style={{ marginTop: '15px', color: 'var(--color-text)' }}>Loading resources...</p>
+      <p className="loading-text">Loading resources...</p>
     </div>
   );
 };

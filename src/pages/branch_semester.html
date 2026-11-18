@@ -1,32 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Select Branch & Semester | SGPA</title>
   <link rel="stylesheet" href="styles.css" />
+
   <style>
+    /* =========================
+       SGPA SELECTOR CONTAINER
+    ========================= */
+
     .selector-container {
+      width: calc(100% - 40px);
       max-width: 420px;
       margin: 60px auto;
       padding: 24px;
       border-radius: 16px;
       background: var(--color-card-bg);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      color: var(--color-text);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
       border: 1px solid var(--color-border);
       text-align: center;
+      transition: background-color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
     }
 
     .selector-container h1 {
       margin-bottom: 8px;
-      color: var(--color-primary);
+      color: var(--color-heading);
       font-size: 24px;
+      font-weight: 700;
     }
 
     .selector-container p {
       margin-bottom: 18px;
-      color: var(--color-text);
+      color: var(--color-muted);
       font-size: 14px;
+      line-height: 1.6;
     }
+
+    .selector-container p strong {
+      color: var(--color-heading);
+    }
+
+    /* =========================
+       SELECTOR GROUPS
+    ========================= */
 
     .selector-group {
       margin-bottom: 16px;
@@ -37,7 +59,7 @@
       display: block;
       margin-bottom: 6px;
       font-size: 14px;
-      color: var(--color-text);
+      color: var(--color-heading);
       font-weight: 600;
     }
 
@@ -46,48 +68,105 @@
       padding: 10px 12px;
       border-radius: 8px;
       border: 1px solid var(--color-border);
-      background: var(--color-background);
+      background: var(--select-bg);
       color: var(--color-text);
       font-size: 14px;
       outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
     }
 
     .selector-select:focus {
-      border-color: var(--color-primary);
+      border-color: var(--color-tertiary);
+      box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
     }
+
+    .selector-select option {
+      background: var(--color-card-bg);
+      color: var(--color-text);
+    }
+
+    /* =========================
+       PROCEED BUTTON
+    ========================= */
 
     .selector-btn {
       width: 100%;
       margin-top: 12px;
-      padding: 10px 18px;
+      padding: 11px 18px;
       border: none;
       border-radius: 10px;
-      background: var(--color-primary);
-      color: var(--color-background);
+      background: var(--color-tertiary);
+      color: #FFFFFF;
       font-size: 15px;
+      font-weight: 600;
       cursor: pointer;
-      transition: 0.2s ease;
+      transition: background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
     .selector-btn:hover {
-      background: var(--color-tertiary);
+      background: var(--color-primary);
+      color: var(--color-background);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
     }
+
+    .selector-btn:active {
+      transform: translateY(0);
+    }
+
+    /* =========================
+       ERROR MESSAGE
+    ========================= */
 
     .selector-error {
       margin-top: 10px;
       font-size: 13px;
-      color: #e74c3c;
+      color: var(--danger-color);
       min-height: 18px;
+    }
+
+    /* =========================
+       DARK MODE POLISH
+    ========================= */
+
+    [data-theme="dark"] .selector-container {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 480px) {
+      .selector-container {
+        margin: 35px auto;
+        padding: 20px;
+      }
+
+      .selector-container h1 {
+        font-size: 21px;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="selector-container">
     <h1>RTU SGPA Calculator</h1>
-    <p>Select your <strong>branch</strong> and <strong>semester</strong> to continue.</p>
+
+    <p>
+      Select your <strong>branch</strong> and
+      <strong>semester</strong> to continue.
+    </p>
 
     <div class="selector-group">
       <label for="branch" class="selector-label">Branch</label>
+
       <select id="branch" class="selector-select">
         <option value="">-- Select Branch --</option>
         <option value="CSE">Computer Science & Engineering (CSE)</option>
@@ -102,6 +181,7 @@
 
     <div class="selector-group">
       <label for="semester" class="selector-label">Semester</label>
+
       <select id="semester" class="selector-select">
         <option value="">-- Select Semester --</option>
         <option value="1">1st Semester</option>
@@ -115,8 +195,11 @@
       </select>
     </div>
 
-    <button class="selector-btn" id="proceedBtn">Open SGPA Calculator</button>
-    <div class="selector-error" id="errorMsg"></div>
+    <button class="selector-btn" id="proceedBtn">
+      Open SGPA Calculator
+    </button>
+
+    <div class="selector-error" id="errorMsg" role="alert"></div>
   </div>
 
   <script>
@@ -126,13 +209,16 @@
       const errorMsg = document.getElementById('errorMsg');
 
       if (!branch || !sem) {
-        errorMsg.textContent = 'Please select both branch and semester.';
+        errorMsg.textContent =
+          'Please select both branch and semester.';
         return;
       }
 
       errorMsg.textContent = '';
-      // redirect with query params
-      window.location.href = `sgpa.html?branch=${encodeURIComponent(branch)}&sem=${encodeURIComponent(sem)}`;
+
+      // Redirect with query parameters
+      window.location.href =
+        `sgpa.html?branch=${encodeURIComponent(branch)}&sem=${encodeURIComponent(sem)}`;
     });
   </script>
 </body>

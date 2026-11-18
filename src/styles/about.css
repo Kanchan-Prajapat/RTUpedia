@@ -1,0 +1,199 @@
+
+/* =====================================
+   ABOUT CONTENT
+===================================== */
+
+.about-content {
+  padding: 60px 5%;
+  background: var(--color-background);
+  color: var(--color-text);
+
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* =====================================
+   MISSION & VISION
+===================================== */
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.about-info-card {
+  background: var(--color-card-bg);
+  color: var(--color-text);
+
+  padding: 35px;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(16, 47, 80, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.about-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(16, 47, 80, 0.10);
+}
+
+.about-icon {
+  font-size: 38px;
+  color: var(--color-secondary);
+  margin-bottom: 18px;
+}
+
+.about-info-card h2 {
+  font-size: 25px;
+  margin-bottom: 18px;
+  color: var(--color-heading);
+}
+
+.about-info-card p {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+
+/* =====================================
+   RESOURCE ORGANIZATION
+===================================== */
+
+.resource-organization {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  color: var(--color-heading);
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  font-size: 16px;
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
+.resource-organization .resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.resource-organization .resource-card {
+  background: var(--color-card-bg);
+  color: var(--color-text);
+
+  padding: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+
+  border-left: 1px solid var(--color-border);
+
+  box-shadow: 0 6px 20px rgba(16, 47, 80, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.25s ease;
+}
+
+.resource-organization .resource-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-secondary);
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.resource-number {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin-bottom: 15px;
+}
+
+.resource-organization .resource-card h3 {
+  font-size: 19px;
+  color: var(--color-heading);
+  margin-bottom: 12px;
+}
+
+.resource-organization .resource-card p {
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+
+/* =====================================
+   DARK MODE REFINEMENTS
+===================================== */
+
+[data-theme="dark"] .about-info-card,
+[data-theme="dark"] .resource-organization .resource-card {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+[data-theme="dark"] .about-info-card:hover,
+[data-theme="dark"] .resource-organization .resource-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 900px) {
+  .resource-organization .resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .about-content {
+    padding: 40px 5%;
+  }
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 55px;
+  }
+
+  .resource-organization .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info-card {
+    padding: 25px;
+  }
+
+  .section-heading h2 {
+    font-size: 26px;
+  }
+
+  .resource-organization .resource-card {
+    padding: 25px;
+  }
+}

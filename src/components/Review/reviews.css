@@ -1,53 +1,81 @@
+
+/* =========================
+   REVIEW CARD
+========================= */
+
 .review-card {
   background: var(--color-card-bg);
+  color: var(--color-text);
   border: 1px solid var(--color-border);
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
 }
 
-/* ⭐ Name */
+/* =========================
+   REVIEW NAME
+========================= */
+
 .review-name {
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 6px;
 }
 
-/* ⭐ Stars */
+/* =========================
+   STAR RATING
+========================= */
+
 .stars {
-  color: #f5b301;
+  color: var(--color-secondary);
   margin-bottom: 8px;
 }
 
-/* ⭐ Review text */
+/* =========================
+   REVIEW TEXT
+========================= */
+
 .review-message {
   font-size: 15px;
   line-height: 1.6;
   color: var(--color-text);
 }
 
-/* 🔥 PREVIEW MODE */
+/* Preview Mode */
+
 .review-message.preview {
   display: -webkit-box;
-  -webkit-line-clamp: 4;   /* 3–4 lines */
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-/* 🔗 Read more */
+/* =========================
+   READ MORE
+========================= */
+
 .read-more {
   display: inline-block;
   margin-top: 6px;
-  color: var(--color-primary);
+  color: var(--color-tertiary);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .read-more:hover {
+  color: var(--color-secondary);
   text-decoration: underline;
 }
 
+/* =========================
+   REVIEW GRID
+========================= */
 
 .review-preview-grid {
   display: grid;
@@ -56,6 +84,49 @@
   max-width: 1200px;
   margin: 30px auto;
 }
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   VIEW ALL BUTTON
+========================= */
+
+.view-all-btn {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--color-tertiary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.view-all-btn:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+/* =========================
+   DARK MODE POLISH
+========================= */
+
+[data-theme="dark"] .review-card {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .review-card:hover {
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 1024px) {
   .review-preview-grid {
@@ -73,26 +144,4 @@
     width: 100%;
     max-width: 380px;
   }
-}
-
-.review-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.review-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-
-.view-all-btn {
-  display: inline-block;
-  margin-top: 15px;
-  color: var(--color-primary);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.view-all-btn:hover {
-  text-decoration: underline;
 }

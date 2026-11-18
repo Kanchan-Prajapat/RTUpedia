@@ -1,81 +1,133 @@
+
 .admin-container {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
+
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 .admin-title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 /* CARD */
+
 .admin-card {
   background: var(--color-card-bg);
+  color: var(--color-text);
   border: 1px solid var(--color-border);
   border-radius: 12px;
 
   padding: 16px;
   margin-bottom: 16px;
 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.25s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
 }
 
 .admin-card:hover {
   transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
 }
 
 /* TEXT */
+
 .admin-name {
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 4px;
+  color: var(--color-heading);
 }
 
 .admin-message {
   font-size: 14px;
   margin-bottom: 8px;
   color: var(--color-text);
+  line-height: 1.6;
 }
 
 .admin-rating {
   font-size: 14px;
   margin-bottom: 10px;
+  color: var(--color-secondary);
 }
 
 /* BUTTONS */
+
 .admin-actions {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .admin-approve {
-  background: #22c55e;
+  background: #16A34A;
   border: none;
-  color: white;
+  color: #FFFFFF;
 
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
+
+  transition: background-color 0.2s ease,
+              transform 0.2s ease;
 }
 
 .admin-delete {
-  background: #ef4444;
+  background: #DC2626;
   border: none;
-  color: white;
+  color: #FFFFFF;
 
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
+
+  transition: background-color 0.2s ease,
+              transform 0.2s ease;
 }
 
 .admin-approve:hover {
-  background: #16a34a;
+  background: #15803D;
 }
 
 .admin-delete:hover {
-  background: #dc2626;
+  background: #B91C1C;
+}
+
+/* DARK MODE */
+
+[data-theme="dark"] .admin-card {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+[data-theme="dark"] .admin-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .admin-container {
+    padding: 14px;
+    margin: 20px auto;
+  }
+
+  .admin-title {
+    font-size: 22px;
+  }
+
+  .admin-card {
+    padding: 14px;
+  }
 }

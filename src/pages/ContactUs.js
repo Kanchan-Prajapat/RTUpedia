@@ -53,15 +53,22 @@ const ContactUs = () => {
 
     <h1 className="contact-title">Contact Us</h1>
 
-    <p className="contact-subtext">
-      <b>
-        Have any suggestions, queries or feedback about our content?
-        <br />
-        Then contact us on WhatsApp or email.
-      </b>
-      <br /><br />
-      We’d love to hear from you!
-    </p>
+   <p className="contact-subtext">
+  Have questions, suggestions, or feedback about RTUpedia?
+  Found an incorrect PDF, broken link, or missing study material?
+
+  <br /><br />
+
+  We are always happy to hear from students. Reach out to us
+  through email or WhatsApp, and help us make RTUpedia better
+  for everyone.
+
+  <br /><br />
+
+  Your feedback helps us improve our academic resources and
+  create a better learning experience.
+</p>
+
 
     {/* REVIEW SECTION */}
     <div className="review-section">
@@ -83,6 +90,69 @@ const ContactUs = () => {
       </form>
     </div>
 
+  </div>
+
+  
+
+</div>
+
+{/* ================= HELP & SUPPORT ================= */}
+
+<div className="contact-help-section">
+
+  <h2 className="card-title">How Can We Help You?</h2>
+
+  <p className="contact-help-intro">
+    Whether you have a question or want to help us improve
+    RTUpedia, you can reach out to us for the following:
+  </p>
+
+  <div className="contact-help-grid">
+
+    <div className="contact-help-card">
+      <i className="fas fa-file-pdf"></i>
+      <h3>Missing Study Materials</h3>
+      <p>
+        Let us know if notes, previous year papers,
+        or practical resources are missing.
+      </p>
+    </div>
+
+    <div className="contact-help-card">
+      <i className="fas fa-exclamation-circle"></i>
+      <h3>Report an Issue</h3>
+      <p>
+        Found a broken PDF link, incorrect information,
+        or an issue while using the website?
+        Please inform us.
+      </p>
+    </div>
+
+    <div className="contact-help-card">
+      <i className="fas fa-lightbulb"></i>
+      <h3>Suggestions & Feedback</h3>
+      <p>
+        Share your ideas and suggestions for new
+        features or improvements.
+      </p>
+    </div>
+
+    <div className="contact-help-card">
+      <i className="fas fa-handshake"></i>
+      <h3>General Enquiries</h3>
+      <p>
+        Contact us for general questions or
+        information about RTUpedia.
+      </p>
+    </div>
+
+  </div>
+
+  <div className="contact-email-box">
+    <p>For all enquiries, email us at:</p>
+    <a href="mailto:rtupedia@gmail.com">
+      rtupedia@gmail.com
+    </a>
   </div>
 
 </div>

@@ -31,7 +31,7 @@
 }
 
 .sgpa-card h2 {
-  color: var(--color-primary);
+  color: var(--color-heading);
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -43,8 +43,8 @@
 }
 
 .sgpa-btn {
-  background: var(--color-primary);
-  color: var(--color-background);
+  background: var(--color-tertiary);
+  color: #FFFFFF;
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
@@ -83,8 +83,8 @@
 
 
 .course-table th {
-  background: var(--color-primary);
-  color: var(--color-background);
+  background: var(--color-tertiary);
+  color: #FFFFFF;
   padding: 12px;
   border-radius: 8px 8px 0 0;
   font-size: 15px;
@@ -119,7 +119,7 @@
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid var(--color-border);
-  background-color: var(--color-background);
+  background-color: #FFFFFF;
   color: var(--color-text);
   width: 80px;
   appearance: none;
@@ -130,14 +130,14 @@
 
 /* Grade Select – Hover Row Fix */
 .course-table tr:hover .grade-select {
-  background-color: var(--color-background);
+  background-color: #FFFFFF;
   color: var(--color-text);
   border-color: var(--color-border);
 }
 
 /* Dropdown Options (LIGHT MODE) */
 .grade-select option {
-  background-color: var(--color-background);
+  background-color: #FFFFFF;
   color: var(--color-text);
 }
 
@@ -150,7 +150,7 @@
 
 [data-theme="dark"] .grade-select option {
   background-color: #0f2239 !important;
-  color: #ffffff !important;
+  color: var(--color-text) !important;
 }
 
 /* ============================
@@ -185,7 +185,7 @@
   padding: 8px 10px;
   border-radius: 8px;
   border: 1px solid var(--color-border);
-  background: var(--color-background);
+  background: var(--color-surface);
   color: var(--color-text);
   min-width: 120px;
 }
@@ -281,7 +281,7 @@
 .sgpa-result-wrapper h3 {
   font-size: 20px;
   font-weight: bold;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 10px;
 }
 
@@ -302,7 +302,7 @@
 
 /* Dark Mode Adjustment */
 [data-theme="dark"] .sgpa-value-box {
-  background: var(--color-background);
+  background: var(--color-surface);
   border-color: var(--color-secondary);
   color: var(--color-text);
 }
@@ -314,7 +314,7 @@
 .pyq-subject-box {
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
-  border-left: 4px solid var(--color-primary);
+  border-left: 4px solid var(--color-tertiary);
   border-radius: 8px;
   padding: 14px 18px;
   margin-bottom: 18px;
@@ -330,7 +330,7 @@
 .pyq-paper-link {
   display: block;
   padding: 4px 0;
-  color: var(--color-primary);
+  color: var(--color-heading);
   text-decoration: none;        /* ✅ NO underline */
   font-weight: 500;
 }
@@ -357,7 +357,7 @@
 /* Notes Subject Box (same as PYQ) */
 .pyq-subject-box {
   border: 1px solid var(--color-border);
-  border-left: 4px solid var(--color-primary);
+  border-left: 4px solid var(--color-tertiary);
   background: var(--color-card-bg);
   padding: 15px;
   margin-bottom: 18px;
@@ -368,7 +368,7 @@
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 10px;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 /* Notes unit styling */
@@ -404,7 +404,7 @@ select {
 .result-title {
   font-size: 16px;
   margin-bottom: 10px;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .result-buttons {
@@ -457,7 +457,7 @@ select {
   cursor: pointer;
 
   background: var(--tab-bg);
-  color: var(--color-primary);
+  color: var(--color-heading);
 
   transition: all 0.2s ease;
 }
@@ -499,7 +499,7 @@ select {
   border: 1px solid var(--color-border);
   resize: none;
   font-size: 14px;
-  background: var(--color-background);
+  background: var(--color-surface);
   color: var(--color-text);
 }
 
@@ -531,7 +531,7 @@ select {
   margin-bottom: 40px;
   font-size: 28px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 /* ✅ GRID LAYOUT */
@@ -592,7 +592,7 @@ select {
   left:0;
   width:100%;
   height:100%;
-  background:#000;
+  background:#0B1120;
   z-index:9999;
 }
 
@@ -632,4 +632,163 @@ select {
 .resource-link {
   cursor: pointer;
   border: none;
+}
+
+/* ================================
+   RTUPEDIA THEME REFINEMENTS
+================================ */
+
+/* SGPA calculator */
+.sgpa-card,
+.legend-box,
+.sgpa-value-box,
+.contact-container,
+.review-form textarea,
+.pyq-subject-box {
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.sgpa-card h2,
+.sgpa-result-wrapper h3,
+.sgpa-title,
+.result-title,
+.all-reviews-title {
+  color: var(--color-heading);
+}
+
+.sgpa-btn {
+  background: var(--color-tertiary);
+  color: #FFFFFF;
+}
+
+.sgpa-btn:hover {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+/* Course table */
+.course-table th {
+  background: var(--color-tertiary);
+  color: #FFFFFF;
+}
+
+.course-table tr {
+  background: var(--color-card-bg);
+}
+
+.course-table tr:hover {
+  background: var(--color-surface-hover);
+}
+
+.course-table tr:hover td {
+  color: var(--color-text) !important;
+}
+
+.grade-select,
+.filter-item select,
+select {
+  background-color: var(--color-select-bg, var(--color-card-bg));
+  color: var(--color-text);
+  border-color: var(--color-select-border, var(--color-border));
+}
+
+.grade-select option {
+  background: var(--color-card-bg);
+  color: var(--color-text);
+}
+
+/* Notes and PYQ */
+.pyq-subject-box {
+  background: var(--color-card-bg);
+  border-color: var(--color-border);
+  border-left-color: var(--color-tertiary);
+}
+
+.pyq-subject-title {
+  color: var(--color-heading);
+}
+
+.pyq-paper-link,
+.resource-link,
+.notes-link,
+.exam-guide-link {
+  color: var(--color-tertiary);
+}
+
+.pyq-paper-link:hover,
+.resource-link:hover,
+.notes-link:hover {
+  color: var(--color-secondary);
+}
+
+/* Tabs */
+.rt-tab-btn {
+  background: var(--tab-bg);
+  color: var(--color-text);
+}
+
+.rt-tab-btn.active {
+  background: var(--tab-active-bg);
+  color: var(--tab-active-text);
+}
+
+/* Review/contact */
+.contact-container {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.review-form textarea {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.review-form textarea::placeholder {
+  color: var(--color-muted);
+}
+
+.review-form textarea:focus-visible,
+.grade-select:focus-visible,
+.filter-item select:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-tertiary);
+  outline-offset: 2px;
+}
+
+/* Keep success feedback semantic and readable */
+.review-popup {
+  background: #15803D;
+  color: #FFFFFF;
+}
+
+/* Resource/result buttons */
+.result-btn.primary {
+  background: var(--color-secondary);
+  color: #17243B;
+}
+
+.result-btn.secondary {
+  background: var(--color-tertiary);
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .sgpa-card,
+[data-theme="dark"] .legend-box,
+[data-theme="dark"] .sgpa-value-box,
+[data-theme="dark"] .contact-container,
+[data-theme="dark"] .pyq-subject-box {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sgpa-card,
+  .sgpa-btn,
+  .rt-tab-btn,
+  .review-form button,
+  .result-btn {
+    transition: none;
+  }
 }

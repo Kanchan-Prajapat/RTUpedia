@@ -208,6 +208,79 @@ useEffect(() => {
 
       </div>
 
+
+{/* RTU EXAM PREPARATION GUIDE */}
+<section className="exam-guide-section" data-aos="fade-up">
+  <div className="exam-guide-container">
+    <h2>How to Prepare for RTU Exams with RTUpedia</h2>
+
+    <p className="exam-guide-intro">
+      Preparing for Rajasthan Technical University examinations
+      requires a clear understanding of the syllabus, regular
+      revision, and consistent practice. RTUpedia brings together
+      useful academic resources to help B.Tech students organize
+      their semester preparation.
+    </p>
+
+    <div className="exam-guide-grid">
+
+      <div className="exam-guide-card">
+        <span className="exam-guide-number">01</span>
+        <h3>Understand Your RTU Syllabus</h3>
+        <p>
+          Begin with the official RTU syllabus for your branch
+          and semester. Review the units and topics prescribed
+          for each subject before starting your preparation.
+        </p>
+      </div>
+
+      <div className="exam-guide-card">
+        <span className="exam-guide-number">02</span>
+        <h3>Study Subject-wise Notes</h3>
+        <p>
+          Explore available subject-wise notes organized by
+          academic year, branch, and semester. Use them to
+          understand concepts and revise individual units.
+        </p>
+      </div>
+
+      <div className="exam-guide-card">
+        <span className="exam-guide-number">03</span>
+        <h3>Practice Previous Year Papers</h3>
+        <p>
+          Solve available RTU previous year question papers
+          to become familiar with question formats and
+          understand how subjects are assessed.
+        </p>
+      </div>
+
+      <div className="exam-guide-card">
+        <span className="exam-guide-number">04</span>
+        <h3>Prepare for Practical Exams</h3>
+        <p>
+          Explore available laboratory resources and practical
+          materials to revise experiments, concepts, and
+          subject-related practical topics.
+        </p>
+      </div>
+
+      <div className="exam-guide-card">
+        <span className="exam-guide-number">05</span>
+        <h3>Check Your Semester Performance</h3>
+        <p>
+          Use the RTU SGPA Calculator to calculate your
+          semester SGPA using subject grades and credits.
+        </p>
+        <Link to="/SGPACalculator" className="exam-guide-link">
+          Try SGPA Calculator →
+        </Link>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
       <div id="sgpa">
 
         <div className="section-divider" data-aos="fade-up"></div>
@@ -310,6 +383,100 @@ useEffect(() => {
           View all reviews →
         </Link>
       </div>
+
+
+{/* FREQUENTLY ASKED QUESTIONS */}
+<section className="faq-section" data-aos="fade-up">
+  <div className="faq-container">
+    <h2>Frequently Asked Questions about RTUpedia</h2>
+
+    <p className="faq-intro">
+      Find answers to common questions about RTU notes,
+      previous year question papers, syllabus resources,
+      and academic tools available on RTUpedia.
+    </p>
+
+    <div className="faq-list">
+
+      <details className="faq-item">
+        <summary>What is RTUpedia?</summary>
+        <p>
+          RTUpedia is an independent educational platform
+          designed for Rajasthan Technical University B.Tech
+          students. It provides access to available notes,
+          previous year question papers, syllabus documents,
+          and academic tools.
+        </p>
+      </details>
+
+      <details className="faq-item">
+        <summary>How can I find notes for my RTU subject?</summary>
+        <p>
+          Select your academic year from the homepage,
+          choose your branch and semester, and open the
+          required subject to explore available study materials.
+        </p>
+      </details>
+
+      <details className="faq-item">
+        <summary>Does RTUpedia provide previous year question papers?</summary>
+        <p>
+          Yes. Available RTU previous year question papers
+          are organized according to branch and semester
+          to help students practice for examinations.
+        </p>
+      </details>
+
+      <details className="faq-item">
+        <summary>Can I download the official RTU syllabus?</summary>
+        <p>
+          Visit the Official RTU Syllabus section on the
+          homepage or RTUpedia syllabus section to access the available syllabus documents
+          for different engineering branches and academic years.
+        </p>
+      </details>
+
+      <details className="faq-item">
+        <summary>How can I calculate my RTU SGPA?</summary>
+        <p>
+          Visit the SGPA Calculator, select the relevant
+          semester, enter your subject grades as instructed,
+          and calculate your semester grade point average.
+        </p>
+        <Link to="/SGPACalculator">Open SGPA Calculator →</Link>
+      </details>
+
+      <details className="faq-item">
+        <summary>Does RTUpedia provide laboratory study materials?</summary>
+        <p>
+          RTUpedia provides available laboratory resources
+          for supported academic years, branches, and semesters.
+        </p>
+      </details>
+
+      <details className="faq-item">
+        <summary>Is RTUpedia officially affiliated with RTU?</summary>
+        <p>
+          No. RTUpedia is an independent educational platform
+          created for students and is not an official website
+          of Rajasthan Technical University.
+        </p>
+      </details>
+
+      <details className="faq-item">
+        <summary>How can I report incorrect or missing study material?</summary>
+        <p>
+          You can contact the RTUpedia team through the
+          Contact Us page to report incorrect information,
+          broken links, or missing academic resources.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
 <div style={{justifyContent:'center', alignItems:'center', margin: '20px'}}>
          <p >RTUpedia is an independent educational platform created for RTU students.
 We do not represent Rajasthan Technical University officially.</p>

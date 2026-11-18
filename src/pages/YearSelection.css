@@ -20,13 +20,157 @@
 }
 
 
+/* =========================
+   RTU EXAM PREPARATION GUIDE
+========================= */
+
+.exam-guide-section {
+  padding: 65px 20px;
+  margin: 30px auto;
+  max-width: 1250px;
+}
+
+.exam-guide-container h2,
+.faq-container h2 {
+  text-align: center;
+  color: var(--color-heading);
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.exam-guide-intro,
+.faq-intro {
+  max-width: 950px;
+  margin: 0 auto 35px;
+  text-align: center;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.exam-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.exam-guide-card {
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease;
+}
+
+.exam-guide-card:hover {
+  transform: translateY(-5px);
+}
+
+.exam-guide-number {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.exam-guide-card h3 {
+  color: var(--color-heading);
+  margin: 14px 0 10px;
+  font-size: 1.15rem;
+}
+
+.exam-guide-card p {
+  color: var(--color-text);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.exam-guide-link,
+.faq-item a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--color-heading);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* =========================
+   FREQUENTLY ASKED QUESTIONS
+========================= */
+
+.faq-section {
+  max-width: 1100px;
+  margin: 65px auto;
+  padding: 30px 20px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 18px 22px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+}
+
+.faq-item summary {
+  color: var(--color-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  line-height: 1.6;
+}
+
+.faq-item p {
+  color: var(--color-text);
+  line-height: 1.8;
+  margin: 14px 0 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .exam-guide-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .exam-guide-section,
+  .faq-section {
+    padding: 35px 15px;
+  }
+
+  .exam-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-guide-container h2,
+  .faq-container h2 {
+    font-size: 1.55rem;
+  }
+
+  .faq-item {
+    padding: 16px;
+  }
+}
+
+
 .sgpa-card:hover {
   transform: scale(1.03);
   box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
 }
 
 .sgpa-card h2 {
-  color: var(--color-primary);
+  color: var(--color-heading);
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -86,7 +230,7 @@
 .why-title {
   font-size: 28px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 40px;
 }
 
@@ -101,6 +245,7 @@
 /* CARD */
 .why-card {
   background: var(--color-card-bg);
+  color: var(--color-text);
   border: 1px solid var(--color-border);
   border-radius: 18px;
   padding: 30px;
@@ -117,14 +262,14 @@
 .why-icon {
   font-size: 44px;
   margin-bottom: 15px;
-  color: var(--color-primary);
+  color: var(--color-heading);
    transition:.3s;
 }
 
 .why-heading {
   font-size: 20px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 10px;
 }
 
@@ -206,7 +351,7 @@
 .admin-title {
   font-size: 26px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 20px;
 }
 
@@ -222,7 +367,7 @@
 .admin-name {
   font-size: 18px;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-heading);
 }
 
 .admin-message {
@@ -231,7 +376,7 @@
 }
 
 .admin-rating {
-  color: gold;
+  color: var(--color-secondary);
   font-size: 16px;
 }
 
@@ -276,12 +421,13 @@
   font-size: 28px;
   font-weight: 700;
   margin-top: 40px;
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 30px;
 }
 
 .review-card {
   background: var(--color-card-bg);
+  color: var(--color-text);
   border: 1px solid var(--color-border);
   border-radius: 16px;
   padding: 26px;
@@ -299,12 +445,12 @@
 
 
 .review-card h4 {
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: 6px;
 }
 
 .stars{
-  color:#ffb400;
+  color:var(--color-secondary);
   font-size:18px;
   margin-bottom: 10px;
 }
@@ -368,7 +514,7 @@
   font-weight:600;
   padding:10px 20px;
   border-radius:25px;
-  color: var(--color-primary);
+  color: var(--color-heading);
   transition:.25s;
   text-decoration: none;
 }
@@ -398,7 +544,7 @@
 
 
 .year-card-grid .ui-card{
-  border:2px solid var(--color-secondary);
+  border:1px solid var(--color-border);
   border-radius:14px;
   padding:24px;
   text-align:center;
@@ -432,7 +578,7 @@
   inset:0;
   border-radius:14px;
   padding:2px;
-  background:linear-gradient(120deg,#ffb400,#ff6a00);
+  background:linear-gradient(120deg,var(--color-secondary),var(--color-tertiary));
   -webkit-mask:
       linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
@@ -458,8 +604,8 @@
 
 .card-grid button{
 
-  background:#0c2d50;
-  color:white;
+  background:var(--color-primary);
+  color:#FFFFFF;
 
   border-radius:8px;
   padding:6px 12px;
@@ -471,17 +617,13 @@
 }
 
 .card-grid button:hover{
-  background:#153e6e;
+  background:var(--color-tertiary);
   transform:translateY(-2px);
 }
 
 .sgpa-card{
 
-  background:linear-gradient(
-    135deg,
-    #ffffff,
-    #f3f6fb
-  );
+  background: var(--color-card-bg);
 
   border-radius:18px;
 
@@ -513,7 +655,7 @@
 
 .hero-section{
 
-  background: linear-gradient(135deg, #002b5c 0%, #001a35 100%);
+  background: linear-gradient(135deg, #0C2B4E 0%, #0B1120 100%);
 
   border-radius:24px;
   padding:70px 60px;
@@ -522,7 +664,7 @@
   max-width: 1200px;
  
 
-  color:white;
+  color:#FFFFFF;
   overflow:hidden;
 }
 
@@ -545,7 +687,7 @@
 
 .hero-title{
   font-size:3.5rem;
-  color:white;
+  color:#FFFFFF;
   letter-spacing:-1px;
   margin-bottom:18px;
 }
@@ -574,8 +716,8 @@
 
 .hero-btn{
 
-  background:white;
-  color:#0c2d50;
+  background: var(--color-card-bg);
+  color:var(--color-primary);
 
   padding:13px 32px;
 
@@ -641,13 +783,13 @@
 
 
 .accordion{
-  background: white;
+  background: var(--color-card-bg);
   border-radius:14px;
 
   padding:14px 20px;
   margin-bottom:16px;
 
-  border-left:4px solid #0c2d50;
+  border-left:4px solid var(--color-primary);
 
   box-shadow:0 8px 20px rgba(0,0,0,0.05);
 
@@ -660,7 +802,7 @@
 }
 
 
-.accordion:nth-child(1){border-left-color:#0c2d50;}
+.accordion:nth-child(1){border-left-color:var(--color-primary);}
 .accordion:nth-child(2){border-left-color:#3b82f6;}
 .accordion:nth-child(3){border-left-color:#10b981;}
 .accordion:nth-child(4){border-left-color:#f59e0b;}
@@ -680,3 +822,110 @@
 
 
 
+
+
+/* ================================
+   THEME POLISH
+================================ */
+
+.exam-guide-card,
+.faq-item,
+.why-card,
+.review-card,
+.year-card-grid .ui-card,
+.card-grid .ui-card,
+.sgpa-card,
+.accordion {
+  color: var(--color-text);
+  border-color: var(--color-border);
+  transition: background-color 0.25s ease, color 0.25s ease,
+    border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.exam-guide-card h3,
+.faq-item summary,
+.why-title,
+.why-heading,
+.review-title,
+.review-card h4,
+.year-card-grid .ui-card h3,
+.sgpa-card h2,
+.admin-title,
+.admin-name {
+  color: var(--color-heading);
+}
+
+.exam-guide-card p,
+.faq-item p,
+.why-text,
+.review-card p,
+.sgpa-card p,
+.admin-message {
+  color: var(--color-text);
+}
+
+.exam-guide-link,
+.faq-item a,
+.view-all {
+  color: var(--color-tertiary);
+}
+
+.filter-item label {
+  color: var(--color-text);
+}
+
+.filter-item select {
+  background: var(--color-select-bg, var(--color-card-bg));
+  color: var(--color-text);
+}
+
+.sgpa-btn,
+.review-controls button,
+.card-grid button {
+  background: var(--color-tertiary);
+  color: #FFFFFF;
+}
+
+.sgpa-btn:hover,
+.review-controls button:hover:not(:disabled),
+.card-grid button:hover {
+  filter: brightness(1.1);
+}
+
+.accordion {
+  background: var(--accordion-bg, var(--color-card-bg));
+  color: var(--accordion-text, var(--color-text));
+  border-left-color: var(--color-tertiary);
+}
+
+.accordion-header {
+  color: var(--color-heading);
+}
+
+[data-theme="dark"] .exam-guide-card,
+[data-theme="dark"] .faq-item,
+[data-theme="dark"] .why-card,
+[data-theme="dark"] .review-card,
+[data-theme="dark"] .year-card-grid .ui-card,
+[data-theme="dark"] .card-grid .ui-card,
+[data-theme="dark"] .sgpa-card,
+[data-theme="dark"] .accordion {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+}
+
+[data-theme="dark"] .hero-section {
+  background: linear-gradient(135deg, #17243B 0%, #0B1120 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exam-guide-card,
+  .faq-item,
+  .why-card,
+  .review-card,
+  .year-card-grid .ui-card,
+  .card-grid .ui-card,
+  .sgpa-card,
+  .accordion {
+    transition: none;
+  }
+}

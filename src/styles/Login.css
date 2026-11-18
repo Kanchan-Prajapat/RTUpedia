@@ -1,3 +1,4 @@
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -6,24 +7,33 @@
 }
 
 .login-card {
-  background: white;
+  background: var(--color-card-bg);
+  color: var(--color-text);
   padding: 30px;
   border-radius: 16px;
-  margin:20px;
+  margin: 20px;
   width: 100%;
   max-width: 380px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  transition: background-color 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
 }
 
 .login-card h2 {
+  color: var(--color-heading);
   margin-bottom: 10px;
 }
 
 .login-card p {
-  color: gray;
+  color: var(--color-muted);
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -32,30 +42,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  border: 1px solid #ddd;
-  margin-left: 20% auto;
+  gap: 10px;
+
+  width: 60%;
+  margin: 0 auto;
+
+  padding: 10px 16px;
+  background: var(--color-surface);
+  color: var(--color-primary);
+
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.2s;
+
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease,
+              color 0.2s ease;
 }
 
 .google-btn:hover {
-  background: #f5f5f5;
+  background: var(--color-surface-hover);
+  border-color: var(--color-tertiary);
 }
 
 .google-btn img {
   width: 20px;
 }
 
-@media (max-width: 480px) {
+[data-theme="dark"] .login-card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
   .google-btn {
-    margin-left: 10%;
+    width: 75%;
   }
 }
 
-@media (max-width : 768px) {
+@media (max-width: 480px) {
   .google-btn {
-    margin-left: 15%;
+    width: 85%;
   }
 }
