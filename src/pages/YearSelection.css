@@ -704,13 +704,17 @@
 
 /* SUBTEXT */
 
-.hero-subtitle{
-  max-width:520px;
-  font-size:1.1rem;
-  line-height:1.6;
-  opacity:0.9;
-  margin-bottom:30px;
+
+.hero-subtitle {
+  color: #CBD5E1;
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 400;
+  opacity: 1;
+  max-width: 520px;
+  margin: 20px 0 28px;
 }
+
 
 /* BUTTON */
 
