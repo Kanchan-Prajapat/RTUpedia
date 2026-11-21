@@ -57,7 +57,7 @@
           },
           {
             "unitName": "Review of CFG, ambiguity of grammars, introduction to parsing. Top-down parsing, LL grammars and parsers, recursive descent parsing, predictive parsers, bottom-up parsing, shift-reduce parsing, LR parsers, SLR, CLR and LALR parsing tables, operator precedence parsing, YACC and error handling.",
-            "notesPDF": "/assets/notes/CSE/3/CD Unit 2.pdf",
+            "notesPDF": "/assets/notes/CSE/5/CD Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLNIZqTaf1QaI&si=2UD2tzf0k6rTgiWs"
           },
           {
