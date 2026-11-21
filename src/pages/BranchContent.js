@@ -8,6 +8,7 @@ import {
   loadLabs,
   loadExtraMore
 } from "../utils/dataFetcher";
+import { getUploadedNotes } from "../utils/notesApi";
 
 import "./SGPACalculator.css";
 import "../styles/global.css";
@@ -38,6 +39,9 @@ const BranchContent = () => {
   const [tab, setTab] = useState("notes");
 
   const [notes, setNotes] = useState([]);
+  const [uploadedNotes, setUploadedNotes] = useState([]);
+  const [uploadedNotesError, setUploadedNotesError] = useState("");
+  const [loadingUploadedNotes, setLoadingUploadedNotes] = useState(false);
   const [pyqGrouped, setPyqGrouped] = useState([]);
   const [labGrouped, setLabGrouped] = useState([]);
   const [moreGrouped, setMoreGrouped] = useState([]);
@@ -119,6 +123,38 @@ const BranchContent = () => {
     selectedBranch,
     selectedSemester
   ]);
+
+  useEffect(() => {
+    if (!selectedBranch || !selectedSemester) return undefined;
+
+    let active = true;
+    setUploadedNotes([]);
+    setUploadedNotesError("");
+    setLoadingUploadedNotes(true);
+
+    getUploadedNotes({
+      yearSlug,
+      branch: selectedBranch,
+      semester: selectedSemester
+    })
+      .then((data) => {
+        if (active) {
+          setUploadedNotes(Array.isArray(data) ? data : []);
+          setLoadingUploadedNotes(false);
+        }
+      })
+      .catch((error) => {
+        if (active) {
+          console.error("Failed to load uploaded notes:", error);
+          setUploadedNotesError("Additional notes are temporarily unavailable.");
+          setLoadingUploadedNotes(false);
+        }
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [yearSlug, selectedBranch, selectedSemester]);
 
 
   /* =========================
@@ -581,7 +617,10 @@ const BranchContent = () => {
 
 
           {!loadingNotes &&
-            notes.length === 0 && (
+            !loadingUploadedNotes &&
+            !uploadedNotesError &&
+            notes.length === 0 &&
+            uploadedNotes.length === 0 && (
               <div className="pyq-empty-text">
                 No notes available for this branch
                 and semester.
@@ -681,6 +720,32 @@ const BranchContent = () => {
             </div>
 
           ))}
+
+          {uploadedNotesError && (
+            <p className="pyq-empty-text" role="status">
+              {uploadedNotesError}
+            </p>
+          )}
+
+          {uploadedNotes.length > 0 && (
+            <div className="resource-card subject-card uploaded-notes-card">
+              <h3>Additional PDF Notes</h3>
+              {uploadedNotes.map((note) => (
+                <div className="unit-row" key={note.id}>
+                  <div>
+                    <strong>{note.subject}</strong>
+                    <div>{note.unit}</div>
+                  </div>
+                  <button
+                    className="resource-link-notes"
+                    onClick={() => openPDF(note.pdf)}
+                  >
+                    📑 View Notes
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
 
         </>
       )}

@@ -11,6 +11,65 @@
   color: var(--color-primary);
 }
 
+.admin-upload-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.admin-upload-title {
+  margin: 0 0 16px;
+  color: var(--color-primary);
+}
+
+.admin-upload-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+.admin-upload-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-upload-form input,
+.admin-upload-form select {
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text);
+  background: var(--color-card-bg);
+}
+
+.admin-upload-form button {
+  justify-self: start;
+}
+
+.admin-upload-form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.admin-upload-feedback {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.admin-upload-error {
+  color: #dc2626;
+}
+
+.admin-upload-success {
+  color: #16a34a;
+}
+
 /* CARD */
 .admin-card {
   background: var(--color-card-bg);
