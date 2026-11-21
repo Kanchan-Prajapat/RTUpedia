@@ -47,7 +47,7 @@
         "units": [
           {
             "unitName": "Compiler, Translator, Interpreter definition, phases of compiler, bootstrapping, review of finite automata, lexical analyzer, input, recognition of tokens, LEX and lexical analyzer generator, error handling.",
-            "notesPDF": "/assets/notes/CSE/5/CD Unit 1.pdf",
+            "notesPDF": "/assets/notes/CSE/5/CD unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLXjUVD4JNLqE&si=9TeMizKME5gJB2iK"
           },
           {
